@@ -49,8 +49,9 @@ MEANINGFUL="$(git diff --cached -U0 \
   | grep -vE '^(\+\+\+|---)' \
   | grep -vE 'const BUILD = |由 newspipe 生成|newspipe 生成 · ' || true)"
 if [ -z "$MEANINGFUL" ]; then
-  echo "  仅有生成时间戳变化，无实质内容变更，回滚暂存并跳过提交"
-  git reset -q
+  echo "  仅有生成时间戳变化，无实质内容变更，还原产物并跳过提交"
+  git reset -q          # 取消暂存；新增文件退回未跟踪，不会被删除
+  git checkout -- .     # 仅还原已跟踪文件（时间戳），未跟踪文件不受影响
   exit 0
 fi
 
