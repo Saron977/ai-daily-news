@@ -1,0 +1,18 @@
+# 测试与回归样例（本地调试用，不参与渲染，也不进版本库）
+_scratch/
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 生成物（如需归档报告本身，请保留下面这条注释掉的规则）
+# *.html
