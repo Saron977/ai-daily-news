@@ -7,6 +7,11 @@
 #
 # 提交描述遵循 Dreame 固定格式：
 #   【项目 版本号】【业务需求名】简短标题 - 改动点：具体改动说明
+#
+# 两个刻意的设计：
+#   1. 描述按「本次实际改了什么」生成（新增/更新/重建），不写与实际不符的套话。
+#   2. 渲染会把生成时刻写进产物，重复渲染必然产生时间戳 diff；
+#      若 diff 去掉时间戳后为空，视为无实质变更，直接跳过提交，避免噪声提交。
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -34,11 +39,22 @@ echo "▶ 2/3 提交"
 git add -A
 
 if git diff --cached --quiet; then
-  echo "  没有需要提交的变更（报告内容与上次一致），跳过提交与推送"
+  echo "  工作区干净，无需提交"
   exit 0
 fi
 
-# 从数据文件里取条数与板块数，避免写死
+# 判断是否只有「生成时间戳」在变（渲染必然刷新 BUILD 常量与页脚时间）
+MEANINGFUL="$(git diff --cached -U0 \
+  | grep -E '^[+-]' \
+  | grep -vE '^(\+\+\+|---)' \
+  | grep -vE 'const BUILD = |由 newspipe 生成|newspipe 生成 · ' || true)"
+if [ -z "$MEANINGFUL" ]; then
+  echo "  仅有生成时间戳变化，无实质内容变更，回滚暂存并跳过提交"
+  git reset -q
+  exit 0
+fi
+
+# ---------- 按实际变更拼装提交描述 ----------
 read -r TOTAL SECTIONS < <(python3 - "$DATA" <<'PY'
 import json,sys
 d=json.load(open(sys.argv[1],encoding="utf-8"))
@@ -46,14 +62,27 @@ print(sum(len(s.get("items",[])) for s in d.get("sections",[])), len(d.get("sect
 PY
 )
 
+# 数据文件是新增还是修改？决定标题用「归档」「更新」还是「重建」
+DATA_STATUS="$(git diff --cached --name-status -- "$DATA" | cut -f1)"
+case "$DATA_STATUS" in
+  A) HEAD_WORD="归档"; DATA_WORD="新增 ${DATA} 内容源与 data/raw 检索留档" ;;
+  M) HEAD_WORD="更新"; DATA_WORD="更新 ${DATA} 内容源" ;;
+  *) HEAD_WORD="重建"; DATA_WORD="内容源未变，仅重建产物" ;;
+esac
+
+# 实际改动的文件清单（排除数据文件本身，避免与上面重复）
+CHANGED="$(git diff --cached --name-only | grep -v "^${DATA}$" | paste -sd '、' - || true)"
+CHANGED_DESC=""
+[ -n "$CHANGED" ] && CHANGED_DESC="；变更文件：${CHANGED}"
+
+MSG="【DailyNews ${VERSION}】【每日新闻】${HEAD_WORD} ${DATE} 晨报（${TOTAL} 条 / ${SECTIONS} 板块）"
+MSG="${MSG} - 改动点：${DATA_WORD}；新鲜度审计通过（焦点板块 ≤3 天、其余 ≤7 天），产物自检通过（序号连续、total 一致、相对日期正确）"
+MSG="${MSG}${CHANGED_DESC}"
 LAST_TAG="$(git describe --tags --abbrev=0 2>/dev/null || echo '')"
-MSG="【DailyNews ${VERSION}】【每日新闻】归档 ${DATE} 晨报（${TOTAL} 条 / ${SECTIONS} 板块）"
-MSG="${MSG} - 改动点：新增 ${DATA} 内容源与 data/raw 检索留档；渲染产出 ${REPORT} 并重建 index.html 与 feed.xml；"
-MSG="${MSG}新鲜度审计通过（焦点板块 ≤3 天、其余 ≤7 天），产物自检通过（序号连续、total 一致、相对日期正确）"
 [ -n "$LAST_TAG" ] && MSG="${MSG}；基线 ${LAST_TAG}"
 
 git commit -q -m "$MSG"
-echo "  ✓ $(git log --oneline -1)"
+echo "  ✓ $(git log --oneline -1 | cut -c1-120)…"
 
 # ---------- 3/3 推送 ----------
 echo
@@ -69,9 +98,8 @@ if ! git push origin "$BRANCH" 2>/dev/null; then
   fi
 fi
 
-REMOTE_URL="$(git remote get-url origin | sed -E 's#(git@[^:]+:|https://[^/]+/)##; s#\.git$##')"
-# 分支无上游时补设跟踪
+SLUG="$(git remote get-url origin | sed -E 's#(git@[^:]+:|https://[^/]+/)##; s#\.git$##')"
 git rev-parse --abbrev-ref "@{upstream}" >/dev/null 2>&1 || git branch --set-upstream-to="origin/$BRANCH" "$BRANCH" >/dev/null 2>&1 || true
 
 echo
-echo "✓ 已归档并推送：https://github.com/${REMOTE_URL}/blob/${BRANCH}/${REPORT}"
+echo "✓ 已归档并推送：https://github.com/${SLUG}/blob/${BRANCH}/${REPORT}"
