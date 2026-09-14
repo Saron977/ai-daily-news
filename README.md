@@ -25,7 +25,8 @@ news/
 │   ├── template.html   # 单文件报告模板（占位符 __DATA__ / __TITLE__ / __DESC__ / __BUILD__）
 │   ├── selftest.js     # 渲染产物自检：桩 DOM 执行 JS + 结构 + 新鲜度断言
 │   ├── readurl.py      # curl 抓网页抽正文（核实来源；沙箱里 web_fetch 常被 DNS 拦）
-│   └── daily.sh        # 一条命令跑完当日流程
+│   ├── daily.sh        # 一条命令跑完当日流程（拼装→校验渲染→自检）
+│   └── publish.sh      # 生成 + 提交 + 推送（GitHub 归档）
 ├── data/
 │   ├── YYYY-MM-DD.json # 每日内容（唯一需要人/LLM 写的文件）
 │   └── raw/            # 检索原始产出（assemble 的输入，可留档）
@@ -41,7 +42,11 @@ news/
 
 ```bash
 tools/daily.sh 2026-09-14     # 拼装 -> 校验+渲染+索引 -> 产物自检
+tools/publish.sh 2026-09-14   # 生成 + 提交 + 推送到 GitHub（归档）
 ```
+
+`publish.sh` 会先跑 `daily.sh`（**校验不过直接中止，不会提交半成品**），再按 Dreame 固定格式生成提交描述并推送；
+推送被拒时自动 `git pull --rebase` 重推，遇冲突则停下报告，不做 force push。
 
 分步：
 
