@@ -72,9 +72,23 @@ case "$DATA_STATUS" in
 esac
 
 # 实际改动的文件清单（排除数据文件本身，避免与上面重复）
-CHANGED="$(git diff --cached --name-only | grep -v "^${DATA}$" | paste -sd '、' - || true)"
+# 注意：不要用 `paste -sd '、'` —— paste 的 -d 按「字节」取分隔符，而「、」在 UTF-8 下是
+# 3 字节（E3 80 81），会变成 3 个分隔符轮换，导致路径粘连并产生非法 UTF-8 提交描述。
+# 同时用 core.quotePath=false，让中文文件名按原样输出而不是 \346\226\260 转义。
+CHANGED="$(git -c core.quotePath=false diff --cached --name-only \
+  | grep -v "^${DATA}$" \
+  | python3 -c "import sys; print('、'.join(x.strip() for x in sys.stdin if x.strip()))" || true)"
 CHANGED_DESC=""
 [ -n "$CHANGED" ] && CHANGED_DESC="；变更文件：${CHANGED}"
+
+# git add -A 会把当期归档之外的工具/文档改动一并卷进这条提交。
+# 这未必是坏事，但必须是「知情」的，否则归档提交会混入不相干变更、难以回溯。
+UNRELATED="$(git -c core.quotePath=false diff --cached --name-only \
+  | grep -vE "^(data/|AI新闻速览_|index\.html$|feed\.xml$)" | grep -v "^${DATA}$" || true)"
+if [ -n "$UNRELATED" ]; then
+  echo "  ⚠ 本次将一并提交归档之外的改动（确认无误可忽略）："
+  echo "$UNRELATED" | sed 's/^/      /'
+fi
 
 MSG="【DailyNews ${VERSION}】【每日新闻】${HEAD_WORD} ${DATE} 晨报（${TOTAL} 条 / ${SECTIONS} 板块）"
 MSG="${MSG} - 改动点：${DATA_WORD}；新鲜度审计通过（焦点板块 ≤3 天、其余 ≤7 天），产物自检通过（序号连续、total 一致、相对日期正确）"
