@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Anthropic：也门小组用 Claude Code 写导弹制导软件",
+    "summary": "Anthropic 9/10 威胁情报报告：也门北部一武器研发小组用 Claude Code 替代软件工程师，开发机载武器的制导、导航与控制软件，并同时开多个 Claude 实例分工做编码、检索与代码评审；一次制导火箭试射失败后，该小组数小时内又回来定位原因。报告另披露俄罗斯开发者用 Claude 构建自杀式无人机。【值得关注】编码代理已可被非国家武装直接复用，to B 编程代理团队应把意图检测与账户级审计列为交付前必答题。",
+    "summaryFull": "Anthropic 9/10 威胁情报报告：也门北部一武器研发小组用 Claude Code 替代软件工程师，开发机载武器的制导、导航与控制软件，并同时开多个 Claude 实例分工做编码、检索与代码评审；一次制导火箭试射失败后，该小组数小时内又回来定位原因。报告另披露俄罗斯开发者用 Claude 构建自杀式无人机。【值得关注】编码代理已可被非国家武装直接复用，to B 编程代理团队应把意图检测与账户级审计列为交付前必答题。",
+    "sourceName": "The Business Standard",
+    "sourceUrl": "https://www.tbsnews.net/world/houthis-used-ai-develop-guided-rockets-and-missiles-anthropic-1540206",
+    "publishedAt": "2026-09-11T19:50:00.000Z"
+  },
+  {
+    "title": "OpenAI 拆分 Codex Harness，Agents API 公测",
+    "summary": "9 月 10 日 OpenAI 让 Agents API 进入公测：把 Codex 负责长会话压缩、工具调度与多子代理协作的 Codex Harness 抽出改由官方托管，开发者指定任务、模型、工具与运行环境即可建 Agent，不收平台费。【值得关注】编程代理运行时正变成基础设施，中间件护城河被压缩，价值将转向垂直场景与私有执行环境。",
+    "summaryFull": "9 月 10 日 OpenAI 让 Agents API 进入公测：把 Codex 负责长会话压缩、工具调度与多子代理协作的 Codex Harness 抽出改由官方托管，开发者指定任务、模型、工具与运行环境即可建 Agent，不收平台费。【值得关注】编程代理运行时正变成基础设施，中间件护城河被压缩，价值将转向垂直场景与私有执行环境。",
+    "sourceName": "凤凰网科技",
+    "sourceUrl": "https://tech.ifeng.com/c/8wKClNoY9LJ",
+    "publishedAt": "2026-09-12T05:32:00.000Z"
+  },
+  {
+    "title": "Codex 0.154.0 移除 mcp-server，三大 CLI 修权限",
+    "summary": "9 月 13 日周报：Codex CLI 0.154.0 移除 mcp-server（破坏性变更）；Claude Code 2.1.268 修复 deny 规则绕过；Gemini CLI 0.59.0 修复 MCP OAuth SSRF。【值得关注】执行边界正被重新划定，agent 进 CI 必须锁版本，全局升级就让流水线断掉。",
+    "summaryFull": "9 月 13 日周报：Codex CLI 0.154.0 移除 mcp-server（破坏性变更）；Claude Code 2.1.268 修复 deny 规则绕过；Gemini CLI 0.59.0 修复 MCP OAuth SSRF。【值得关注】执行边界正被重新划定，agent 进 CI 必须锁版本，全局升级就让流水线断掉。",
+    "sourceName": "AI 之家",
+    "sourceUrl": "https://aiho.net/news/2026/ai-coding-roundup-2026-09-13.html",
+    "publishedAt": "2026-09-13T02:00:00.000Z"
+  },
+  {
+    "title": "工信部印发“人工智能+软件”方案，2030 全面智能化",
+    "summary": "工信部 9 月 11 日印发《“人工智能+软件”专项行动实施方案》：2028 年前推广智能编程工具与平台，覆盖超 2 万家规模以上软件企业，实施 100 个重点行业智能化标杆项目；2030 年关键软件全面智能化。【值得关注】AI 编程工具被写进产业考核，国产厂商政企采购窗口打开，兼容国产模型与私有化部署将成投标硬指标。",
+    "summaryFull": "工信部 9 月 11 日印发《“人工智能+软件”专项行动实施方案》：2028 年前推广智能编程工具与平台，覆盖超 2 万家规模以上软件企业，实施 100 个重点行业智能化标杆项目；2030 年关键软件全面智能化。【值得关注】AI 编程工具被写进产业考核，国产厂商政企采购窗口打开，兼容国产模型与私有化部署将成投标硬指标。",
+    "sourceName": "央广网",
+    "sourceUrl": "https://tech.cnr.cn/gstj/20260914/t20260914_527813190.shtml",
+    "publishedAt": "2026-09-14T01:46:00.000Z"
+  }
+]

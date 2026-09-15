@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import difflib
 import html
 import json
 import os
@@ -114,6 +115,61 @@ def is_bare_homepage(url: str) -> bool:
     return bool(m)
 
 
+def history_items(date: str, days: int = 7) -> list[tuple[str, str, str]]:
+    """读取最近 days 天内其它日期的报告内容，返回 (日期, 标题, 来源链接)。
+
+    用于跨期查重：同一件事被连着两天写进不同期，是这类日报最容易犯、
+    又最难靠人工发现的错误（分板块检索时尤其明显）。
+    """
+    out: list[tuple[str, str, str]] = []
+    if not os.path.isdir(DATA_DIR):
+        return out
+    try:
+        target = dt.date.fromisoformat(date)
+    except ValueError:
+        return out
+    for fn in sorted(os.listdir(DATA_DIR)):
+        m = re.match(r"^(\d{4}-\d{2}-\d{2})\.json$", fn)
+        if not m or m.group(1) == date:
+            continue
+        try:
+            if abs((target - dt.date.fromisoformat(m.group(1))).days) > days:
+                continue
+            with open(os.path.join(DATA_DIR, fn), encoding="utf-8") as fh:
+                prev = json.load(fh)
+        except Exception:
+            continue
+        for sec in prev.get("sections", []):
+            for it in sec.get("items", []):
+                out.append((m.group(1), (it.get("title") or "").strip(),
+                            (it.get("sourceUrl") or "").strip()))
+    return out
+
+
+def cross_day_duplicates(data: dict, date: str, days: int = 7) -> list[str]:
+    """与最近历史期次比对，返回重复提示（同一链接=错误级，标题高度相似=警告级）。"""
+    hist = history_items(date, days)
+    if not hist:
+        return []
+    hits: list[str] = []
+    for sec in data.get("sections", []):
+        for it in sec.get("items", []):
+            title = (it.get("title") or "").strip()
+            url = (it.get("sourceUrl") or "").strip()
+            for pdate, ptitle, purl in hist:
+                if url and purl and url == purl:
+                    hits.append(f"[{sec.get('label')}] 与 {pdate} 期重复（同一来源链接）：{title[:30]}…")
+                    break
+                if title and ptitle:
+                    ratio = difflib.SequenceMatcher(None, title, ptitle).ratio()
+                    if ratio >= 0.62:
+                        hits.append(
+                            f"[{sec.get('label')}] 与 {pdate} 期高度相似（{ratio:.0%}）："
+                            f"{title[:26]}… ↔ {ptitle[:26]}…")
+                        break
+    return hits
+
+
 # ---------------------------------------------------------------- validate
 def validate(data: dict, date: str, *, strict: bool = True) -> tuple[list, list]:
     """返回 (errors, warnings)。errors 非空即视为不可交付。"""
@@ -197,6 +253,10 @@ def validate(data: dict, date: str, *, strict: bool = True) -> tuple[list, list]
 
     if isinstance(data.get("total"), int) and data["total"] != total:
         errors.append(f"data.total={data['total']} 与实际条数 {total} 不一致（渲染时会以实际为准）")
+
+    # 跨期查重：同一链接=错误（就是同一件事又报一遍）；标题高度相似=警告
+    for hit in cross_day_duplicates(data, date, days=int(data.get("dupLookbackDays", 7))):
+        (errors if "同一来源链接" in hit else warnings).append(hit)
 
     return errors, warnings
 
@@ -521,23 +581,36 @@ def cmd_check_links(args) -> int:
     bad = 0
     for u in urls:
         code, note = "—", ""
+        UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/125 Safari/537.36")
+
+        def _get():
+            with urllib.request.urlopen(
+                    urllib.request.Request(u, headers={"User-Agent": UA}), timeout=20) as r:
+                return r.status
+
         try:
-            req = urllib.request.Request(u, method="HEAD", headers={
-                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-                              "(KHTML, like Gecko) Chrome/125 Safari/537.36"})
-            with urllib.request.urlopen(req, timeout=15) as r:
+            with urllib.request.urlopen(
+                    urllib.request.Request(u, method="HEAD", headers={"User-Agent": UA}), timeout=15) as r:
                 code = r.status
         except urllib.error.HTTPError as e:
             code = e.code
-            if e.code in (403, 405, 503):  # 反爬常拦 HEAD，再试 GET
-                try:
-                    req = urllib.request.Request(u, headers={"User-Agent": req.get_header("User-agent")})
-                    with urllib.request.urlopen(req, timeout=15) as r:
-                        code, note = r.status, "(GET)"
-                except Exception as e2:
-                    code, note = getattr(e2, "code", "ERR"), f"({type(e2).__name__})"
-        except Exception as e:
-            code, note = "ERR", f"({type(e).__name__})"
+            # 有些站点（如 m.ithome.com）不支持 HEAD，会对 HEAD 直接返回 404，
+            # 但 GET 正常。因此任何 HEAD 失败都再用 GET 复核一次，避免误报。
+            try:
+                code, note = _get(), "(GET 复核)"
+            except urllib.error.HTTPError as e2:
+                code, note = e2.code, "(GET)"
+            except Exception as e2:
+                code, note = "ERR", f"({type(e2).__name__})"
+        except Exception:
+            try:
+                code, note = _get(), "(GET 复核)"
+            except urllib.error.HTTPError as e2:
+                code, note = e2.code, "(GET)"
+            except Exception as e2:
+                code, note = "ERR", f"({type(e2).__name__})"
+
         ok = isinstance(code, int) and code < 400
         if not ok:
             bad += 1

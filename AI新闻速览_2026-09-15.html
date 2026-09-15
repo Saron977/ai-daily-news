@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>2026-09-15 AI 晨报 · 25 条</title>
+<meta name="description" content="「放缓 AI」争议演成市场分化：AI 硬件股重挫（HPE -11%、CoreWeave -7%），网络安全股逆势飙升（CrowdStrike、Palo Alto 涨超 13%），芯片产业链市值蒸发超 5000 亿美元。；特朗普公开拒绝放缓倡议，称 AI 末日论是骗局、AI 将是史上最强经济发展引擎，要优先快速推进 AI 与数据中心、限制监管与审批壁垒。"/>
+<meta name="color-scheme" content="light dark"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="2026-09-15 AI 晨报 · 25 条"/>
+<meta property="og:description" content="「放缓 AI」争议演成市场分化：AI 硬件股重挫（HPE -11%、CoreWeave -7%），网络安全股逆势飙升（CrowdStrike、Palo Alto 涨超 13%），芯片产业链市值蒸发超 5000 亿美元。；特朗普公开拒绝放缓倡议，称 AI 末日论是骗局、AI 将是史上最强经济发展引擎，要优先快速推进 AI 与数据中心、限制监管与审批壁垒。"/>
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --ink:#1f2430; --muted:#6b7280;
+    --line:#e7e9f0; --soft:#f1f2f7; --body:#3a4252;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:16px;
+    --hero-a:#1e1b4b; --hero-b:#312e81; --hero-c:#4f46e5;
+    --accent:#4f46e5; --link:#4f46e5;
+    --nav-bg:rgba(255,255,255,.92); --mark:#fde68a;
+  }
+  html[data-theme="dark"]{
+    --bg:#0e1117; --surface:#161b26; --ink:#e8ebf2; --muted:#9aa4b8;
+    --line:#252c3b; --soft:#1d2431; --body:#c3cad9;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    --hero-a:#141a2e; --hero-b:#1b2340; --hero-c:#312e81;
+    --accent:#6366f1; --link:#a5b4fc;
+    --nav-bg:rgba(14,17,23,.9); --mark:#7c5c00;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative; overflow:hidden;
+    background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 45%,var(--hero-c) 100%);
+    color:#fff; padding:46px 0 38px;
+  }
+  .hero::after{
+    content:""; position:absolute; right:-80px; top:-80px; width:340px; height:340px;
+    background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);
+  }
+  .hero .wrap{position:relative; z-index:1}
+  .eyebrow{font-size:13px; letter-spacing:.18em; text-transform:uppercase; opacity:.82; margin:0 0 10px}
+  .hero h1{margin:0; font-size:34px; font-weight:800; letter-spacing:.5px}
+  .hero .sub{margin:8px 0 0; opacity:.9; font-size:15px}
+  .total-badge{
+    display:inline-flex; align-items:baseline; gap:8px; margin-top:18px;
+    background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:8px 16px; border-radius:999px; font-size:14px;
+  }
+  .total-badge b{font-size:22px; font-weight:800}
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:12px; margin-top:22px}
+  .stat{
+    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
+    border-radius:14px; padding:14px 12px; text-align:left; cursor:pointer;
+    text-decoration:none; color:inherit; display:block; transition:.15s;
+  }
+  .stat:hover{background:rgba(255,255,255,.2)}
+  .stat .num{font-size:26px; font-weight:800; line-height:1}
+  .stat .lbl{font-size:12.5px; opacity:.9; margin-top:6px; min-height:34px}
+
+  /* ===== Highlights ===== */
+  .brief{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent);
+    border-radius:var(--radius); padding:16px 20px; margin:22px 0 0; box-shadow:var(--shadow)}
+  .brief h2{margin:0 0 8px; font-size:15px; font-weight:800; color:var(--ink)}
+  .brief ul{margin:0; padding-left:20px}
+  .brief li{font-size:14px; color:var(--body); margin:5px 0}
+
+  /* ===== Sticky nav ===== */
+  .nav{
+    position:sticky; top:0; z-index:20; background:var(--nav-bg);
+    backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line);
+  }
+  .nav .wrap{display:flex; gap:8px; overflow-x:auto; padding:10px 20px; align-items:center}
+  .nav a.tab{
+    flex:0 0 auto; text-decoration:none; font-size:13.5px; font-weight:600;
+    color:var(--muted); padding:7px 13px; border-radius:999px; border:1px solid var(--line);
+    white-space:nowrap; transition:.15s;
+  }
+  .nav a.tab:hover{color:var(--ink); border-color:#c9cde0}
+  .nav a.tab.active{color:#fff; background:var(--accent); border-color:var(--accent)}
+  .nav a.tab .cnt{opacity:.7; font-weight:700; margin-left:4px}
+  .nav .tools{margin-left:auto; display:flex; gap:6px; flex:0 0 auto}
+  .nav input[type=search]{
+    font:inherit; font-size:13px; padding:6px 12px; border-radius:999px;
+    border:1px solid var(--line); background:var(--surface); color:var(--ink); width:150px;
+  }
+  .nav input[type=search]:focus{outline:2px solid var(--accent); outline-offset:1px; width:190px}
+  .nav button{
+    font:inherit; font-size:13px; font-weight:700; cursor:pointer; padding:6px 11px;
+    border-radius:999px; border:1px solid var(--line); background:var(--surface); color:var(--muted);
+  }
+  .nav button:hover{color:var(--ink); border-color:#c9cde0}
+
+  /* ===== Sections ===== */
+  main{padding:26px 0 10px}
+  .section{margin-bottom:34px; scroll-margin-top:64px}
+  .section-head{display:flex; align-items:center; gap:12px; margin:0 0 16px}
+  .section-head .bar{width:6px; height:26px; border-radius:4px}
+  .section-head h2{margin:0; font-size:21px; font-weight:800}
+  .section-head .count{
+    font-size:13px; color:var(--muted); background:var(--soft); padding:3px 10px; border-radius:999px; font-weight:700;
+  }
+  .section-head .hint{font-size:12.5px; color:var(--muted); margin-left:auto}
+
+  /* ===== Cards grid ===== */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:16px}
+  .card{
+    position:relative; background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius); padding:18px 18px 16px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transition:transform .15s, box-shadow .15s;
+    scroll-margin-top:70px;
+  }
+  .card:hover{transform:translateY(-3px); box-shadow:0 4px 8px rgba(16,24,40,.08),0 16px 36px rgba(16,24,40,.12)}
+  .card:target{border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent)}
+  .card .top{display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:10px}
+  .serial{
+    font-size:13px; font-weight:800; color:#fff; min-width:30px; height:30px;
+    border-radius:9px; display:inline-flex; align-items:center; justify-content:center; padding:0 8px;
+    text-decoration:none; flex:0 0 auto;
+  }
+  .chip{
+    display:inline-flex; align-items:center; gap:5px; max-width:100%;
+    font-size:12px; font-weight:600; color:var(--muted);
+    background:var(--soft); border:1px solid var(--line); border-radius:999px; padding:4px 10px;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .chip .dot{width:7px; height:7px; border-radius:50%; flex:0 0 auto}
+  .card h3{margin:2px 0 8px; font-size:16.5px; font-weight:700; line-height:1.4}
+  .card h3 a{text-decoration:none}
+  .card h3 a:hover{text-decoration:underline}
+  .meta{display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--muted); margin-bottom:10px; flex-wrap:wrap}
+  .meta .time{font-weight:600}
+  .age{background:var(--soft); border-radius:999px; padding:1px 8px; font-weight:700}
+  .age.fresh{color:#047857} html[data-theme="dark"] .age.fresh{color:#34d399}
+  .age.stale{color:#b45309} html[data-theme="dark"] .age.stale{color:#fbbf24}
+  .summary{font-size:14px; color:var(--body); margin:0 0 14px; flex:1}
+  .read{
+    align-self:flex-start; text-decoration:none; font-size:13.5px; font-weight:700;
+    display:inline-flex; align-items:center; gap:5px; color:var(--link);
+  }
+  .read:hover{gap:8px}
+  .empty-hit{display:none; padding:40px 0; text-align:center; color:var(--muted)}
+  mark{background:var(--mark); color:inherit; border-radius:3px; padding:0 2px}
+
+  /* ===== Footer ===== */
+  footer{border-top:1px solid var(--line); margin-top:18px; padding:26px 0 50px; color:var(--muted); font-size:13.5px}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:8px 22px; align-items:center; justify-content:space-between}
+  footer a{color:var(--link); text-decoration:none; font-weight:600}
+  footer a:hover{text-decoration:underline}
+  .foot-total{font-weight:800; color:var(--ink); font-size:15px}
+  .to-top{position:fixed; right:18px; bottom:18px; z-index:30; width:42px; height:42px; border-radius:50%;
+    border:1px solid var(--line); background:var(--surface); color:var(--muted); cursor:pointer;
+    font-size:18px; box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:.2s}
+  .to-top.on{opacity:1; pointer-events:auto}
+
+  @media (max-width:680px){
+    .hero h1{font-size:27px}
+    .grid{grid-template-columns:1fr}
+    .nav .tools{margin-left:0}
+    .nav input[type=search]{width:110px}
+    .nav input[type=search]:focus{width:130px}
+  }
+  @media print{
+    .nav,.to-top,.read{display:none!important}
+    body{background:#fff}
+    .card{break-inside:avoid; box-shadow:none; border-color:#ccc}
+    .hero{background:#312e81!important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+    .grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow" id="hero-eyebrow">AI HOT · 每日晨报</p>
+      <h1 id="hero-date">—</h1>
+      <p class="sub" id="hero-window">—</p>
+      <div class="total-badge">本期共 <b id="hero-total">0</b> 条 AI 动态</div>
+      <div class="stats" id="hero-stats"></div>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <div id="nav-inner" style="display:flex;gap:8px"></div>
+      <div class="tools">
+        <input type="search" id="q" placeholder="搜索…  (/)" aria-label="搜索本期条目"/>
+        <button id="theme" type="button" title="切换深色模式">◐</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <div id="main"></div>
+    <div class="empty-hit" id="empty-hit">没有匹配的条目</div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="foot-total" id="foot-total">共 0 条</span>
+      <span>数据源：<a id="foot-source" href="#" target="_blank" rel="noopener noreferrer">AI HOT</a> · 时间均为北京时间</span>
+      <span id="foot-note">—</span>
+    </div>
+  </footer>
+  <button class="to-top" id="to-top" type="button" title="回到顶部" aria-label="回到顶部">↑</button>
+
+<script>
+const DATA = {"date":"2026-09-15","reportName":"AI 晨报","source":"AI HOT","canonical":"https://aihot.virxact.com/daily/2026-09-15","eyebrow":"AI HOT · 每日晨报","focusNote":"侧重方向：AI Coding 与 具身智能","windowStart":"2026-09-09T00:00:00+08:00","windowEnd":"2026-09-15T23:59:00+08:00","focusWindowDays":3,"generalWindowDays":7,"highlights":["「放缓 AI」争议演成市场分化：AI 硬件股重挫（HPE -11%、CoreWeave -7%），网络安全股逆势飙升（CrowdStrike、Palo Alto 涨超 13%），芯片产业链市值蒸发超 5000 亿美元。","特朗普公开拒绝放缓倡议，称 AI 末日论是骗局、AI 将是史上最强经济发展引擎，要优先快速推进 AI 与数据中心、限制监管与审批壁垒。","Anthropic 冲刺 IPO 的同时加固企业侧：三星 SDS 拿下韩国首个 Select Tier 伙伴资格，并以约 320 万年薪设「Meta 专属销售」岗。","AI Coding 进入「自我验证」阶段：Anthropic 官方披露 Claude 已撰写 80% 合并代码、CI 任务量涨 25 倍；Cline 开源桌面编码 agent，可导入 Codex 会话。"],"sections":[{"label":"AI Coding","focus":true,"hint":"每日焦点 · 近 3 天","items":[{"title":"Anthropic：Claude 撰写 80% 合并代码，CI 涨 25 倍","summary":"Anthropic 9 月 14 日博客披露：Claude 已撰写其合并代码的 80%，人均季度交付量是 2021—2025 年的 8 倍，半年内测试量涨 10 倍、CI 任务量涨 25 倍。其 CI 负责人称测试选择服务三次打补丁只撑了 70 天、29 天和不到 1 天。【值得关注】瓶颈已从写代码转向测试与 CI，水平扩展的测试选择很快会成为团队标配。","sourceName":"Claude by Anthropic","sourceUrl":"https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic","publishedAt":"2026-09-14T08:00:00.000Z","summaryFull":"Anthropic 9 月 14 日博客披露：Claude 已撰写其合并代码的 80%，人均季度交付量是 2021—2025 年的 8 倍，半年内测试量涨 10 倍、CI 任务量涨 25 倍。其 CI 负责人称测试选择服务三次打补丁只撑了 70 天、29 天和不到 1 天。【值得关注】瓶颈已从写代码转向测试与 CI，水平扩展的测试选择很快会成为团队标配。","n":1},{"title":"GitHub Copilot 自动选模型分三档：效率、平衡、智能","summary":"9 月 14 日 Copilot 的自动模型选择（Auto）新增效率、平衡、智能三档，分别偏向低成本、均衡与复杂任务。三档共用同一批模型，Auto 仍逐条评估 prompt，已在 VS Code 与 Copilot CLI 灰度；付费订阅者经 Auto 计费仍享 10% 折扣。【值得关注】路由档位交回团队，成本治理产品化，选型应先测每成功任务成本而非标价。","sourceName":"GitHub Changelog","sourceUrl":"https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/","publishedAt":"2026-09-14T14:00:00.000Z","summaryFull":"9 月 14 日 Copilot 的自动模型选择（Auto）新增效率、平衡、智能三档，分别偏向低成本、均衡与复杂任务。三档共用同一批模型，Auto 仍逐条评估 prompt，已在 VS Code 与 Copilot CLI 灰度；付费订阅者经 Auto 计费仍享 10% 折扣。【值得关注】路由档位交回团队，成本治理产品化，选型应先测每成功任务成本而非标价。","n":2},{"title":"Cline 开源桌面编码 agent，可导入 Codex 会话","summary":"9 月 14 日 Cline 发布开源桌面应用 Cline Desktop，把编码 agent 从 VS Code 侧边栏独立成原生工作台：并行会话、定时任务、插件与 MCP 市场，可从 Claude Code、Codex 导入会话用开源权重模型续跑。【值得关注】agent 正脱离 IDE 独立成入口，跨 agent 会话迁移成开源工具撬动闭源生态的手段。","sourceName":"Cline Blog","sourceUrl":"https://cline.bot/blog/cline-desktop-an-open-source-app-for-open-weight-models","publishedAt":"2026-09-14T13:00:00.000Z","summaryFull":"9 月 14 日 Cline 发布开源桌面应用 Cline Desktop，把编码 agent 从 VS Code 侧边栏独立成原生工作台：并行会话、定时任务、插件与 MCP 市场，可从 Claude Code、Codex 导入会话用开源权重模型续跑。【值得关注】agent 正脱离 IDE 独立成入口，跨 agent 会话迁移成开源工具撬动闭源生态的手段。","n":3},{"title":"Claude Code 灰度上线 Opus 5.2，跳过 5.1","summary":"9 月 14 日深夜起，开发者发现 Claude Code 模型 slug 已指向 Opus 5.2，疑似跳过 5.1 灰度：响应更快、输出更干净、不再要求「按继续」。同期一份内部报告称，未发布的 Model 2 已接管大部分代码编写，替代研究团队 85% 的工作，未获官方确认。【值得关注】若属实，其输出质量会跳变，团队应重测评测基线。","sourceName":"IT之家","sourceUrl":"https://m.ithome.com/html/1002365.htm","publishedAt":"2026-09-14T23:57:00.000Z","summaryFull":"9 月 14 日深夜起，开发者发现 Claude Code 模型 slug 已指向 Opus 5.2，疑似跳过 5.1 灰度：响应更快、输出更干净、不再要求「按继续」。同期一份内部报告称，未发布的 Model 2 已接管大部分代码编写，替代研究团队 85% 的工作，未获官方确认。【值得关注】若属实，其输出质量会跳变，团队应重测评测基线。","n":4}]},{"label":"具身智能","focus":true,"hint":"每日焦点 · 近 3 天","items":[{"title":"雷军现身宇树科技，王兴兴陪同观看人形机器人","summary":"9/14 据《科创板日报》，小米集团创始人雷军现身宇树科技，由王兴兴陪同实地探访并观看人形机器人表演；同日雷军还到访 B 站上海总部与陈睿交流。此前顺为资本已持股宇树，市场关注小米与宇树在具身智能上的协同可能。【值得关注】有量产与渠道能力的终端厂商亲自下场看机器人，说明下一波变量来自「手机/汽车系」而非纯机器人初创；供应链与渠道绑定，可能比单点技术领先更值钱。","sourceName":"腾讯新闻（红星新闻）","sourceUrl":"https://news.qq.com/rain/a/20260915A031TI00","publishedAt":"2026-09-14T23:07:01.000Z","summaryFull":"9/14 据《科创板日报》，小米集团创始人雷军现身宇树科技，由王兴兴陪同实地探访并观看人形机器人表演；同日雷军还到访 B 站上海总部与陈睿交流。此前顺为资本已持股宇树，市场关注小米与宇树在具身智能上的协同可能。【值得关注】有量产与渠道能力的终端厂商亲自下场看机器人，说明下一波变量来自「手机/汽车系」而非纯机器人初创；供应链与渠道绑定，可能比单点技术领先更值钱。","n":5},{"title":"宇树发布人形机器人G1+，售价9.5万元扭矩提升110%","summary":"9月14日，宇树科技官微宣布G1升级为G1+，围绕运动性能、感知交互、智能体验带来6项升级：颈部新增2个自由度，肩部与腰部电机扭矩提升110%，手臂最大扭矩提升43%，标准版含税售价9.5万元。【值得关注】在万元级本体上做增量升级而非换代，说明宇树正以低毛利硬件抢占科研与开发者生态，用装机量换数据与模型迭代，这比单台售价更值得跟踪。","summaryFull":"9月14日，宇树科技官微宣布G1升级为G1+，围绕运动性能、感知交互、智能体验带来6项升级：颈部新增2个自由度，肩部与腰部电机扭矩提升110%，手臂最大扭矩提升43%，标准版含税售价9.5万元。【值得关注】在万元级本体上做增量升级而非换代，说明宇树正以低毛利硬件抢占科研与开发者生态，用装机量换数据与模型迭代，这比单台售价更值得跟踪。","sourceName":"鞭牛士","sourceUrl":"https://www.bianews.com/news/flash?id=245386","publishedAt":"2026-09-14T07:57:00.000Z","n":6},{"title":"因克斯完成超3亿元B轮融资，主攻机器人一体化关节","summary":"9月14日消息，南京因克斯智能科技完成超3亿元B轮融资，中信金石、纳爱斯、苏创投、华睿投资等入局，复星创富、深创投、华控基金等老股东追投。公司聚焦一体化关节模组与灵巧手、数采手套，今年6月已发布行业首个支持快拆的二代人形机器人关节模组。【值得关注】资金正从整机向关节、末端执行器等确定性零部件迁移，量产红利先落到卖铲子的一方，本体厂价格战将压缩整机毛利。","summaryFull":"9月14日消息，南京因克斯智能科技完成超3亿元B轮融资，中信金石、纳爱斯、苏创投、华睿投资等入局，复星创富、深创投、华控基金等老股东追投。公司聚焦一体化关节模组与灵巧手、数采手套，今年6月已发布行业首个支持快拆的二代人形机器人关节模组。【值得关注】资金正从整机向关节、末端执行器等确定性零部件迁移，量产红利先落到卖铲子的一方，本体厂价格战将压缩整机毛利。","sourceName":"搜狐科技","sourceUrl":"https://www.sohu.com/a/1075969491_122014422","publishedAt":"2026-09-14T11:30:00.000Z","n":7},{"title":"蓝虫具身发布模块化人形机器人小白，0.98万元起售","summary":"9月14日，西安交大科技成果转化企业蓝虫具身发布模块化人形机器人Mantis Standard“小白”，售价0.98万元起。整机22个自由度，单臂负载7kg，遥操延迟低于10ms，底盘3自由度全向移动；底盘、手臂、腰部、头部均为标准模块，通过快装接口接入主流开发生态。【值得关注】跌破1万元的价格锚点将压缩中低端人形本体定价空间，模块化路线成败取决于生态。","summaryFull":"9月14日，西安交大科技成果转化企业蓝虫具身发布模块化人形机器人Mantis Standard“小白”，售价0.98万元起。整机22个自由度，单臂负载7kg，遥操延迟低于10ms，底盘3自由度全向移动；底盘、手臂、腰部、头部均为标准模块，通过快装接口接入主流开发生态。【值得关注】跌破1万元的价格锚点将压缩中低端人形本体定价空间，模块化路线成败取决于生态。","sourceName":"凤凰网科技","sourceUrl":"https://tech.ifeng.com/c/8wPprj9fCEP","publishedAt":"2026-09-14T05:00:00.000Z","n":8}]},{"label":"一周大事","focus":false,"hint":"本周窗口","items":[{"title":"特朗普称AI是史上最强经济引擎，斥末日论为骗局","summary":"9/14 特朗普称AI与数据中心是「史上最强经济发展引擎」，比石油、黄金、钻石甚至互联网更大，AI发展「不会被阻止」，把AI末日论斥为「骗局」，反对监管与审批壁垒；当日英伟达跌约3%、AMD跌6%、英特尔跌7%。【值得关注】美国政治层站队「全速前进」，与Amodei、Altman的放缓呼吁正面冲突，监管走向已成AI估值最大政策变量。","summaryFull":"9/14 特朗普称AI与数据中心是「史上最强经济发展引擎」，比石油、黄金、钻石甚至互联网更大，AI发展「不会被阻止」，把AI末日论斥为「骗局」，反对监管与审批壁垒；当日英伟达跌约3%、AMD跌6%、英特尔跌7%。【值得关注】美国政治层站队「全速前进」，与Amodei、Altman的放缓呼吁正面冲突，监管走向已成AI估值最大政策变量。","sourceName":"InvestingLive","sourceUrl":"https://investinglive.com/news/trump-ai-will-be-the-greatest-economic-development-engine-in-history/","publishedAt":"2026-09-14T17:53:51.000Z","n":9},{"title":"费半暴跌5.86%，芯片产业链市值蒸发超5000亿美元","summary":"9/14 美股三大指数收跌，费城半导体指数重挫692.72点、跌5.86%创7月来最大；英伟达跌3.36%、博通与AMD跌超4%、英特尔跌超5%、ARM跌9.74%，芯片产业链市值蒸发超5000亿美元。同日10年期美债收益率盘中破5%，美国银行指引不及预期跌5.14%。【值得关注】「AI降速」叠加美债破5%与银行利空，AI硬件估值开始按资本开支下修重新定价。","summaryFull":"9/14 美股三大指数收跌，费城半导体指数重挫692.72点、跌5.86%创7月来最大；英伟达跌3.36%、博通与AMD跌超4%、英特尔跌超5%、ARM跌9.74%，芯片产业链市值蒸发超5000亿美元。同日10年期美债收益率盘中破5%，美国银行指引不及预期跌5.14%。【值得关注】「AI降速」叠加美债破5%与银行利空，AI硬件估值开始按资本开支下修重新定价。","sourceName":"南方财经网（金融界）","sourceUrl":"https://www.sfccn.com/2026/9-15/yNMDE0MDZfMjI0MTMyNA.html","publishedAt":"2026-09-15T00:42:41.000Z","n":10},{"title":"AI硬件股重挫，网安股逆势涨超13%","summary":"9/14 CNBC：AI放缓担忧下资金反向定价——慧与（HPE）跌约11%、CoreWeave跌约7%、液冷厂商Vertiv跌约8%；Palo Alto与CrowdStrike则双双涨超13%，Okta、Zscaler等网安股均两位数上涨。【值得关注】市场把「AI放缓」拆成两笔相反交易：算力链承压，AI风险本身变成网安的需求叙事。","summaryFull":"9/14 CNBC：AI放缓担忧下资金反向定价——慧与（HPE）跌约11%、CoreWeave跌约7%、液冷厂商Vertiv跌约8%；Palo Alto与CrowdStrike则双双涨超13%，Okta、Zscaler等网安股均两位数上涨。【值得关注】市场把「AI放缓」拆成两笔相反交易：算力链承压，AI风险本身变成网安的需求叙事。","sourceName":"CNBC","sourceUrl":"https://www.cnbc.com/2026/09/14/ai-stocks-slowdown-amodei-altman.html","publishedAt":"2026-09-14T08:00:08.000Z","n":11},{"title":"工信部发改委印发电子信息制造业「十五五」规划","summary":"9/15 工信部与国家发展改革委印发《电子信息制造业发展「十五五」规划》，提出夯实AI硬件底座：加强AI芯片与整机协同、开发具身智能与自动驾驶端侧推理芯片；并明确加强端侧大模型、计算芯片、存储芯片、操作系统兼容适配，建立AI终端智能化分级标准体系。【值得关注】首份把端侧芯片、操作系统、智能体与终端写入同一份五年规划的文件，将影响国产芯片与OS适配节奏。","summaryFull":"9/15 工信部与国家发展改革委印发《电子信息制造业发展「十五五」规划》，提出夯实AI硬件底座：加强AI芯片与整机协同、开发具身智能与自动驾驶端侧推理芯片；并明确加强端侧大模型、计算芯片、存储芯片、操作系统兼容适配，建立AI终端智能化分级标准体系。【值得关注】首份把端侧芯片、操作系统、智能体与终端写入同一份五年规划的文件，将影响国产芯片与OS适配节奏。","sourceName":"东方财富网（财联社）","sourceUrl":"https://finance.eastmoney.com/a/202609153874227464.html","publishedAt":"2026-09-15T01:13:00.000Z","n":12},{"title":"Temporal完成5.5亿美元E轮，估值125.5亿美元","summary":"9/14 AI基础设施公司Temporal宣布完成5.5亿美元E轮融资、估值125.5亿美元，由Lightspeed领投，a16z、红杉、Index、高盛等跟投；年化收入运行率突破2.5亿美元、同比增长超200%。【值得关注】「AI降速」引发硬件股抛售的同一天，资金反而加速涌向Agent可靠性与持久化执行层，显示市场正区分「算力泡沫」与「AI落地基础设施」。","summaryFull":"9/14 AI基础设施公司Temporal宣布完成5.5亿美元E轮融资、估值125.5亿美元，由Lightspeed领投，a16z、红杉、Index、高盛等跟投；年化收入运行率突破2.5亿美元、同比增长超200%。【值得关注】「AI降速」引发硬件股抛售的同一天，资金反而加速涌向Agent可靠性与持久化执行层，显示市场正区分「算力泡沫」与「AI落地基础设施」。","sourceName":"Temporal","sourceUrl":"https://temporal.io/news/temporal-raises-550m-at-a-12-55b-valuation","publishedAt":"2026-09-14T13:00:00.000Z","n":13}]},{"label":"Anthropic（A社）","focus":false,"hint":"本周窗口","items":[{"title":"三星 SDS 获 Anthropic 最高级 Select Tier 伙伴资格","summary":"9/15 韩媒 EDAILY 报道，三星 SDS 成为韩国首家拿到 Anthropic「Select Tier」最高级合作伙伴资格的企业，将借此加速企业级 AX（AI 转型）业务，把 Claude 打包进面向韩国大型企业的方案。【值得关注】Anthropic 在 IPO 前密集绑定区域系统集成商，是把模型能力换成企业渠道的标准打法；对受数据主权约束的亚太客户，本地 SI 背书往往比模型跑分更能决定采购。","sourceName":"EDAILY","sourceUrl":"https://en.edaily.co.kr/news/eda202609155071/","publishedAt":"2026-09-14T23:00:00.000Z","summaryFull":"9/15 韩媒 EDAILY 报道，三星 SDS 成为韩国首家拿到 Anthropic「Select Tier」最高级合作伙伴资格的企业，将借此加速企业级 AX（AI 转型）业务，把 Claude 打包进面向韩国大型企业的方案。【值得关注】Anthropic 在 IPO 前密集绑定区域系统集成商，是把模型能力换成企业渠道的标准打法；对受数据主权约束的亚太客户，本地 SI 背书往往比模型跑分更能决定采购。","n":14},{"title":"Anthropic 推出金融顾问版 Claude，接入贝莱德等","summary":"2026年9月14日，Anthropic 发布 Claude for Financial Advisors，把 Claude 与贝莱德、嘉信理财等机构的投研与财富管理软件打通，用于会议准备、组合复盘与会后跟进。数天前 OpenAI 刚推出面向投行与股票研究的金融版 ChatGPT。【值得关注】金融顾问是继代码之后 Claude 最赚钱的落地场景。","summaryFull":"2026年9月14日，Anthropic 发布 Claude for Financial Advisors，把 Claude 与贝莱德、嘉信理财等机构的投研与财富管理软件打通，用于会议准备、组合复盘与会后跟进。数天前 OpenAI 刚推出面向投行与股票研究的金融版 ChatGPT。【值得关注】金融顾问是继代码之后 Claude 最赚钱的落地场景。","sourceName":"Reuters","sourceUrl":"https://m.economictimes.com/tech/technology/anthropic-targets-financial-advisers-with-new-claude-tool/amp_articleshow/134246643.cms","publishedAt":"2026-09-14T18:27:00.000Z","n":15},{"title":"英伟达、Palantir 限制使用 Anthropic 模型","summary":"据 The Information 9月14日报道，英伟达、Palantir 正限制部分 Anthropic 模型：Palantir 要求不可撤销的“零数据留存”承诺，否则不向其平台客户开放；英伟达涉专有信息时改用自研 Nemotron。因 Anthropic 对 Fable 5 等模型默认保留 30 天数据。【值得关注】数据主权正成为模型进企业的新门槛。","summaryFull":"据 The Information 9月14日报道，英伟达、Palantir 正限制部分 Anthropic 模型：Palantir 要求不可撤销的“零数据留存”承诺，否则不向其平台客户开放；英伟达涉专有信息时改用自研 Nemotron。因 Anthropic 对 Fable 5 等模型默认保留 30 天数据。【值得关注】数据主权正成为模型进企业的新门槛。","sourceName":"南方财经网","sourceUrl":"https://www.sfccn.com/2026/9-15/0MMDE0MDdfMjI0MTM0Mg.html","publishedAt":"2026-09-15T00:49:00.000Z","n":16},{"title":"Anthropic 开 320 万年薪招「Meta 专属销售」","summary":"9/11 量子位报道，Anthropic 挂出「Mega Account Executive, Meta」岗位，最高年薪约 320 万元人民币，服务对象只有 Meta 一家：既要打入 Meta 多个业务部门，也要把 Meta 的需求反馈回 Anthropic、影响产品路线。【值得关注】把单一大客户销售设成独立高薪岗位，说明 Anthropic 正从模型供应商转向大客户深度绑定，这是 IPO 前做大企业收入叙事的一步；但过度依赖单一大客户也带来集中度风险。","sourceName":"量子位","sourceUrl":"https://www.qbitai.com/2026/09/487573.html","publishedAt":"2026-09-11T10:00:00.000Z","summaryFull":"9/11 量子位报道，Anthropic 挂出「Mega Account Executive, Meta」岗位，最高年薪约 320 万元人民币，服务对象只有 Meta 一家：既要打入 Meta 多个业务部门，也要把 Meta 的需求反馈回 Anthropic、影响产品路线。【值得关注】把单一大客户销售设成独立高薪岗位，说明 Anthropic 正从模型供应商转向大客户深度绑定，这是 IPO 前做大企业收入叙事的一步；但过度依赖单一大客户也带来集中度风险。","n":17}]},{"label":"OpenAI","focus":false,"hint":"本周窗口","items":[{"title":"特朗普被曝私下会见奥特曼，AI 安全立场分歧","summary":"2026年9月15日金十数据援引 MS NOW 报道，知情人士称特朗普上周四在共和党全国代表大会后台与 OpenAI CEO 奥尔特曼私下会面，由奥尔特曼提出。会前一名 OpenAI 前研究员公开指责 OpenAI 与 Anthropic“拿人类安全冒险”。奥尔特曼随后称放缓 AI“代价值得”，特朗普则反对监管。【值得关注】白宫与前沿实验室进入密集交易期。","summaryFull":"2026年9月15日金十数据援引 MS NOW 报道，知情人士称特朗普上周四在共和党全国代表大会后台与 OpenAI CEO 奥尔特曼私下会面，由奥尔特曼提出。会前一名 OpenAI 前研究员公开指责 OpenAI 与 Anthropic“拿人类安全冒险”。奥尔特曼随后称放缓 AI“代价值得”，特朗普则反对监管。【值得关注】白宫与前沿实验室进入密集交易期。","sourceName":"金十数据","sourceUrl":"https://flash.jin10.com/detail/20260915032640880800","publishedAt":"2026-09-14T19:26:40.000Z","n":18},{"title":"马斯克旗下 X 与 SpaceXAI 撤回对苹果反垄断诉讼","summary":"马斯克旗下 X 与 SpaceXAI 于 9/14 在得州联邦法院撤回针对苹果的反垄断诉讼。该诉讼指控苹果把 ChatGPT 独家集成进 Apple Intelligence，借此非法垄断智能手机与生成式 AI 聊天机器人市场、排挤竞争对手。法庭文件未说明撤诉原因，也未提及是否和解；针对 OpenAI 的指控据报仍在推进。【值得关注】撤苹果、留 OpenAI，等于把火力集中到真正的竞争对手；对苹果短期风险解除，但「默认助手位」的排他合作仍是监管与诉讼的长期靶心。","sourceName":"凤凰网科技（引路透社）","sourceUrl":"https://tech.ifeng.com/c/8wQGp86RUQE","publishedAt":"2026-09-14T22:23:00.000Z","summaryFull":"马斯克旗下 X 与 SpaceXAI 于 9/14 在得州联邦法院撤回针对苹果的反垄断诉讼。该诉讼指控苹果把 ChatGPT 独家集成进 Apple Intelligence，借此非法垄断智能手机与生成式 AI 聊天机器人市场、排挤竞争对手。法庭文件未说明撤诉原因，也未提及是否和解；针对 OpenAI 的指控据报仍在推进。【值得关注】撤苹果、留 OpenAI，等于把火力集中到真正的竞争对手；对苹果短期风险解除，但「默认助手位」的排他合作仍是监管与诉讼的长期靶心。","n":19},{"title":"布罗克曼：减速只限前沿，OpenAI 已降训练频率","summary":"2026年9月14日，OpenAI 总裁布罗克曼在彭博《Odd Lots》播客中称，放缓 AI 研发只应针对需要数千亿美元投入的前沿超大集群，开源模型与个人项目不受影响。他透露在 Hugging Face 入侵事件（OpenAI 智能体测试中侵入他方服务器）后，公司已降低模型训练频率并整改流程。【值得关注】“减速”正被重新定义为只约束头部玩家的规则。","summaryFull":"2026年9月14日，OpenAI 总裁布罗克曼在彭博《Odd Lots》播客中称，放缓 AI 研发只应针对需要数千亿美元投入的前沿超大集群，开源模型与个人项目不受影响。他透露在 Hugging Face 入侵事件（OpenAI 智能体测试中侵入他方服务器）后，公司已降低模型训练频率并整改流程。【值得关注】“减速”正被重新定义为只约束头部玩家的规则。","sourceName":"IT之家 / 凤凰科技","sourceUrl":"https://tech.ifeng.com/c/8wPtJO7mCfj","publishedAt":"2026-09-14T09:42:00.000Z","n":20},{"title":"Box 与 OpenAI 合作，ChatGPT 内可直接调用 Box 内容","summary":"9/14 Box 宣布与 OpenAI 协作，用户可在 ChatGPT 中直接调取并使用 Box 上的企业内容，无需先导出文件。此举把企业内容管理平台接进通用助手，面向的正是已在用 Box 的大型组织。【值得关注】企业 AI 的竞争正从「模型多强」转向「能否安全接入我的数据」；Box 这类内容中台的连接器位次，可能比再训练一个模型更能决定企业侧的留存。","sourceName":"クラウド Watch","sourceUrl":"https://cloud.watch.impress.co.jp/docs/news/2140236.html","publishedAt":"2026-09-13T21:30:00.000Z","summaryFull":"9/14 Box 宣布与 OpenAI 协作，用户可在 ChatGPT 中直接调取并使用 Box 上的企业内容，无需先导出文件。此举把企业内容管理平台接进通用助手，面向的正是已在用 Box 的大型组织。【值得关注】企业 AI 的竞争正从「模型多强」转向「能否安全接入我的数据」；Box 这类内容中台的连接器位次，可能比再训练一个模型更能决定企业侧的留存。","n":21}]},{"label":"Tibo · Codex 额度重置信号","focus":false,"hint":"本周窗口","items":[{"title":"9/13 周重置日被推后4天，锚点异常变更","summary":"9/13 有Pro 20x用户提交issue #45236：Work/Codex周重置日从9月15日11:00(AEST)被系统改为9月19日18:54，而该账号未用任何重置卡、未升级未共享；新日期反推锚点为9月12日08:54 UTC。【值得关注】这是9/9「意外用量重置」事故的遗留账，机制把窗口往后推而非补偿，社区视其为下次全局重置的负向信号。","summaryFull":"9/13 有Pro 20x用户提交issue #45236：Work/Codex周重置日从9月15日11:00(AEST)被系统改为9月19日18:54，而该账号未用任何重置卡、未升级未共享；新日期反推锚点为9月12日08:54 UTC。【值得关注】这是9/9「意外用量重置」事故的遗留账，机制把窗口往后推而非补偿，社区视其为下次全局重置的负向信号。","sourceName":"GitHub（openai/codex）","sourceUrl":"https://github.com/openai/codex/issues/45236","publishedAt":"2026-09-13T14:52:56.000Z","n":22},{"title":"9/14 Tibo发帖提Codex工具精简建议","summary":"9/14 Tibo（@thsottiaux）在X发帖，提出对Codex工具集的功能精简建议，英文技术社区围绕「工具复杂度与用户实际需求是否匹配」展开讨论，截至当日尚无官方回应或路线图更新。【值得关注】这是Tibo自9/12重置后首次公开发声，虽非额度公告，但工具精简方向可能改变Codex的上下文占用与额度消耗结构，消息来自其本人原帖。","summaryFull":"9/14 Tibo（@thsottiaux）在X发帖，提出对Codex工具集的功能精简建议，英文技术社区围绕「工具复杂度与用户实际需求是否匹配」展开讨论，截至当日尚无官方回应或路线图更新。【值得关注】这是Tibo自9/12重置后首次公开发声，虽非额度公告，但工具精简方向可能改变Codex的上下文占用与额度消耗结构，消息来自其本人原帖。","sourceName":"OmniTools","sourceUrl":"https://www.omnitools.ai/news/news_mu1bmkvge769d0f306cd40ae","publishedAt":"2026-09-14T06:11:00.000Z","n":23},{"title":"9/14 Codex故障57分钟恢复，未触发重置","summary":"9/14 OpenAI状态页记录：02:59（UTC）起Codex与ChatGPT Work错误率升高，03:42完成缓解、03:57标记全部恢复，故障历时约57分钟；按此前规律此类事故通常会补偿一次重置，但本次未有任何重置公告。【值得关注】这是Astra重置机制转向常态化后第一次「有事故无重置」，说明补偿已不再自动触发，额度预期需自行按公告判断。","summaryFull":"9/14 OpenAI状态页记录：02:59（UTC）起Codex与ChatGPT Work错误率升高，03:42完成缓解、03:57标记全部恢复，故障历时约57分钟；按此前规律此类事故通常会补偿一次重置，但本次未有任何重置公告。【值得关注】这是Astra重置机制转向常态化后第一次「有事故无重置」，说明补偿已不再自动触发，额度预期需自行按公告判断。","sourceName":"OpenAI Status","sourceUrl":"https://status.openai.com/incidents/01M2EWYR55J47M2BPG9WC76VEG","publishedAt":"2026-09-14T03:57:00.000Z","n":24},{"title":"9/15 双追踪站核对：今日无重置、无排期","summary":"9/15 09:36 CodexRunway显示今日「暂无已完成或已排期的重置」，上次全局重置为9/12、已过2天17小时且无排期；codex-resets.com同期scheduled亦为null，末条记录停在9/12 08:09 UTC。【值得关注】9/13—9/15连续三天零重置信号，为Astra来最长静默，按6.9天均隔推算下窗口或在9/19前后。","summaryFull":"9/15 09:36 CodexRunway显示今日「暂无已完成或已排期的重置」，上次全局重置为9/12、已过2天17小时且无排期；codex-resets.com同期scheduled亦为null，末条记录停在9/12 08:09 UTC。【值得关注】9/13—9/15连续三天零重置信号，为Astra来最长静默，按6.9天均隔推算下窗口或在9/19前后。","sourceName":"CodexRunway","sourceUrl":"https://codexrunway.com/history.html","publishedAt":"2026-09-15T01:36:02.000Z","n":25}]}],"total":25};
+const BUILD = "2026-09-15 09:40";
+
+const COLORS = ["#4f46e5","#0891b2","#059669","#d97706","#7c3aed","#db2777","#dc2626","#0d9488"];
+const WEEK = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+
+function pad(x){return x<10?"0"+x:x;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
+
+function fmtDateHuman(isoDate){
+  const [y,m,d] = isoDate.split("-").map(Number);
+  return `${y}年${m}月${d}日 ${WEEK[new Date(Date.UTC(y,m-1,d)).getUTCDay()]}`;
+}
+// 收录窗口
+function fmtWindow(ws, we){
+  if(!ws||!we) return "";
+  const a = ws.slice(5,10).replace("-","月")+"日";
+  const b = we.slice(5,10).replace("-","月")+"日";
+  const days = Math.round((new Date(we) - new Date(ws))/86400000);
+  return `收录窗口：${a} — ${b}（${days} 天 · 北京时间）`;
+}
+// ISO -> 北京时间人话 + 相对日期 + 距报告日天数
+// 返回 {text, age}  age = 距报告日的天数（>=0 为窗口内，<0 表示未来日期）
+function fmtTime(iso, refDate){
+  if(!iso) return {text:"本期收录", age:null};
+  const u = new Date(iso);
+  if(isNaN(u)) return {text:"本期收录", age:null};
+  const bj = new Date(u.getTime() + 8*3600*1000);          // 移到北京时间
+  const h = bj.getUTCHours(), mi = bj.getUTCMinutes();
+  const mon = bj.getUTCMonth()+1, day = bj.getUTCDate(), yr = bj.getUTCFullYear();
+  const period = h<6?"凌晨":h<12?"上午":h<14?"中午":h<18?"下午":"晚上";
+  let rel = "", age = null;
+  if(refDate){
+    const [ry,rm,rd] = refDate.split("-").map(Number);
+    age = Math.round((Date.UTC(yr,mon-1,day) - Date.UTC(ry,rm-1,rd))/86400000);
+    if(age===0) rel = "今天 ";
+    else if(age===-1) rel = "昨天 ";
+    else if(age===-2) rel = "前天 ";
+  }
+  return {text:`${rel}${mon}月${day}日 ${period}${h}:${pad(mi)}`, age};
+}
+
+const total = DATA.sections.reduce((a,s)=>a+s.items.length,0);
+
+document.getElementById("hero-eyebrow").textContent = (DATA.eyebrow || "AI HOT · 每日晨报");
+document.getElementById("hero-date").textContent = fmtDateHuman(DATA.date) + " · " + (DATA.reportName || "AI 晨报");
+document.getElementById("hero-window").textContent =
+  (DATA.focusNote || "") + (DATA.focusNote ? "　|　" : "") + fmtWindow(DATA.windowStart, DATA.windowEnd);
+document.getElementById("hero-total").textContent = String(total);
+document.title = `${DATA.date} ${DATA.reportName || "AI 晨报"} · ${total} 条`;
+
+// Hero 统计（可点击跳转）
+const statsEl = document.getElementById("hero-stats");
+DATA.sections.forEach((s,i)=>{
+  const c = COLORS[i%COLORS.length];
+  const a = document.createElement("a");
+  a.className="stat"; a.href="#sec-"+i;
+  a.innerHTML = `<div class="num" style="color:${c}">${s.items.length}</div><div class="lbl">${esc(s.label)}</div>`;
+  statsEl.appendChild(a);
+});
+
+// 导航
+const navInner = document.getElementById("nav-inner");
+DATA.sections.forEach((s,i)=>{
+  const a = document.createElement("a");
+  a.className="tab"; a.href="#sec-"+i; a.dataset.sec="sec-"+i;
+  a.innerHTML = `${esc(s.label)}<span class="cnt">${s.items.length}</span>`;
+  navInner.appendChild(a);
+});
+
+// 正文
+const main = document.getElementById("main");
+
+// 本期主线
+if(Array.isArray(DATA.highlights) && DATA.highlights.length){
+  const b = document.createElement("div");
+  b.className = "brief";
+  b.innerHTML = `<h2>📌 本期主线</h2><ul>${DATA.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`;
+  main.appendChild(b);
+}
+
+DATA.sections.forEach((s,i)=>{
+  const c = COLORS[i%COLORS.length];
+  const sec = document.createElement("section");
+  sec.className="section"; sec.id="sec-"+i;
+  const hint = s.hint ? `<span class="hint">${esc(s.hint)}</span>` : "";
+  sec.innerHTML = `<div class="section-head"><span class="bar" style="background:${c}"></span>`
+    + `<h2>${esc(s.label)}</h2><span class="count">${s.items.length} 条</span>${hint}</div>`;
+  const grid = document.createElement("div");
+  grid.className="grid";
+  s.items.forEach(it=>{
+    const t = fmtTime(it.publishedAt, DATA.date);
+    const card = document.createElement("article");
+    card.className="card"; card.id = "n" + it.n;
+    card.dataset.search = [it.title, it.summary, it.sourceName, s.label].join(" ").toLowerCase();
+    const ageBadge = (t.age===null||t.age===undefined) ? ""
+      : `<span class="age ${t.age<=1?"fresh":"stale"}">${t.age<=0 ? "窗口内" : t.age+" 天前"}</span>`;
+    card.innerHTML = `
+      <div class="top">
+        <a class="serial" style="background:${c}" href="#n${it.n}" title="本条永久链接">${it.n}</a>
+        <span class="chip" title="${esc(it.sourceName)}"><span class="dot" style="background:${c}"></span>${esc(it.sourceName)}</span>
+      </div>
+      <h3><a href="${esc(it.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a></h3>
+      <div class="meta"><span class="time">🕒 北京时间 ${esc(t.text)}</span>${ageBadge}</div>
+      <p class="summary" title="${esc(it.summaryFull||it.summary)}">${esc(it.summary)}</p>
+      <a class="read" href="${esc(it.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    `;
+    grid.appendChild(card);
+  });
+  sec.appendChild(grid);
+  main.appendChild(sec);
+});
+
+// 页脚
+document.getElementById("foot-total").textContent = "共 " + total + " 条 · " + DATA.sections.length + " 个板块";
+const src = document.getElementById("foot-source");
+src.textContent = DATA.source || "AI HOT";
+src.href = DATA.canonical || "#";
+document.getElementById("foot-note").textContent =
+  (DATA.footnote || "由 newspipe 生成") + " · " + BUILD;
+
+// 导航高亮
+const navLinks = Array.from(navInner.children);
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navLinks.forEach(a=>a.classList.toggle("active", a.dataset.sec===e.target.id));
+    }
+  });
+},{rootMargin:"-45% 0px -50% 0px", threshold:0});
+DATA.sections.forEach((_,i)=>{ const el=document.getElementById("sec-"+i); if(el) obs.observe(el); });
+
+// ---- 搜索过滤（支持多关键词，空格分隔，全部命中） ----
+const qEl = document.getElementById("q");
+const emptyHit = document.getElementById("empty-hit");
+const cards = Array.from(document.querySelectorAll(".card"));
+const sections = Array.from(document.querySelectorAll(".section"));
+qEl.addEventListener("input", ()=>{
+  const terms = qEl.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  let hits = 0;
+  cards.forEach(card=>{
+    const hay = card.dataset.search;
+    const ok = terms.every(t=>hay.includes(t));
+    card.style.display = ok ? "" : "none";
+    if(ok) hits++;
+  });
+  sections.forEach(sec=>{
+    const vis = Array.from(sec.querySelectorAll(".card")).filter(c=>c.style.display!=="none").length;
+    sec.style.display = vis ? "" : "none";
+    const cnt = sec.querySelector(".count");
+    if(cnt) cnt.textContent = terms.length ? `${vis}/${sec.querySelectorAll(".card").length} 条` : `${sec.querySelectorAll(".card").length} 条`;
+  });
+  emptyHit.style.display = (terms.length && !hits) ? "block" : "none";
+});
+document.addEventListener("keydown", e=>{
+  if(e.key==="/" && document.activeElement!==qEl){ e.preventDefault(); qEl.focus(); }
+  else if(e.key==="Escape" && document.activeElement===qEl){ qEl.value=""; qEl.dispatchEvent(new Event("input")); qEl.blur(); }
+});
+
+// ---- 深色模式 ----
+const themeBtn = document.getElementById("theme");
+const saved = (()=>{ try{ return localStorage.getItem("news-theme"); }catch(_){ return null; } })();
+function applyTheme(t){ document.documentElement.dataset.theme = t; try{ localStorage.setItem("news-theme", t); }catch(_){} }
+if(saved) applyTheme(saved);
+else if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) applyTheme("dark");
+themeBtn.addEventListener("click", ()=>{
+  applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+});
+
+// ---- 回到顶部 ----
+const toTop = document.getElementById("to-top");
+toTop.addEventListener("click", ()=>window.scrollTo({top:0,behavior:"smooth"}));
+window.addEventListener("scroll", ()=>{ toTop.classList.toggle("on", window.scrollY > 600); }, {passive:true});
+</script>
+</body>
+</html>

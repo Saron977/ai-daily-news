@@ -77,23 +77,34 @@ ok(typeof fmtTime === "function", "fmtTime 可用");
 
 // ---- 相对日期文案（旧模板会把所有过去日期误标为「昨天」） ----
 // 约定：相对标签 + 绝对日期同时给出（报告多日后回看仍可定位）；>2 天前只给绝对日期。
-// 最后一条覆盖跨零点：UTC 9/13 20:00 = 北京 9/14 04:00，必须判为「今天」。
+// 断言按报告日动态生成，换日期也会执行（早期写死 9/14，换一天就整段跳过，等于没测）。
+const [RY, RM, RD] = DATA.date.split("-").map(Number);
+const dayMs = 86400000;
+const shift = (n) => new Date(Date.UTC(RY, RM - 1, RD) - n * dayMs);
+const isoAt = (d, utcHour) => new Date(d.getTime() + (utcHour - 8) * 3600000).toISOString()
+  .replace(/\.\d{3}Z$/, ".000Z");                    // 反推 UTC 时刻，使北京时间正好落在整点
+const label = (d, period, hh) =>
+  `${d.getUTCMonth() + 1}月${d.getUTCDate()}日 ${period}${hh}:00`;
+
+const d0 = shift(0), d1 = shift(1), d2 = shift(2), d4 = shift(4);
 const cases = [
-  ["2026-09-14T02:00:00.000Z", "今天 9月14日 上午10:00"],
-  ["2026-09-13T02:00:00.000Z", "昨天 9月13日 上午10:00"],
-  ["2026-09-12T02:00:00.000Z", "前天 9月12日 上午10:00"],
-  ["2026-09-11T02:00:00.000Z", "9月11日 上午10:00"],
-  ["2026-09-03T14:00:00.000Z", "9月3日 晚上22:00"],
-  ["2026-09-13T20:00:00.000Z", "今天 9月14日 凌晨4:00"],
+  [isoAt(d0, 10), `今天 ${label(d0, "上午", 10)}`],
+  [isoAt(d1, 10), `昨天 ${label(d1, "上午", 10)}`],
+  [isoAt(d2, 10), `前天 ${label(d2, "上午", 10)}`],
+  [isoAt(d4, 10), label(d4, "上午", 10)],            // >2 天只给绝对日期，不带相对标签
+  [isoAt(d0, 22), `今天 ${label(d0, "晚上", 22)}`],   // 时段词：晚上
+  [isoAt(d1, 4),  `昨天 ${label(d1, "凌晨", 4)}`],    // 时段词：凌晨
 ];
-if (DATA.date === "2026-09-14") {
-  for (const [iso, want] of cases) {
-    const got = fmtTime(iso, DATA.date).text;
-    ok(got === want, `fmtTime(${iso}) → ${got}${got === want ? "" : `（期望 ${want}）`}`);
-  }
-} else {
-  console.log(`  · 跳过日期文案断言（报告日为 ${DATA.date}，断言集针对 2026-09-14）`);
+for (const [iso, want] of cases) {
+  const got = fmtTime(iso, DATA.date).text;
+  ok(got === want, `fmtTime(${iso}) → ${got}${got === want ? "" : `（期望 ${want}）`}`);
 }
+// 跨零点：北京日期必须按 UTC+8 判定，而不是直接用 UTC 日
+const crossIso = isoAt(d0, 4);                       // 北京 d0 04:00 == UTC 前一日 20:00
+ok(crossIso.slice(0, 10) !== DATA.date,
+   `跨零点用例确实跨了 UTC 日（${crossIso}）`);
+ok(fmtTime(crossIso, DATA.date).text.startsWith("今天"),
+   `跨零点判为今天：${fmtTime(crossIso, DATA.date).text}`);
 
 // ---- 渲染产物 ----
 ok(String(els["hero-total"] && els["hero-total"].textContent) === String(total), `Hero 总数 = ${total}`);
