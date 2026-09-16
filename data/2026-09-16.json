@@ -1,0 +1,270 @@
+{
+  "date": "2026-09-16",
+  "reportName": "AI 晨报",
+  "source": "AI HOT",
+  "canonical": "https://aihot.virxact.com/daily/2026-09-16",
+  "eyebrow": "AI HOT · 每日晨报",
+  "focusNote": "侧重方向：AI Coding 与 具身智能",
+  "windowStart": "2026-09-10T00:00:00+08:00",
+  "windowEnd": "2026-09-16T23:59:00+08:00",
+  "focusWindowDays": 3,
+  "generalWindowDays": 7,
+  "highlights": [
+    "黄仁勋与 Amodei、Altman 在 Dreamforce 同台分歧：黄仁勋称「快与安全是伪命题」，行业不需要新立法，并公开附和特朗普的 AI 风险「骗局」论。",
+    "谷歌发布 Gemini 3.8 Live 与 Live Extended Thinking，称迄今最先进的实时对话模型，支持 97 种语言切换，主打并行推理。",
+    "安全监管出现反转信号：OpenAI 首度支持强制第三方安全评估法案，并与 Anthropic、谷歌洽谈共建行业安全标准机构。",
+    "具身智能融资与产能双热：帕西尼累计融资超 40 亿元，Agility 发布 Digit 5 并拿下超 3 亿美元订单，东方精工产线进入规模化生产。"
+  ],
+  "sections": [
+    {
+      "label": "AI Coding",
+      "focus": true,
+      "hint": "每日焦点 · 近 3 天",
+      "items": [
+        {
+          "title": "Claude Code 2.1.271 上线逐命令域名沙箱",
+          "summary": "9 月 14 日 Claude Code 发布 2.1.271：沙箱下 Bash、PowerShell、Monitor 支持逐命令 allowed_domains，只放开该命令需要的主机，其余拒绝；同版新增插件安装 --accept-command 校验与 Remote 快速模式。【值得关注】网络白名单从会话级下沉到命令级，是 agent 权限模型关键一步。",
+          "summaryFull": "9 月 14 日 Claude Code 发布 2.1.271：沙箱下 Bash、PowerShell、Monitor 支持逐命令 allowed_domains，只放开该命令需要的主机，其余拒绝；同版新增插件安装 --accept-command 校验与 Remote 快速模式。【值得关注】网络白名单从会话级下沉到命令级，是 agent 权限模型关键一步。",
+          "sourceName": "GitHub Releases (anthropics/claude-code)",
+          "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.271",
+          "publishedAt": "2026-09-14T22:12:54.000Z",
+          "n": 1
+        },
+        {
+          "title": "Gemini CLI v0.60.0 发布：纯安全加固版",
+          "summary": "9 月 16 日 Gemini CLI 推送 v0.60.0 稳定版，修复 MCP OAuth 未校验签发者（RFC 9207）、NTFS 8.3 短文件名绕过、符号链接与工作区路径边界、系统级配置权限校验、扩展加载器路径解析，并隔离 macOS 沙箱临时目录。【值得关注】这批几乎全是「规则写了但没生效」类漏洞，agent CLI 正转向默认拒绝的安全基线。",
+          "summaryFull": "9 月 16 日 Gemini CLI 推送 v0.60.0 稳定版，修复 MCP OAuth 未校验签发者（RFC 9207）、NTFS 8.3 短文件名绕过、符号链接与工作区路径边界、系统级配置权限校验、扩展加载器路径解析，并隔离 macOS 沙箱临时目录。【值得关注】这批几乎全是「规则写了但没生效」类漏洞，agent CLI 正转向默认拒绝的安全基线。",
+          "sourceName": "GitHub Releases (google-gemini/gemini-cli)",
+          "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0",
+          "publishedAt": "2026-09-15T20:31:02.000Z",
+          "n": 2
+        },
+        {
+          "title": "GitHub Copilot CLI 1.0.85：Vim 模式全量开放",
+          "summary": "9 月 16 日 Copilot CLI 发布 1.0.85，Vim 模式全量开放（/vim 或 editorMode），新增 /sandbox 网络主机允许与拒绝规则、/config 侧边栏与精简版工具活动汇总，并加入语义 JSONL 会话与记忆导入命令。【值得关注】会话可导入导出正成为 CLI agent 的通用能力，团队应尽早把它当作可迁移资产治理。",
+          "summaryFull": "9 月 16 日 Copilot CLI 发布 1.0.85，Vim 模式全量开放（/vim 或 editorMode），新增 /sandbox 网络主机允许与拒绝规则、/config 侧边栏与精简版工具活动汇总，并加入语义 JSONL 会话与记忆导入命令。【值得关注】会话可导入导出正成为 CLI agent 的通用能力，团队应尽早把它当作可迁移资产治理。",
+          "sourceName": "GitHub Releases (github/copilot-cli)",
+          "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v1.0.85",
+          "publishedAt": "2026-09-16T02:44:45.000Z",
+          "n": 3
+        },
+        {
+          "title": "编码 agent 创企 Factory 融资 2 亿，估值 50 亿",
+          "summary": "9 月 15 日路透社报道，为大型企业工程团队提供编码 agent 的 Factory 完成 2 亿美元融资，估值从 4 月的 15 亿美元升至 50 亿美元，五个月翻三倍多；Blackstone、Khosla、红杉、Insight 参投，支持托管云、本地与完全气隙部署。【值得关注】资本买的是编码之外那层治理与编排，受监管行业宁选气隙自托管也不接受代码出域。",
+          "summaryFull": "9 月 15 日路透社报道，为大型企业工程团队提供编码 agent 的 Factory 完成 2 亿美元融资，估值从 4 月的 15 亿美元升至 50 亿美元，五个月翻三倍多；Blackstone、Khosla、红杉、Insight 参投，支持托管云、本地与完全气隙部署。【值得关注】资本买的是编码之外那层治理与编排，受监管行业宁选气隙自托管也不接受代码出域。",
+          "sourceName": "Reuters / The Star",
+          "sourceUrl": "https://www.thestar.com.my/tech/tech-news/2026/09/16/ai-coding-agent-startup-factory-triples-valuation-to-5-billion-in-latest-funding-round",
+          "publishedAt": "2026-09-15T18:58:00.000Z",
+          "n": 4
+        }
+      ]
+    },
+    {
+      "label": "具身智能",
+      "focus": true,
+      "hint": "每日焦点 · 近 3 天",
+      "items": [
+        {
+          "title": "帕西尼再获数亿元B++轮融资 累计融资超40亿元",
+          "summary": "9月16日，具身智能公司帕西尼宣布再获数亿元B++轮融资，累计融资超40亿元。本轮投资方包括广新基金、四川省科创投资集团、宿迁产发创投等，京铭资本等老股东继续加码；今年8月该公司刚完成10亿元战略轮融资。【值得关注】资本持续向具身感知与触觉传感器等上游核心部件集中，头部效应加速显现。",
+          "summaryFull": "9月16日，具身智能公司帕西尼宣布再获数亿元B++轮融资，累计融资超40亿元。本轮投资方包括广新基金、四川省科创投资集团、宿迁产发创投等，京铭资本等老股东继续加码；今年8月该公司刚完成10亿元战略轮融资。【值得关注】资本持续向具身感知与触觉传感器等上游核心部件集中，头部效应加速显现。",
+          "sourceName": "每日经济新闻",
+          "sourceUrl": "https://www.nbd.com.cn/articles/2026-09-16/4582865.html",
+          "publishedAt": "2026-09-16T02:39:00.000Z",
+          "n": 5
+        },
+        {
+          "title": "两场国家级具身智能标准研讨会落地广州 研讨5项国标",
+          "summary": "9月15日，广东省具身智能科技有限公司接连承办两场国家标准研讨会，百余位专家齐聚广州，集中研讨《人形机器人数据训练场建设规范》《人工智能 具身智能云协议要求》等5项国家标准。【值得关注】标准与训练场体系同步推进，具身智能正从单点技术竞赛转向数据互通与产业规范化的新阶段。",
+          "summaryFull": "9月15日，广东省具身智能科技有限公司接连承办两场国家标准研讨会，百余位专家齐聚广州，集中研讨《人形机器人数据训练场建设规范》《人工智能 具身智能云协议要求》等5项国家标准。【值得关注】标准与训练场体系同步推进，具身智能正从单点技术竞赛转向数据互通与产业规范化的新阶段。",
+          "sourceName": "羊城派",
+          "sourceUrl": "https://m.21jingji.com/article/20260915/herald/3b2fb406d23173e012cd823975b7c703.html",
+          "publishedAt": "2026-09-15T03:03:00.000Z",
+          "n": 6
+        },
+        {
+          "title": "Agility发布第五代人形机器人Digit 5 获超3亿美元订单",
+          "summary": "9月15日，Agility Robotics发布第五代通用人形机器人Digit 5，主打可与人类近距离协同作业，无需传统自动化所需的物理安全围栏。该机器人基于超6.5万小时运行与商业部署数据打造，公司CEO Peggy Johnson称已获超3亿美元多年期订单。【值得关注】人形机器人正从“能干活”转向“安全共处”，协同安全能力成为进入工业场景的准入门槛。",
+          "summaryFull": "9月15日，Agility Robotics发布第五代通用人形机器人Digit 5，主打可与人类近距离协同作业，无需传统自动化所需的物理安全围栏。该机器人基于超6.5万小时运行与商业部署数据打造，公司CEO Peggy Johnson称已获超3亿美元多年期订单。【值得关注】人形机器人正从“能干活”转向“安全共处”，协同安全能力成为进入工业场景的准入门槛。",
+          "sourceName": "RoboticsTomorrow",
+          "sourceUrl": "https://www.roboticstomorrow.com/news/2026/09/15/unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale/27092/",
+          "publishedAt": "2026-09-15T09:43:00.000Z",
+          "n": 7
+        },
+        {
+          "title": "东方精工：东方元启人形机器人产线建成 进入规模化生产",
+          "summary": "9月16日，东方精工在投资者关系活动中表示，2026年上半年控股子公司东方元启运营的人形机器人自动化产线建成并进入规模化生产阶段，成为国内较早具备规模化量产能力的装备制造企业。该工厂由乐聚智能与东方精工联合打造，位于佛山南海，年产能达万台。【值得关注】装备制造企业切入人形机器人量产环节，有望缓解行业“造得稳、造得一致”的一致性难题。",
+          "summaryFull": "9月16日，东方精工在投资者关系活动中表示，2026年上半年控股子公司东方元启运营的人形机器人自动化产线建成并进入规模化生产阶段，成为国内较早具备规模化量产能力的装备制造企业。该工厂由乐聚智能与东方精工联合打造，位于佛山南海，年产能达万台。【值得关注】装备制造企业切入人形机器人量产环节，有望缓解行业“造得稳、造得一致”的一致性难题。",
+          "sourceName": "21世纪经济报道",
+          "sourceUrl": "https://m.21jingji.com/timeline/15aaa80982b4de1a19ef14fa16a6760a.html",
+          "publishedAt": "2026-09-16T01:23:00.000Z",
+          "n": 8
+        }
+      ]
+    },
+    {
+      "label": "一周大事",
+      "focus": false,
+      "hint": "本周窗口",
+      "items": [
+        {
+          "title": "黄仁勋Dreamforce称AI安全无需新立法，与Amodei公开分歧",
+          "summary": "9/15 Dreamforce大会上，Anthropic的Amodei先重申应放缓模型研发，黄仁勋随后与Benioff同台反驳，称市场力量已足够、行业不需要新的法律或监管，快与安全是「伪命题」，产品责任应由模型开发者自负；同日Altman称安全须优先于能力。【值得关注】芯片龙头公开站到安全派对面，AI监管之争已从研究者与政府扩大到产业内部。",
+          "summaryFull": "9/15 Dreamforce大会上，Anthropic的Amodei先重申应放缓模型研发，黄仁勋随后与Benioff同台反驳，称市场力量已足够、行业不需要新的法律或监管，快与安全是「伪命题」，产品责任应由模型开发者自负；同日Altman称安全须优先于能力。【值得关注】芯片龙头公开站到安全派对面，AI监管之争已从研究者与政府扩大到产业内部。",
+          "sourceName": "CNBC",
+          "sourceUrl": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html",
+          "publishedAt": "2026-09-15T20:00:00.000Z",
+          "n": 9
+        },
+        {
+          "title": "谷歌发布Gemini 3.8 Live实时对话模型，支持97种语言",
+          "summary": "当地时间9/15谷歌推出Gemini 3.8 Live与Extended Thinking两款实时对话模型。Extended Thinking在Artificial Analysis语音质量指数以82.6%居首，基础版可自动切换97种语言并后台调用工具。【值得关注】实时语音正成为大模型新战场，谷歌以双档位覆盖成本与高复杂度任务。",
+          "summaryFull": "当地时间9/15谷歌推出Gemini 3.8 Live与Extended Thinking两款实时对话模型。Extended Thinking在Artificial Analysis语音质量指数以82.6%居首，基础版可自动切换97种语言并后台调用工具。【值得关注】实时语音正成为大模型新战场，谷歌以双档位覆盖成本与高复杂度任务。",
+          "sourceName": "IT之家",
+          "sourceUrl": "https://m.ithome.com/html/1002824.htm",
+          "publishedAt": "2026-09-15T17:17:00.000Z",
+          "n": 10
+        },
+        {
+          "title": "AI智能体初创Instinct洽谈10亿美元融资，估值或达100亿",
+          "summary": "财联社9/16消息，个人AI助手初创Instinct正洽谈再融10亿美元，此前刚完成2.5亿美元融资；若足额完成，老股东期望估值至少约100亿美元。公司近期多次提示服务满载、响应变慢，创始人Noah Shinn称未来希望自购芯片甚至自建数据中心。【值得关注】Agent需求正撞上算力天花板，自建算力或成头部Agent公司下一步。",
+          "summaryFull": "财联社9/16消息，个人AI助手初创Instinct正洽谈再融10亿美元，此前刚完成2.5亿美元融资；若足额完成，老股东期望估值至少约100亿美元。公司近期多次提示服务满载、响应变慢，创始人Noah Shinn称未来希望自购芯片甚至自建数据中心。【值得关注】Agent需求正撞上算力天花板，自建算力或成头部Agent公司下一步。",
+          "sourceName": "财联社",
+          "sourceUrl": "https://www.chinastarmarket.cn/detail/2484421",
+          "publishedAt": "2026-09-16T01:57:32.000Z",
+          "n": 11
+        },
+        {
+          "title": "字节跳动上半年净利率降至16.7%，获300亿美元贷款投AI",
+          "summary": "9/15晚间报道称，因大幅加码AI投入，字节跳动2026上半年净利润同比下滑，净利率由2024年的21%降至约16.7%，同期营收增长30%、海外收入占比创新高；公司近期获约300亿美元银行贷款，为史上最大规模。阿里拟配股募资约100亿美元、智谱启动50亿美元发行，均投向AI基建。【值得关注】中国大厂AI竞赛正从利润表转向资产负债表，融资能力成为新胜负手。",
+          "summaryFull": "9/15晚间报道称，因大幅加码AI投入，字节跳动2026上半年净利润同比下滑，净利率由2024年的21%降至约16.7%，同期营收增长30%、海外收入占比创新高；公司近期获约300亿美元银行贷款，为史上最大规模。阿里拟配股募资约100亿美元、智谱启动50亿美元发行，均投向AI基建。【值得关注】中国大厂AI竞赛正从利润表转向资产负债表，融资能力成为新胜负手。",
+          "sourceName": "新浪科技",
+          "sourceUrl": "https://finance.sina.cn/2026-09-15/detail-inirxpiq6857286.d.html",
+          "publishedAt": "2026-09-15T13:06:00.000Z",
+          "n": 12
+        },
+        {
+          "title": "Meta自研AI芯片MTIA 450将在明年上半年进数据中心",
+          "summary": "彭博9/15报道，Meta计划2027年上半年在自有数据中心部署第三代自研AI芯片MTIA 450（代号Arke），下一代MTIA 500约一个月后完成设计、2027年底上量。工程副总裁Yee Jiun Song称新芯片每瓦与每美元性能优于英伟达，但未公布测试条件与代工厂。【值得关注】推理成本已成大厂AI账单主项，自研ASIC正从配角变主力。",
+          "summaryFull": "彭博9/15报道，Meta计划2027年上半年在自有数据中心部署第三代自研AI芯片MTIA 450（代号Arke），下一代MTIA 500约一个月后完成设计、2027年底上量。工程副总裁Yee Jiun Song称新芯片每瓦与每美元性能优于英伟达，但未公布测试条件与代工厂。【值得关注】推理成本已成大厂AI账单主项，自研ASIC正从配角变主力。",
+          "sourceName": "Yahoo Finance（彭博）",
+          "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/meta-targets-first-half-2027-144553142.html",
+          "publishedAt": "2026-09-15T14:45:53.000Z",
+          "n": 13
+        }
+      ]
+    },
+    {
+      "label": "Anthropic（A社）",
+      "focus": false,
+      "hint": "本周窗口",
+      "items": [
+        {
+          "title": "Anthropic 为 Claude 推出 Salesforce 插件（Beta）",
+          "summary": "财联社 9/15 消息，Anthropic 宣布为 Claude 推出 Salesforce 插件，目前处于 beta 测试阶段。此举把 Claude 接进全球最大的 CRM 工作流，配合正在举行的 Dreamforce 大会发布，指向销售与客服场景。【值得关注】把模型塞进 CRM 是 to B 变现最短的路径——数据已在客户自有系统里、付费意愿明确；但 Salesforce 自家的 Agentforce 与 Claude 存在直接竞争，插件更像是「先占位、再博弈」。",
+          "sourceName": "财联社",
+          "sourceUrl": "https://www.163.com/dy/article/L6UC2RUE0550B1DU.html",
+          "publishedAt": "2026-09-15T10:00:00.000Z",
+          "summaryFull": "财联社 9/15 消息，Anthropic 宣布为 Claude 推出 Salesforce 插件，目前处于 beta 测试阶段。此举把 Claude 接进全球最大的 CRM 工作流，配合正在举行的 Dreamforce 大会发布，指向销售与客服场景。【值得关注】把模型塞进 CRM 是 to B 变现最短的路径——数据已在客户自有系统里、付费意愿明确；但 Salesforce 自家的 Agentforce 与 Claude 存在直接竞争，插件更像是「先占位、再博弈」。",
+          "n": 14
+        },
+        {
+          "title": "白宫前 AI 政策顾问 Sihao Huang 加入 Anthropic",
+          "summary": "9 月 16 日，Sihao Huang 宣布加入 Anthropic，出任前沿计算战略负责人（Head of Frontier Compute Strategy）。他此前任白宫科技政策办公室（OSTP）人工智能与新兴技术高级政策顾问，履新后将与 Anthropic 计算平台主管 Tom Brown 合作，推进基础设施扩张与行业联盟建设，并为 AI 快速发展制定规划。【值得关注】从白宫 OSTP 直接挖人管算力战略，Anthropic 正把政策关系与数据中心扩张放进同一个人的 KPI。",
+          "summaryFull": "9 月 16 日，Sihao Huang 宣布加入 Anthropic，出任前沿计算战略负责人（Head of Frontier Compute Strategy）。他此前任白宫科技政策办公室（OSTP）人工智能与新兴技术高级政策顾问，履新后将与 Anthropic 计算平台主管 Tom Brown 合作，推进基础设施扩张与行业联盟建设，并为 AI 快速发展制定规划。【值得关注】从白宫 OSTP 直接挖人管算力战略，Anthropic 正把政策关系与数据中心扩张放进同一个人的 KPI。",
+          "sourceName": "财联社",
+          "sourceUrl": "https://www.cls.cn/detail/2484458",
+          "publishedAt": "2026-09-16T02:32:19.000Z",
+          "n": 15
+        },
+        {
+          "title": "Anthropic 任命 Gamberoni 为意大利总经理，主推 Claude Code",
+          "summary": "9 月 15 日，Anthropic 宣布任命 Mattia Gamberoni 为意大利区总经理（Country Manager Italia），从米兰办公室带队。他此前负责 Stripe 南欧业务，并参与 AWS 伊比利亚的早期拓展，还曾在思科、Salesforce 任职。其工作重点是推动意大利企业、初创公司与高校采用 Claude Code，并落地本地 meetup、工作坊与黑客松。【值得关注】米兰办公室开设数月即配齐一号位，欧洲本地化正从卖 API 转向深耕开发者生态。",
+          "summaryFull": "9 月 15 日，Anthropic 宣布任命 Mattia Gamberoni 为意大利区总经理（Country Manager Italia），从米兰办公室带队。他此前负责 Stripe 南欧业务，并参与 AWS 伊比利亚的早期拓展，还曾在思科、Salesforce 任职。其工作重点是推动意大利企业、初创公司与高校采用 Claude Code，并落地本地 meetup、工作坊与黑客松。【值得关注】米兰办公室开设数月即配齐一号位，欧洲本地化正从卖 API 转向深耕开发者生态。",
+          "sourceName": "CorCom",
+          "sourceUrl": "https://www.corrierecomunicazioni.it/digital-economy/anthropic-sceglie-mattia-gamberoni-come-country-manager-italia-chi-e-la-carriera-i-progetti/",
+          "publishedAt": "2026-09-15T11:17:46.000Z",
+          "n": 16
+        },
+        {
+          "title": "Anthropic 联合两家数据中心商捐 1000 万美元修水网",
+          "summary": "9 月 14 日，Cipher Digital（Nasdaq: CIFR）、Fluidstack 与 Anthropic 共同承诺出资 1000 万美元，用于美国得克萨斯州科罗拉多城供水系统的维修与升级，以缓解当地今夏反复出现的停水问题。三方将与市政共同设立非营利机构「科罗拉多城水基础设施基金会」管理资金。市长 Ruben Hurt 称款项将用于更换老旧铸铁管道。【值得关注】AI 数据中心的水电负外部性正在反噬选址，这类社区补偿或成新建项目标配。",
+          "summaryFull": "9 月 14 日，Cipher Digital（Nasdaq: CIFR）、Fluidstack 与 Anthropic 共同承诺出资 1000 万美元，用于美国得克萨斯州科罗拉多城供水系统的维修与升级，以缓解当地今夏反复出现的停水问题。三方将与市政共同设立非营利机构「科罗拉多城水基础设施基金会」管理资金。市长 Ruben Hurt 称款项将用于更换老旧铸铁管道。【值得关注】AI 数据中心的水电负外部性正在反噬选址，这类社区补偿或成新建项目标配。",
+          "sourceName": "KTXS",
+          "sourceUrl": "https://ktxs.com/news/local/10m-donation-to-improve-colorado-citys-water-system",
+          "publishedAt": "2026-09-14T19:02:00.000Z",
+          "n": 17
+        }
+      ]
+    },
+    {
+      "label": "OpenAI",
+      "focus": false,
+      "hint": "本周窗口",
+      "items": [
+        {
+          "title": "奥特曼在 Dreamforce 回应监管：行业能安全开发 AI",
+          "summary": "当地时间 9 月 15 日，OpenAI CEO 山姆·奥特曼在旧金山 Dreamforce 大会与 Salesforce CEO 贝尼奥夫对话时表示，他「非常确信」公司与整个行业有能力在不给公众造成重大伤害的前提下安全推进 AI，并称对当前围绕发展速度与监管必要性的讨论方式感到失望。他同时强调 AI 公司应能自主提升模型能力并确保安全，OpenAI 正与 Anthropic、谷歌 DeepMind 合作处理安全问题。【值得关注】在对手 CEO 撰文呼吁减速后，奥特曼选择公开反击，两家头部实验室的路线之争已摆上台面。",
+          "summaryFull": "当地时间 9 月 15 日，OpenAI CEO 山姆·奥特曼在旧金山 Dreamforce 大会与 Salesforce CEO 贝尼奥夫对话时表示，他「非常确信」公司与整个行业有能力在不给公众造成重大伤害的前提下安全推进 AI，并称对当前围绕发展速度与监管必要性的讨论方式感到失望。他同时强调 AI 公司应能自主提升模型能力并确保安全，OpenAI 正与 Anthropic、谷歌 DeepMind 合作处理安全问题。【值得关注】在对手 CEO 撰文呼吁减速后，奥特曼选择公开反击，两家头部实验室的路线之争已摆上台面。",
+          "sourceName": "IT之家 / 凤凰科技",
+          "sourceUrl": "https://m.ithome.com/html/1002831.htm",
+          "publishedAt": "2026-09-15T22:53:55.000Z",
+          "n": 18
+        },
+        {
+          "title": "OpenAI 首度支持强制第三方安全评估法案",
+          "summary": "9 月 15 日，OpenAI 公开支持美国众议院一项两党提案，首次赞成以立法形式强制对最强 AI 模型开展第三方安全评估。该方案由 6 名众议员提出，要求美国商务部认证独立审计机构，并设专职官员监督 AI 安全合规；OpenAI 游说负责人 Chris Lehane 确认了公司立场，称「能通过的法案都支持」。此前 OpenAI 已支持加州独立验证机构认证立法。【值得关注】从自愿承诺转向法定审计，OpenAI 押注「先定规则者得利」，但也可能给自己套上合规成本。",
+          "summaryFull": "9 月 15 日，OpenAI 公开支持美国众议院一项两党提案，首次赞成以立法形式强制对最强 AI 模型开展第三方安全评估。该方案由 6 名众议员提出，要求美国商务部认证独立审计机构，并设专职官员监督 AI 安全合规；OpenAI 游说负责人 Chris Lehane 确认了公司立场，称「能通过的法案都支持」。此前 OpenAI 已支持加州独立验证机构认证立法。【值得关注】从自愿承诺转向法定审计，OpenAI 押注「先定规则者得利」，但也可能给自己套上合规成本。",
+          "sourceName": "4sysops（引 Politico）",
+          "sourceUrl": "https://4sysops.com/archives/openai-backs-first-federal-plan-for-third-party-ai-safety-assessments/",
+          "publishedAt": "2026-09-15T16:22:59.000Z",
+          "n": 19
+        },
+        {
+          "title": "OpenAI 与 Anthropic、谷歌洽谈共建 AI 安全标准机构",
+          "summary": "9 月 15 日，OpenAI 首席对外事务官 Chris Lehane 在华盛顿媒体吹风会上证实，数周前已与 Anthropic、谷歌 DeepMind 启动多边 AI 安全合作，三方并正推动成立独立的民间 AI 标准机构，参照美国金融业自律监管机构 FINRA 模式。对 FTC 主席 Ferguson 有关「构筑竞争壁垒」的质疑，Lehane 以航空业安全协作为先例反驳，称与市场竞争无关。【值得关注】罕见的三巨头同桌，但反垄断疑虑与中期选举议程都可能让这件事止步于纸面。",
+          "summaryFull": "9 月 15 日，OpenAI 首席对外事务官 Chris Lehane 在华盛顿媒体吹风会上证实，数周前已与 Anthropic、谷歌 DeepMind 启动多边 AI 安全合作，三方并正推动成立独立的民间 AI 标准机构，参照美国金融业自律监管机构 FINRA 模式。对 FTC 主席 Ferguson 有关「构筑竞争壁垒」的质疑，Lehane 以航空业安全协作为先例反驳，称与市场竞争无关。【值得关注】罕见的三巨头同桌，但反垄断疑虑与中期选举议程都可能让这件事止步于纸面。",
+          "sourceName": "머니투데이（Money Today）",
+          "sourceUrl": "https://www.mt.co.kr/world/2026/09/16/2026091604422517159",
+          "publishedAt": "2026-09-15T19:45:00.000Z",
+          "n": 20
+        },
+        {
+          "title": "OpenAI 洽谈超 1.2 万亿美元估值新融资，上市时点待定",
+          "summary": "彭博社 9 月 16 日报道，OpenAI 正与投资者初步洽谈新一轮融资，估值超过 1.2 万亿美元，为首次公开募股铺路；是否推进将取决于公司最终确定的上市时间，潜在收购也在考量之中。此前 9 月 13 日，奥特曼已确认 OpenAI 今年不会上市，称现阶段上市「不明智」。【值得关注】在 Anthropic 冲刺 2 万亿估值 IPO 的对照下，OpenAI 选择先在一级市场补弹药，AI 双雄的资本节奏正式分叉。",
+          "summaryFull": "彭博社 9 月 16 日报道，OpenAI 正与投资者初步洽谈新一轮融资，估值超过 1.2 万亿美元，为首次公开募股铺路；是否推进将取决于公司最终确定的上市时间，潜在收购也在考量之中。此前 9 月 13 日，奥特曼已确认 OpenAI 今年不会上市，称现阶段上市「不明智」。【值得关注】在 Anthropic 冲刺 2 万亿估值 IPO 的对照下，OpenAI 选择先在一级市场补弹药，AI 双雄的资本节奏正式分叉。",
+          "sourceName": "Bloomberg（经 The Hindu BusinessLine）",
+          "sourceUrl": "https://www.thehindubusinessline.com/info-tech/openai-weighing-funding-round-at-over-12-trillion-valuation/article71470879.ece",
+          "publishedAt": "2026-09-16T02:13:00.000Z",
+          "n": 21
+        }
+      ]
+    },
+    {
+      "label": "Tibo · Codex 额度重置信号",
+      "focus": false,
+      "hint": "本周窗口",
+      "items": [
+        {
+          "title": "9/16凌晨Tibo发图引重置猜测，社区澄清非官方信号",
+          "summary": "9/16 Tibo（@thsottiaux）发帖（x.com/thsottiaux/status/2099922755655479624），中文社区以「Tibo这是说今天要重置了吗」讨论，一度解读为重置或Codex新功能预告；随后有用户澄清「RESET」图片系网友自制，非官方信号。【值得关注】重置预期已被社区符号化，模糊发帖即被放大解读。",
+          "summaryFull": "9/16 Tibo（@thsottiaux）发帖（x.com/thsottiaux/status/2099922755655479624），中文社区以「Tibo这是说今天要重置了吗」讨论，一度解读为重置或Codex新功能预告；随后有用户澄清「RESET」图片系网友自制，非官方信号。【值得关注】重置预期已被社区符号化，模糊发帖即被放大解读。",
+          "sourceName": "大佬说（locdd）",
+          "sourceUrl": "https://locdd.com/t/topic/91568",
+          "publishedAt": "2026-09-15T18:28:24.911Z",
+          "n": 22
+        },
+        {
+          "title": "9/16追踪站核对：Codex无重置无排期，距上次已3天19小时",
+          "summary": "9/16 codex-reset.com 追踪站核对：今日（UTC）Codex 未发生重置，最近一次经验证的全局重置仍是 9/12 08:09 UTC，距今约 3 天 19 小时，24–48 小时预测亦未给出排期；OpenAI 状态页显示 Codex 可用率正常。【值得关注】距上次重置已超 3 天，明显长于此前约 2 天的间隔中位数，说明「按缺勤补偿」的节奏正在收窄；重度用户应按 5 小时与周窗口的实际刷新时间安排用量，而不是等公告。",
+          "summaryFull": "9/16 codex-reset.com 追踪站核对：今日（UTC）Codex 未发生重置，最近一次经验证的全局重置仍是 9/12 08:09 UTC，距今约 3 天 19 小时，24–48 小时预测亦未给出排期；OpenAI 状态页显示 Codex 可用率正常。【值得关注】距上次重置已超 3 天，明显长于此前约 2 天的间隔中位数，说明「按缺勤补偿」的节奏正在收窄；重度用户应按 5 小时与周窗口的实际刷新时间安排用量，而不是等公告。",
+          "sourceName": "Codex Reset Tracker（Timeline）",
+          "sourceUrl": "https://codex-reset.com/timeline",
+          "publishedAt": "2026-09-16T03:18:03.000Z",
+          "n": 23
+        }
+      ]
+    }
+  ],
+  "total": 23
+}

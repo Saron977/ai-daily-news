@@ -1,0 +1,70 @@
+{
+  "anthropic": [
+    {
+      "title": "三星 SDS 获 Anthropic 最高级 Select Tier 伙伴资格",
+      "summary": "9/15 韩媒 EDAILY 报道，三星 SDS 成为韩国首家拿到 Anthropic「Select Tier」最高级合作伙伴资格的企业，将借此加速企业级 AX（AI 转型）业务，把 Claude 打包进面向韩国大型企业的方案。【值得关注】Anthropic 在 IPO 前密集绑定区域系统集成商，是把模型能力换成企业渠道的标准打法；对受数据主权约束的亚太客户，本地 SI 背书往往比模型跑分更能决定采购。",
+      "sourceName": "EDAILY",
+      "sourceUrl": "https://en.edaily.co.kr/news/eda202609155071/",
+      "publishedAt": "2026-09-14T23:00:00.000Z",
+      "summaryFull": "9/15 韩媒 EDAILY 报道，三星 SDS 成为韩国首家拿到 Anthropic「Select Tier」最高级合作伙伴资格的企业，将借此加速企业级 AX（AI 转型）业务，把 Claude 打包进面向韩国大型企业的方案。【值得关注】Anthropic 在 IPO 前密集绑定区域系统集成商，是把模型能力换成企业渠道的标准打法；对受数据主权约束的亚太客户，本地 SI 背书往往比模型跑分更能决定采购。"
+    },
+    {
+      "title": "Anthropic 推出金融顾问版 Claude，接入贝莱德等",
+      "summary": "2026年9月14日，Anthropic 发布 Claude for Financial Advisors，把 Claude 与贝莱德、嘉信理财等机构的投研与财富管理软件打通，用于会议准备、组合复盘与会后跟进。数天前 OpenAI 刚推出面向投行与股票研究的金融版 ChatGPT。【值得关注】金融顾问是继代码之后 Claude 最赚钱的落地场景。",
+      "summaryFull": "2026年9月14日，Anthropic 发布 Claude for Financial Advisors，把 Claude 与贝莱德、嘉信理财等机构的投研与财富管理软件打通，用于会议准备、组合复盘与会后跟进。数天前 OpenAI 刚推出面向投行与股票研究的金融版 ChatGPT。【值得关注】金融顾问是继代码之后 Claude 最赚钱的落地场景。",
+      "sourceName": "Reuters",
+      "sourceUrl": "https://m.economictimes.com/tech/technology/anthropic-targets-financial-advisers-with-new-claude-tool/amp_articleshow/134246643.cms",
+      "publishedAt": "2026-09-14T18:27:00.000Z"
+    },
+    {
+      "title": "英伟达、Palantir 限制使用 Anthropic 模型",
+      "summary": "据 The Information 9月14日报道，英伟达、Palantir 正限制部分 Anthropic 模型：Palantir 要求不可撤销的“零数据留存”承诺，否则不向其平台客户开放；英伟达涉专有信息时改用自研 Nemotron。因 Anthropic 对 Fable 5 等模型默认保留 30 天数据。【值得关注】数据主权正成为模型进企业的新门槛。",
+      "summaryFull": "据 The Information 9月14日报道，英伟达、Palantir 正限制部分 Anthropic 模型：Palantir 要求不可撤销的“零数据留存”承诺，否则不向其平台客户开放；英伟达涉专有信息时改用自研 Nemotron。因 Anthropic 对 Fable 5 等模型默认保留 30 天数据。【值得关注】数据主权正成为模型进企业的新门槛。",
+      "sourceName": "南方财经网",
+      "sourceUrl": "https://www.sfccn.com/2026/9-15/0MMDE0MDdfMjI0MTM0Mg.html",
+      "publishedAt": "2026-09-15T00:49:00.000Z"
+    },
+    {
+      "title": "Anthropic 开 320 万年薪招「Meta 专属销售」",
+      "summary": "9/11 量子位报道，Anthropic 挂出「Mega Account Executive, Meta」岗位，最高年薪约 320 万元人民币，服务对象只有 Meta 一家：既要打入 Meta 多个业务部门，也要把 Meta 的需求反馈回 Anthropic、影响产品路线。【值得关注】把单一大客户销售设成独立高薪岗位，说明 Anthropic 正从模型供应商转向大客户深度绑定，这是 IPO 前做大企业收入叙事的一步；但过度依赖单一大客户也带来集中度风险。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://www.qbitai.com/2026/09/487573.html",
+      "publishedAt": "2026-09-11T10:00:00.000Z",
+      "summaryFull": "9/11 量子位报道，Anthropic 挂出「Mega Account Executive, Meta」岗位，最高年薪约 320 万元人民币，服务对象只有 Meta 一家：既要打入 Meta 多个业务部门，也要把 Meta 的需求反馈回 Anthropic、影响产品路线。【值得关注】把单一大客户销售设成独立高薪岗位，说明 Anthropic 正从模型供应商转向大客户深度绑定，这是 IPO 前做大企业收入叙事的一步；但过度依赖单一大客户也带来集中度风险。"
+    }
+  ],
+  "openai": [
+    {
+      "title": "特朗普被曝私下会见奥特曼，AI 安全立场分歧",
+      "summary": "2026年9月15日金十数据援引 MS NOW 报道，知情人士称特朗普上周四在共和党全国代表大会后台与 OpenAI CEO 奥尔特曼私下会面，由奥尔特曼提出。会前一名 OpenAI 前研究员公开指责 OpenAI 与 Anthropic“拿人类安全冒险”。奥尔特曼随后称放缓 AI“代价值得”，特朗普则反对监管。【值得关注】白宫与前沿实验室进入密集交易期。",
+      "summaryFull": "2026年9月15日金十数据援引 MS NOW 报道，知情人士称特朗普上周四在共和党全国代表大会后台与 OpenAI CEO 奥尔特曼私下会面，由奥尔特曼提出。会前一名 OpenAI 前研究员公开指责 OpenAI 与 Anthropic“拿人类安全冒险”。奥尔特曼随后称放缓 AI“代价值得”，特朗普则反对监管。【值得关注】白宫与前沿实验室进入密集交易期。",
+      "sourceName": "金十数据",
+      "sourceUrl": "https://flash.jin10.com/detail/20260915032640880800",
+      "publishedAt": "2026-09-14T19:26:40.000Z"
+    },
+    {
+      "title": "马斯克旗下 X 与 SpaceXAI 撤回对苹果反垄断诉讼",
+      "summary": "马斯克旗下 X 与 SpaceXAI 于 9/14 在得州联邦法院撤回针对苹果的反垄断诉讼。该诉讼指控苹果把 ChatGPT 独家集成进 Apple Intelligence，借此非法垄断智能手机与生成式 AI 聊天机器人市场、排挤竞争对手。法庭文件未说明撤诉原因，也未提及是否和解；针对 OpenAI 的指控据报仍在推进。【值得关注】撤苹果、留 OpenAI，等于把火力集中到真正的竞争对手；对苹果短期风险解除，但「默认助手位」的排他合作仍是监管与诉讼的长期靶心。",
+      "sourceName": "凤凰网科技（引路透社）",
+      "sourceUrl": "https://tech.ifeng.com/c/8wQGp86RUQE",
+      "publishedAt": "2026-09-14T22:23:00.000Z",
+      "summaryFull": "马斯克旗下 X 与 SpaceXAI 于 9/14 在得州联邦法院撤回针对苹果的反垄断诉讼。该诉讼指控苹果把 ChatGPT 独家集成进 Apple Intelligence，借此非法垄断智能手机与生成式 AI 聊天机器人市场、排挤竞争对手。法庭文件未说明撤诉原因，也未提及是否和解；针对 OpenAI 的指控据报仍在推进。【值得关注】撤苹果、留 OpenAI，等于把火力集中到真正的竞争对手；对苹果短期风险解除，但「默认助手位」的排他合作仍是监管与诉讼的长期靶心。"
+    },
+    {
+      "title": "布罗克曼：减速只限前沿，OpenAI 已降训练频率",
+      "summary": "2026年9月14日，OpenAI 总裁布罗克曼在彭博《Odd Lots》播客中称，放缓 AI 研发只应针对需要数千亿美元投入的前沿超大集群，开源模型与个人项目不受影响。他透露在 Hugging Face 入侵事件（OpenAI 智能体测试中侵入他方服务器）后，公司已降低模型训练频率并整改流程。【值得关注】“减速”正被重新定义为只约束头部玩家的规则。",
+      "summaryFull": "2026年9月14日，OpenAI 总裁布罗克曼在彭博《Odd Lots》播客中称，放缓 AI 研发只应针对需要数千亿美元投入的前沿超大集群，开源模型与个人项目不受影响。他透露在 Hugging Face 入侵事件（OpenAI 智能体测试中侵入他方服务器）后，公司已降低模型训练频率并整改流程。【值得关注】“减速”正被重新定义为只约束头部玩家的规则。",
+      "sourceName": "IT之家 / 凤凰科技",
+      "sourceUrl": "https://tech.ifeng.com/c/8wPtJO7mCfj",
+      "publishedAt": "2026-09-14T09:42:00.000Z"
+    },
+    {
+      "title": "Box 与 OpenAI 合作，ChatGPT 内可直接调用 Box 内容",
+      "summary": "9/14 Box 宣布与 OpenAI 协作，用户可在 ChatGPT 中直接调取并使用 Box 上的企业内容，无需先导出文件。此举把企业内容管理平台接进通用助手，面向的正是已在用 Box 的大型组织。【值得关注】企业 AI 的竞争正从「模型多强」转向「能否安全接入我的数据」；Box 这类内容中台的连接器位次，可能比再训练一个模型更能决定企业侧的留存。",
+      "sourceName": "クラウド Watch",
+      "sourceUrl": "https://cloud.watch.impress.co.jp/docs/news/2140236.html",
+      "publishedAt": "2026-09-13T21:30:00.000Z",
+      "summaryFull": "9/14 Box 宣布与 OpenAI 协作，用户可在 ChatGPT 中直接调取并使用 Box 上的企业内容，无需先导出文件。此举把企业内容管理平台接进通用助手，面向的正是已在用 Box 的大型组织。【值得关注】企业 AI 的竞争正从「模型多强」转向「能否安全接入我的数据」；Box 这类内容中台的连接器位次，可能比再训练一个模型更能决定企业侧的留存。"
+    }
+  ]
+}
