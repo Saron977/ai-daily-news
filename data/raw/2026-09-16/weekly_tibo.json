@@ -1,0 +1,62 @@
+{
+  "weekly": [
+    {
+      "title": "黄仁勋Dreamforce称AI安全无需新立法，与Amodei公开分歧",
+      "summary": "9/15 Dreamforce大会上，Anthropic的Amodei先重申应放缓模型研发，黄仁勋随后与Benioff同台反驳，称市场力量已足够、行业不需要新的法律或监管，快与安全是「伪命题」，产品责任应由模型开发者自负；同日Altman称安全须优先于能力。【值得关注】芯片龙头公开站到安全派对面，AI监管之争已从研究者与政府扩大到产业内部。",
+      "summaryFull": "9/15 Dreamforce大会上，Anthropic的Amodei先重申应放缓模型研发，黄仁勋随后与Benioff同台反驳，称市场力量已足够、行业不需要新的法律或监管，快与安全是「伪命题」，产品责任应由模型开发者自负；同日Altman称安全须优先于能力。【值得关注】芯片龙头公开站到安全派对面，AI监管之争已从研究者与政府扩大到产业内部。",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/09/15/nvidia-and-anthropic-ceos-diverge-on-ai-safety-at-dreamforce.html",
+      "publishedAt": "2026-09-15T20:00:00.000Z"
+    },
+    {
+      "title": "谷歌发布Gemini 3.8 Live实时对话模型，支持97种语言",
+      "summary": "当地时间9/15谷歌推出Gemini 3.8 Live与Extended Thinking两款实时对话模型。Extended Thinking在Artificial Analysis语音质量指数以82.6%居首，基础版可自动切换97种语言并后台调用工具。【值得关注】实时语音正成为大模型新战场，谷歌以双档位覆盖成本与高复杂度任务。",
+      "summaryFull": "当地时间9/15谷歌推出Gemini 3.8 Live与Extended Thinking两款实时对话模型。Extended Thinking在Artificial Analysis语音质量指数以82.6%居首，基础版可自动切换97种语言并后台调用工具。【值得关注】实时语音正成为大模型新战场，谷歌以双档位覆盖成本与高复杂度任务。",
+      "sourceName": "IT之家",
+      "sourceUrl": "https://m.ithome.com/html/1002824.htm",
+      "publishedAt": "2026-09-15T17:17:00.000Z"
+    },
+    {
+      "title": "AI智能体初创Instinct洽谈10亿美元融资，估值或达100亿",
+      "summary": "财联社9/16消息，个人AI助手初创Instinct正洽谈再融10亿美元，此前刚完成2.5亿美元融资；若足额完成，老股东期望估值至少约100亿美元。公司近期多次提示服务满载、响应变慢，创始人Noah Shinn称未来希望自购芯片甚至自建数据中心。【值得关注】Agent需求正撞上算力天花板，自建算力或成头部Agent公司下一步。",
+      "summaryFull": "财联社9/16消息，个人AI助手初创Instinct正洽谈再融10亿美元，此前刚完成2.5亿美元融资；若足额完成，老股东期望估值至少约100亿美元。公司近期多次提示服务满载、响应变慢，创始人Noah Shinn称未来希望自购芯片甚至自建数据中心。【值得关注】Agent需求正撞上算力天花板，自建算力或成头部Agent公司下一步。",
+      "sourceName": "财联社",
+      "sourceUrl": "https://www.chinastarmarket.cn/detail/2484421",
+      "publishedAt": "2026-09-16T01:57:32.000Z"
+    },
+    {
+      "title": "字节跳动上半年净利率降至16.7%，获300亿美元贷款投AI",
+      "summary": "9/15晚间报道称，因大幅加码AI投入，字节跳动2026上半年净利润同比下滑，净利率由2024年的21%降至约16.7%，同期营收增长30%、海外收入占比创新高；公司近期获约300亿美元银行贷款，为史上最大规模。阿里拟配股募资约100亿美元、智谱启动50亿美元发行，均投向AI基建。【值得关注】中国大厂AI竞赛正从利润表转向资产负债表，融资能力成为新胜负手。",
+      "summaryFull": "9/15晚间报道称，因大幅加码AI投入，字节跳动2026上半年净利润同比下滑，净利率由2024年的21%降至约16.7%，同期营收增长30%、海外收入占比创新高；公司近期获约300亿美元银行贷款，为史上最大规模。阿里拟配股募资约100亿美元、智谱启动50亿美元发行，均投向AI基建。【值得关注】中国大厂AI竞赛正从利润表转向资产负债表，融资能力成为新胜负手。",
+      "sourceName": "新浪科技",
+      "sourceUrl": "https://finance.sina.cn/2026-09-15/detail-inirxpiq6857286.d.html",
+      "publishedAt": "2026-09-15T13:06:00.000Z"
+    },
+    {
+      "title": "Meta自研AI芯片MTIA 450将在明年上半年进数据中心",
+      "summary": "彭博9/15报道，Meta计划2027年上半年在自有数据中心部署第三代自研AI芯片MTIA 450（代号Arke），下一代MTIA 500约一个月后完成设计、2027年底上量。工程副总裁Yee Jiun Song称新芯片每瓦与每美元性能优于英伟达，但未公布测试条件与代工厂。【值得关注】推理成本已成大厂AI账单主项，自研ASIC正从配角变主力。",
+      "summaryFull": "彭博9/15报道，Meta计划2027年上半年在自有数据中心部署第三代自研AI芯片MTIA 450（代号Arke），下一代MTIA 500约一个月后完成设计、2027年底上量。工程副总裁Yee Jiun Song称新芯片每瓦与每美元性能优于英伟达，但未公布测试条件与代工厂。【值得关注】推理成本已成大厂AI账单主项，自研ASIC正从配角变主力。",
+      "sourceName": "Yahoo Finance（彭博）",
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/meta-targets-first-half-2027-144553142.html",
+      "publishedAt": "2026-09-15T14:45:53.000Z"
+    }
+  ],
+  "tibo": [
+    {
+      "title": "9/16凌晨Tibo发图引重置猜测，社区澄清非官方信号",
+      "summary": "9/16 Tibo（@thsottiaux）发帖（x.com/thsottiaux/status/2099922755655479624），中文社区以「Tibo这是说今天要重置了吗」讨论，一度解读为重置或Codex新功能预告；随后有用户澄清「RESET」图片系网友自制，非官方信号。【值得关注】重置预期已被社区符号化，模糊发帖即被放大解读。",
+      "summaryFull": "9/16 Tibo（@thsottiaux）发帖（x.com/thsottiaux/status/2099922755655479624），中文社区以「Tibo这是说今天要重置了吗」讨论，一度解读为重置或Codex新功能预告；随后有用户澄清「RESET」图片系网友自制，非官方信号。【值得关注】重置预期已被社区符号化，模糊发帖即被放大解读。",
+      "sourceName": "大佬说（locdd）",
+      "sourceUrl": "https://locdd.com/t/topic/91568",
+      "publishedAt": "2026-09-15T18:28:24.911Z"
+    },
+    {
+      "title": "9/16追踪站核对：Codex无重置无排期，距上次已3天19小时",
+      "summary": "9/16 codex-reset.com 追踪站核对：今日（UTC）Codex 未发生重置，最近一次经验证的全局重置仍是 9/12 08:09 UTC，距今约 3 天 19 小时，24–48 小时预测亦未给出排期；OpenAI 状态页显示 Codex 可用率正常。【值得关注】距上次重置已超 3 天，明显长于此前约 2 天的间隔中位数，说明「按缺勤补偿」的节奏正在收窄；重度用户应按 5 小时与周窗口的实际刷新时间安排用量，而不是等公告。",
+      "summaryFull": "9/16 codex-reset.com 追踪站核对：今日（UTC）Codex 未发生重置，最近一次经验证的全局重置仍是 9/12 08:09 UTC，距今约 3 天 19 小时，24–48 小时预测亦未给出排期；OpenAI 状态页显示 Codex 可用率正常。【值得关注】距上次重置已超 3 天，明显长于此前约 2 天的间隔中位数，说明「按缺勤补偿」的节奏正在收窄；重度用户应按 5 小时与周窗口的实际刷新时间安排用量，而不是等公告。",
+      "sourceName": "Codex Reset Tracker（Timeline）",
+      "sourceUrl": "https://codex-reset.com/timeline",
+      "publishedAt": "2026-09-16T03:18:03.000Z"
+    }
+  ]
+}
