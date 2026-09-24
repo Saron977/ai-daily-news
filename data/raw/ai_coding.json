@@ -1,34 +1,34 @@
 [
   {
-    "title": "豆包 Seed 2.1 Pro 升级：38.7 万行仓库修复率 83%",
-    "summary": "9 月 16 日火山引擎上线豆包 Seed-2.1-pro-0915，主打多模态编程，可读草图录屏改代码。在 38.7 万行的开源游戏仓库 Luanti 上，多子 Agent 连跑 36 小时，把 1000 个 Issue 中 83% 修到可合并，Token 降三成，已接入 TRAE。【值得关注】AI 编程的计量单位正从单次补全转向 Issue 队列完成率。",
-    "sourceName": "新华网",
-    "sourceUrl": "https://www.news.cn/tech/20260916/6c5139a7840145b6b11f0ae9e00d9cb2/c.html",
-    "publishedAt": "2026-09-16T09:32:12.000Z",
-    "summaryFull": "9 月 16 日火山引擎上线豆包 Seed-2.1-pro-0915，主打多模态编程，可读草图录屏改代码。在 38.7 万行的开源游戏仓库 Luanti 上，多子 Agent 连跑 36 小时，把 1000 个 Issue 中 83% 修到可合并，Token 降三成，已接入 TRAE。【值得关注】AI 编程的计量单位正从单次补全转向 Issue 队列完成率。"
+    "title": "小米开源 MiMo-V2.6：1.02 万亿参数 Pro 版 AA 指数第一",
+    "summary": "9 月 22 日小米开源 MiMo-V2.6-Pro/Flash，Pro 是 1.02 万亿参数、420 亿激活的稀疏 MoE，AA 智能指数 46 分，压过 Kimi K3 的 44 分与 GLM-5.3 的 45 分，成为最高开源权重模型，API 仍是 3 元/6 元每百万 token。【值得关注】开源权重首次压过国产同侪，闭源靠榜单溢价的窗口收窄。",
+    "summaryFull": "9 月 22 日小米开源 MiMo-V2.6-Pro/Flash，Pro 是 1.02 万亿参数、420 亿激活的稀疏 MoE，AA 智能指数 46 分，压过 Kimi K3 的 44 分与 GLM-5.3 的 45 分，成为最高开源权重模型，API 仍是 3 元/6 元每百万 token。【值得关注】开源权重首次压过国产同侪，闭源靠榜单溢价的窗口收窄。",
+    "sourceName": "IT之家",
+    "sourceUrl": "https://www.ithome.com/0/100/5496.htm",
+    "publishedAt": "2026-09-21T23:05:00.000Z"
   },
   {
-    "title": "阿里开源代码审查工具 open-code-review 登顶热榜",
-    "summary": "9 月 16 日阿里开源内部用了两年的 AI 代码审查工具 open-code-review，当日以 2756 星增量登顶 GitHub Trending，发 v1.12.3。它用确定性流水线做筛选与定位，模型只管判断，官方称同底座模型精度高于 Claude Code、Token 仅约九分之一。【值得关注】审查正从通用 Agent 跑一遍转向工程约束加模型。",
-    "sourceName": "CSDN AI Agent 技术社区",
-    "sourceUrl": "https://agent.csdn.net/6aa9f95fcf836948fcd25136.html",
-    "publishedAt": "2026-09-16T02:05:13.000Z",
-    "summaryFull": "9 月 16 日阿里开源内部用了两年的 AI 代码审查工具 open-code-review，当日以 2756 星增量登顶 GitHub Trending，发 v1.12.3。它用确定性流水线做筛选与定位，模型只管判断，官方称同底座模型精度高于 Claude Code、Token 仅约九分之一。【值得关注】审查正从通用 Agent 跑一遍转向工程约束加模型。"
-  },
-  {
-    "title": "VS Code 1.138 发布：Agent Host 让会话常驻",
-    "summary": "9 月 16 日微软发布 VS Code 1.138，把 Agent Host 架构推入稳定版：智能体会话由后台进程持有，关掉文件夹或离开机器仍在跑，可跑在本机 Dev Container 隔离环境。Codex 可用 Copilot 或 ChatGPT 订阅接入，同时登录两者能在模型选择器中途切换。【值得关注】编辑器正从聊天框变成常驻工作单元宿主。",
-    "sourceName": "Visual Studio Code (官方更新日志)",
-    "sourceUrl": "https://code.visualstudio.com/updates/v1_138",
-    "publishedAt": "2026-09-16T07:39:30.000Z",
-    "summaryFull": "9 月 16 日微软发布 VS Code 1.138，把 Agent Host 架构推入稳定版：智能体会话由后台进程持有，关掉文件夹或离开机器仍在跑，可跑在本机 Dev Container 隔离环境。Codex 可用 Copilot 或 ChatGPT 订阅接入，同时登录两者能在模型选择器中途切换。【值得关注】编辑器正从聊天框变成常驻工作单元宿主。"
-  },
-  {
-    "title": "Claude Code 2.1.274：MCP 默认切 v2 客户端",
-    "summary": "9 月 17 日 Claude Code 发布 2.1.274，108 项改动：Bedrock、Vertex、Foundry 等默认启用 v2 MCP 客户端与 MCP 2026-07-28 协商；新增内存告警与 MCP 连接等待上限，修复会话卡在 400 错误死循环。【值得关注】本版几乎全是可靠性修补，MCP 协议默认前移，自建服务器需提前验证兼容性。",
+    "title": "Claude Code 2.1.281：拒绝命令替换式 rm，可关署名",
+    "summary": "9 月 23 日 Anthropic 发布 Claude Code 2.1.281：跳过权限时，rm -rf \"$(pwd)\" 这类目标不固定的删除命令仍弹确认，静置 2 分钟即拒绝；settings.json 可用 attribution: false 关闭提交与 PR 署名，但旧版会漏读该文件。【值得关注】安全边界压到命令语义层，共享配置须先统一版本。",
+    "summaryFull": "9 月 23 日 Anthropic 发布 Claude Code 2.1.281：跳过权限时，rm -rf \"$(pwd)\" 这类目标不固定的删除命令仍弹确认，静置 2 分钟即拒绝；settings.json 可用 attribution: false 关闭提交与 PR 署名，但旧版会漏读该文件。【值得关注】安全边界压到命令语义层，共享配置须先统一版本。",
     "sourceName": "GitHub Releases (anthropics/claude-code)",
-    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.274",
-    "publishedAt": "2026-09-17T00:12:02.000Z",
-    "summaryFull": "9 月 17 日 Claude Code 发布 2.1.274，108 项改动：Bedrock、Vertex、Foundry 等默认启用 v2 MCP 客户端与 MCP 2026-07-28 协商；新增内存告警与 MCP 连接等待上限，修复会话卡在 400 错误死循环。【值得关注】本版几乎全是可靠性修补，MCP 协议默认前移，自建服务器需提前验证兼容性。"
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+    "publishedAt": "2026-09-23T19:19:15.000Z"
+  },
+  {
+    "title": "Google Antigravity 2.17：/plan 先出计划再写代码",
+    "summary": "9 月 22 日谷歌发布 Antigravity 2.17.0，新增 /plan 命令，智能体先给出可改的计划再写代码，原 Agent 设置更名 Plan Review Policy。本次含改进 11 项、修复 10 项：规则独享 2 万 token 预算，不再挤掉技能与 MCP 工具；旧配置路径失效。【值得关注】竞争转向开工前的对齐成本，迁移属破坏性变更。",
+    "summaryFull": "9 月 22 日谷歌发布 Antigravity 2.17.0，新增 /plan 命令，智能体先给出可改的计划再写代码，原 Agent 设置更名 Plan Review Policy。本次含改进 11 项、修复 10 项：规则独享 2 万 token 预算，不再挤掉技能与 MCP 工具；旧配置路径失效。【值得关注】竞争转向开工前的对齐成本，迁移属破坏性变更。",
+    "sourceName": "Google Antigravity (官方更新日志)",
+    "sourceUrl": "https://antigravity.google/changelog",
+    "publishedAt": "2026-09-21T18:30:00.000Z"
+  },
+  {
+    "title": "GitHub Copilot 应用上线本地沙箱，默认关闭",
+    "summary": "9 月 23 日 GitHub 为 Copilot 应用推出本地沙箱预览，按项目限制文件系统、网络与凭据：可配额外的读写、只读与禁止目录。该策略仅对本地仓库会话生效，云端沙箱不适用；系统若无法强制，沙箱 shell 报错而不裸跑。功能默认关闭，需在项目设置开启或输入 /sandbox。【值得关注】沙箱回落到本地是本轮安全主线，默认关闭意味着防护靠团队开启。",
+    "summaryFull": "9 月 23 日 GitHub 为 Copilot 应用推出本地沙箱预览，按项目限制文件系统、网络与凭据：可配额外的读写、只读与禁止目录。该策略仅对本地仓库会话生效，云端沙箱不适用；系统若无法强制，沙箱 shell 报错而不裸跑。功能默认关闭，需在项目设置开启或输入 /sandbox。【值得关注】沙箱回落到本地是本轮安全主线，默认关闭意味着防护靠团队开启。",
+    "sourceName": "GitHub Changelog",
+    "sourceUrl": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+    "publishedAt": "2026-09-23T16:00:00.000Z"
   }
 ]
