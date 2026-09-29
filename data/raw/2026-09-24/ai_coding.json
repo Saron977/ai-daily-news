@@ -1,0 +1,34 @@
+[
+  {
+    "title": "小米开源 MiMo-V2.6：1.02 万亿参数 Pro 版 AA 指数第一",
+    "summary": "9 月 22 日小米开源 MiMo-V2.6-Pro/Flash，Pro 是 1.02 万亿参数、420 亿激活的稀疏 MoE，AA 智能指数 46 分，压过 Kimi K3 的 44 分与 GLM-5.3 的 45 分，成为最高开源权重模型，API 仍是 3 元/6 元每百万 token。【值得关注】开源权重首次压过国产同侪，闭源靠榜单溢价的窗口收窄。",
+    "summaryFull": "9 月 22 日小米开源 MiMo-V2.6-Pro/Flash，Pro 是 1.02 万亿参数、420 亿激活的稀疏 MoE，AA 智能指数 46 分，压过 Kimi K3 的 44 分与 GLM-5.3 的 45 分，成为最高开源权重模型，API 仍是 3 元/6 元每百万 token。【值得关注】开源权重首次压过国产同侪，闭源靠榜单溢价的窗口收窄。",
+    "sourceName": "IT之家",
+    "sourceUrl": "https://www.ithome.com/0/100/5496.htm",
+    "publishedAt": "2026-09-21T23:05:00.000Z"
+  },
+  {
+    "title": "Claude Code 2.1.281：拒绝命令替换式 rm，可关署名",
+    "summary": "9 月 23 日 Anthropic 发布 Claude Code 2.1.281：跳过权限时，rm -rf \"$(pwd)\" 这类目标不固定的删除命令仍弹确认，静置 2 分钟即拒绝；settings.json 可用 attribution: false 关闭提交与 PR 署名，但旧版会漏读该文件。【值得关注】安全边界压到命令语义层，共享配置须先统一版本。",
+    "summaryFull": "9 月 23 日 Anthropic 发布 Claude Code 2.1.281：跳过权限时，rm -rf \"$(pwd)\" 这类目标不固定的删除命令仍弹确认，静置 2 分钟即拒绝；settings.json 可用 attribution: false 关闭提交与 PR 署名，但旧版会漏读该文件。【值得关注】安全边界压到命令语义层，共享配置须先统一版本。",
+    "sourceName": "GitHub Releases (anthropics/claude-code)",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.281",
+    "publishedAt": "2026-09-23T19:19:15.000Z"
+  },
+  {
+    "title": "Google Antigravity 2.17：/plan 先出计划再写代码",
+    "summary": "9 月 22 日谷歌发布 Antigravity 2.17.0，新增 /plan 命令，智能体先给出可改的计划再写代码，原 Agent 设置更名 Plan Review Policy。本次含改进 11 项、修复 10 项：规则独享 2 万 token 预算，不再挤掉技能与 MCP 工具；旧配置路径失效。【值得关注】竞争转向开工前的对齐成本，迁移属破坏性变更。",
+    "summaryFull": "9 月 22 日谷歌发布 Antigravity 2.17.0，新增 /plan 命令，智能体先给出可改的计划再写代码，原 Agent 设置更名 Plan Review Policy。本次含改进 11 项、修复 10 项：规则独享 2 万 token 预算，不再挤掉技能与 MCP 工具；旧配置路径失效。【值得关注】竞争转向开工前的对齐成本，迁移属破坏性变更。",
+    "sourceName": "Google Antigravity (官方更新日志)",
+    "sourceUrl": "https://antigravity.google/changelog",
+    "publishedAt": "2026-09-21T18:30:00.000Z"
+  },
+  {
+    "title": "GitHub Copilot 应用上线本地沙箱，默认关闭",
+    "summary": "9 月 23 日 GitHub 为 Copilot 应用推出本地沙箱预览，按项目限制文件系统、网络与凭据：可配额外的读写、只读与禁止目录。该策略仅对本地仓库会话生效，云端沙箱不适用；系统若无法强制，沙箱 shell 报错而不裸跑。功能默认关闭，需在项目设置开启或输入 /sandbox。【值得关注】沙箱回落到本地是本轮安全主线，默认关闭意味着防护靠团队开启。",
+    "summaryFull": "9 月 23 日 GitHub 为 Copilot 应用推出本地沙箱预览，按项目限制文件系统、网络与凭据：可配额外的读写、只读与禁止目录。该策略仅对本地仓库会话生效，云端沙箱不适用；系统若无法强制，沙箱 shell 报错而不裸跑。功能默认关闭，需在项目设置开启或输入 /sandbox。【值得关注】沙箱回落到本地是本轮安全主线，默认关闭意味着防护靠团队开启。",
+    "sourceName": "GitHub Changelog",
+    "sourceUrl": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app/",
+    "publishedAt": "2026-09-23T16:00:00.000Z"
+  }
+]
