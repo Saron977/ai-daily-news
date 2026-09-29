@@ -84,6 +84,18 @@ python3 tools/readurl.py "<url>" --grep "关键词"             # 核实来源
 | `companies.json` | `{"anthropic": […4], "openai": […4]}` | Anthropic（A社）/ OpenAI |
 | `highlights.json` | 数组（可选） | 「📌 本期主线」卡片 |
 
+### ⚠️ 拼装会覆盖当日数据文件
+
+`assemble` 无条件以 `data/raw/` 为准重写 `data/<date>.json`。而人工审校（跨板块去重、改标题、
+换来源）通常直接改 `data/<date>.json`。因此：
+
+- **`daily.sh` 默认不再重拼已存在的 `data/<date>.json`**，需要重建时显式给 `REASSEMBLE=1`
+- 审校期间改的是 `data/raw/*.json` 时，注意**检索方可能在你改完之后再次写入同一个文件**——
+  2026-09-29 期真的踩过一次：研究员在我改好标题之后重写了 `companies.json`，
+  随后 `publish.sh` 重拼时把标题覆盖回旧版并发布了出去
+- 稳妥顺序：**等所有检索产出都落地（且检索方已结束）→ 拼装 → 审校 → 发布**。
+  发布后若又收到检索方补写，重新拼装并复核一次再提交
+
 
 ## 数据格式
 
