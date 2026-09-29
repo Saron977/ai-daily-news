@@ -1,7 +1,7 @@
 {
   "anthropic": [
     {
-      "title": "Anthropic 发布 Sonnet 5.5：提速 30%，成本降 30%",
+      "title": "Anthropic 发 Sonnet 5.5：Terminal-Bench 反超 Opus",
       "summary": "Anthropic 9 月 28 日发布 Sonnet 5.5，比 Sonnet 5 快 30%、多数任务成本最多低 30%，每百万 token 定价 2 美元起。它在 Terminal-Bench 4.0 上得 70.6%，反超旗舰 Opus 5.5 的 66.4%。【值得关注】一周连发两款，Anthropic 呼吁减速的同时以性价比施压 OpenAI。",
       "summaryFull": "Anthropic 9 月 28 日发布 Sonnet 5.5，比 Sonnet 5 快 30%、多数任务成本最多低 30%，每百万 token 定价 2 美元起。它在 Terminal-Bench 4.0 上得 70.6%，反超旗舰 Opus 5.5 的 66.4%。【值得关注】一周连发两款，Anthropic 呼吁减速的同时以性价比施压 OpenAI。",
       "sourceName": "The Next Web",
