@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Claude Code 2.1.284：Sonnet 5.5 成默认模型",
+    "summary": "9月28日 Claude Code 2.1.284 发布，Sonnet 5.5 成为默认模型，$2/$10 每百万 token。新版在状态栏与 /usage 显示网关花费，Auto mode 新增“下次再问”，并可 /mcp reconnect all。【值得关注】成本可视化比跑分更能左右团队选型，按 token 计费者应重估默认档位。",
+    "summaryFull": "9月28日 Claude Code 2.1.284 发布，Sonnet 5.5 成为默认模型，$2/$10 每百万 token。新版在状态栏与 /usage 显示网关花费，Auto mode 新增“下次再问”，并可 /mcp reconnect all。【值得关注】成本可视化比跑分更能左右团队选型，按 token 计费者应重估默认档位。",
+    "sourceName": "Anthropic GitHub Releases",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
+    "publishedAt": "2026-09-28T18:01:46.000Z"
+  },
+  {
+    "title": "OpenAI Codex CLI 0.158.0 转正：审批默认开启",
+    "summary": "9月28日 OpenAI 发布 Codex CLI 0.158.0：提权命令的终端输入审批默认开启，并支持用 codex mcp add --oauth-client-secret 接入需预注册 OAuth 密钥的 MCP 服务器。【值得关注】审批默认值转向保守、MCP 密钥接入标准化，企业应重查智能体的凭据与审批策略。",
+    "summaryFull": "9月28日 OpenAI 发布 Codex CLI 0.158.0：提权命令的终端输入审批默认开启，并支持用 codex mcp add --oauth-client-secret 接入需预注册 OAuth 密钥的 MCP 服务器。【值得关注】审批默认值转向保守、MCP 密钥接入标准化，企业应重查智能体的凭据与审批策略。",
+    "sourceName": "OpenAI GitHub Releases",
+    "sourceUrl": "https://github.com/openai/codex/releases/tag/rust-v0.158.0",
+    "publishedAt": "2026-09-28T05:10:36.000Z"
+  },
+  {
+    "title": "GitHub Copilot 接入 Sonnet 5.5，全付费档可用",
+    "summary": "9月28日 GitHub 宣布 Claude Sonnet 5.5 在 Copilot 全面可用，覆盖 Pro、Max、Business 与 Enterprise，VS Code、JetBrains、Xcode 及 Copilot CLI 均可选择，按用量与厂商目录价计费。【值得关注】多模型汇入同一订阅，选型关键正从“谁更聪明”转向单位任务成本。",
+    "summaryFull": "9月28日 GitHub 宣布 Claude Sonnet 5.5 在 Copilot 全面可用，覆盖 Pro、Max、Business 与 Enterprise，VS Code、JetBrains、Xcode 及 Copilot CLI 均可选择，按用量与厂商目录价计费。【值得关注】多模型汇入同一订阅，选型关键正从“谁更聪明”转向单位任务成本。",
+    "sourceName": "GitHub Changelog",
+    "sourceUrl": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/",
+    "publishedAt": "2026-09-28T08:00:00.000Z"
+  },
+  {
+    "title": "MiniMax M3.1-Flash-Preview 上线自家编码平台",
+    "summary": "9/28 MiniMax 最新文本模型 M3.1-Flash-Preview 上线其编码平台 MiniMax Code（上海证券报报道）。这是本周继小米 MiMo-V2.6 之后，又一家国产厂商把新模型直接落到自家编码工具而非只开 API。【值得关注】国产厂商正把「模型+编码 agent」打包成一体交付，用工具链绑定开发者；对只提供 API 的厂商，这会让模型能力更难单独定价，也更容易被替换。",
+    "sourceName": "上海证券报·中国证券网",
+    "sourceUrl": "https://www.cnstock.com/commonDetail/796059",
+    "publishedAt": "2026-09-28T05:44:00.000Z",
+    "summaryFull": "9/28 MiniMax 最新文本模型 M3.1-Flash-Preview 上线其编码平台 MiniMax Code（上海证券报报道）。这是本周继小米 MiMo-V2.6 之后，又一家国产厂商把新模型直接落到自家编码工具而非只开 API。【值得关注】国产厂商正把「模型+编码 agent」打包成一体交付，用工具链绑定开发者；对只提供 API 的厂商，这会让模型能力更难单独定价，也更容易被替换。"
+  }
+]

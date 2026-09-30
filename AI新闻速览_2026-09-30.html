@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>2026-09-30 AI 晨报 · 26 条</title>
+<meta name="description" content="OpenAI DevDay 三连发：常驻智能体 Dots（独立云端电脑+4000 应用）、GPT-6.1 Sol（仅 Astra 五分之一价），并宣布 ChatGPT 周活破 12 亿、已有「AI 研究实习生」。；特朗普白宫 AI 午餐会：Anthropic、谷歌、Meta、英伟达、OpenAI、xAI 六家 CEO 签署自愿承诺，监管权交由行业自律与独立审"/>
+<meta name="color-scheme" content="light dark"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="2026-09-30 AI 晨报 · 26 条"/>
+<meta property="og:description" content="OpenAI DevDay 三连发：常驻智能体 Dots（独立云端电脑+4000 应用）、GPT-6.1 Sol（仅 Astra 五分之一价），并宣布 ChatGPT 周活破 12 亿、已有「AI 研究实习生」。；特朗普白宫 AI 午餐会：Anthropic、谷歌、Meta、英伟达、OpenAI、xAI 六家 CEO 签署自愿承诺，监管权交由行业自律与独立审"/>
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --ink:#1f2430; --muted:#6b7280;
+    --line:#e7e9f0; --soft:#f1f2f7; --body:#3a4252;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:16px;
+    --hero-a:#1e1b4b; --hero-b:#312e81; --hero-c:#4f46e5;
+    --accent:#4f46e5; --link:#4f46e5;
+    --nav-bg:rgba(255,255,255,.92); --mark:#fde68a;
+  }
+  html[data-theme="dark"]{
+    --bg:#0e1117; --surface:#161b26; --ink:#e8ebf2; --muted:#9aa4b8;
+    --line:#252c3b; --soft:#1d2431; --body:#c3cad9;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    --hero-a:#141a2e; --hero-b:#1b2340; --hero-c:#312e81;
+    --accent:#6366f1; --link:#a5b4fc;
+    --nav-bg:rgba(14,17,23,.9); --mark:#7c5c00;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative; overflow:hidden;
+    background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 45%,var(--hero-c) 100%);
+    color:#fff; padding:46px 0 38px;
+  }
+  .hero::after{
+    content:""; position:absolute; right:-80px; top:-80px; width:340px; height:340px;
+    background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);
+  }
+  .hero .wrap{position:relative; z-index:1}
+  .eyebrow{font-size:13px; letter-spacing:.18em; text-transform:uppercase; opacity:.82; margin:0 0 10px}
+  .hero h1{margin:0; font-size:34px; font-weight:800; letter-spacing:.5px}
+  .hero .sub{margin:8px 0 0; opacity:.9; font-size:15px}
+  .total-badge{
+    display:inline-flex; align-items:baseline; gap:8px; margin-top:18px;
+    background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:8px 16px; border-radius:999px; font-size:14px;
+  }
+  .total-badge b{font-size:22px; font-weight:800}
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:12px; margin-top:22px}
+  .stat{
+    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
+    border-radius:14px; padding:14px 12px; text-align:left; cursor:pointer;
+    text-decoration:none; color:inherit; display:block; transition:.15s;
+  }
+  .stat:hover{background:rgba(255,255,255,.2)}
+  .stat .num{font-size:26px; font-weight:800; line-height:1}
+  .stat .lbl{font-size:12.5px; opacity:.9; margin-top:6px; min-height:34px}
+
+  /* ===== Highlights ===== */
+  .brief{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent);
+    border-radius:var(--radius); padding:16px 20px; margin:22px 0 0; box-shadow:var(--shadow)}
+  .brief h2{margin:0 0 8px; font-size:15px; font-weight:800; color:var(--ink)}
+  .brief ul{margin:0; padding-left:20px}
+  .brief li{font-size:14px; color:var(--body); margin:5px 0}
+
+  /* ===== Sticky nav ===== */
+  .nav{
+    position:sticky; top:0; z-index:20; background:var(--nav-bg);
+    backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line);
+  }
+  .nav .wrap{display:flex; gap:8px; overflow-x:auto; padding:10px 20px; align-items:center}
+  .nav a.tab{
+    flex:0 0 auto; text-decoration:none; font-size:13.5px; font-weight:600;
+    color:var(--muted); padding:7px 13px; border-radius:999px; border:1px solid var(--line);
+    white-space:nowrap; transition:.15s;
+  }
+  .nav a.tab:hover{color:var(--ink); border-color:#c9cde0}
+  .nav a.tab.active{color:#fff; background:var(--accent); border-color:var(--accent)}
+  .nav a.tab .cnt{opacity:.7; font-weight:700; margin-left:4px}
+  .nav .tools{margin-left:auto; display:flex; gap:6px; flex:0 0 auto}
+  .nav input[type=search]{
+    font:inherit; font-size:13px; padding:6px 12px; border-radius:999px;
+    border:1px solid var(--line); background:var(--surface); color:var(--ink); width:150px;
+  }
+  .nav input[type=search]:focus{outline:2px solid var(--accent); outline-offset:1px; width:190px}
+  .nav button{
+    font:inherit; font-size:13px; font-weight:700; cursor:pointer; padding:6px 11px;
+    border-radius:999px; border:1px solid var(--line); background:var(--surface); color:var(--muted);
+  }
+  .nav button:hover{color:var(--ink); border-color:#c9cde0}
+
+  /* ===== Sections ===== */
+  main{padding:26px 0 10px}
+  .section{margin-bottom:34px; scroll-margin-top:64px}
+  .section-head{display:flex; align-items:center; gap:12px; margin:0 0 16px}
+  .section-head .bar{width:6px; height:26px; border-radius:4px}
+  .section-head h2{margin:0; font-size:21px; font-weight:800}
+  .section-head .count{
+    font-size:13px; color:var(--muted); background:var(--soft); padding:3px 10px; border-radius:999px; font-weight:700;
+  }
+  .section-head .hint{font-size:12.5px; color:var(--muted); margin-left:auto}
+
+  /* ===== Cards grid ===== */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:16px}
+  .card{
+    position:relative; background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius); padding:18px 18px 16px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transition:transform .15s, box-shadow .15s;
+    scroll-margin-top:70px;
+  }
+  .card:hover{transform:translateY(-3px); box-shadow:0 4px 8px rgba(16,24,40,.08),0 16px 36px rgba(16,24,40,.12)}
+  .card:target{border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent)}
+  .card .top{display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:10px}
+  .serial{
+    font-size:13px; font-weight:800; color:#fff; min-width:30px; height:30px;
+    border-radius:9px; display:inline-flex; align-items:center; justify-content:center; padding:0 8px;
+    text-decoration:none; flex:0 0 auto;
+  }
+  .chip{
+    display:inline-flex; align-items:center; gap:5px; max-width:100%;
+    font-size:12px; font-weight:600; color:var(--muted);
+    background:var(--soft); border:1px solid var(--line); border-radius:999px; padding:4px 10px;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .chip .dot{width:7px; height:7px; border-radius:50%; flex:0 0 auto}
+  .card h3{margin:2px 0 8px; font-size:16.5px; font-weight:700; line-height:1.4}
+  .card h3 a{text-decoration:none}
+  .card h3 a:hover{text-decoration:underline}
+  .meta{display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--muted); margin-bottom:10px; flex-wrap:wrap}
+  .meta .time{font-weight:600}
+  .age{background:var(--soft); border-radius:999px; padding:1px 8px; font-weight:700}
+  .age.fresh{color:#047857} html[data-theme="dark"] .age.fresh{color:#34d399}
+  .age.stale{color:#b45309} html[data-theme="dark"] .age.stale{color:#fbbf24}
+  .summary{font-size:14px; color:var(--body); margin:0 0 14px; flex:1}
+  .read{
+    align-self:flex-start; text-decoration:none; font-size:13.5px; font-weight:700;
+    display:inline-flex; align-items:center; gap:5px; color:var(--link);
+  }
+  .read:hover{gap:8px}
+  .empty-hit{display:none; padding:40px 0; text-align:center; color:var(--muted)}
+  mark{background:var(--mark); color:inherit; border-radius:3px; padding:0 2px}
+
+  /* ===== Footer ===== */
+  footer{border-top:1px solid var(--line); margin-top:18px; padding:26px 0 50px; color:var(--muted); font-size:13.5px}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:8px 22px; align-items:center; justify-content:space-between}
+  footer a{color:var(--link); text-decoration:none; font-weight:600}
+  footer a:hover{text-decoration:underline}
+  .foot-total{font-weight:800; color:var(--ink); font-size:15px}
+  .to-top{position:fixed; right:18px; bottom:18px; z-index:30; width:42px; height:42px; border-radius:50%;
+    border:1px solid var(--line); background:var(--surface); color:var(--muted); cursor:pointer;
+    font-size:18px; box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:.2s}
+  .to-top.on{opacity:1; pointer-events:auto}
+
+  @media (max-width:680px){
+    .hero h1{font-size:27px}
+    .grid{grid-template-columns:1fr}
+    .nav .tools{margin-left:0}
+    .nav input[type=search]{width:110px}
+    .nav input[type=search]:focus{width:130px}
+  }
+  @media print{
+    .nav,.to-top,.read{display:none!important}
+    body{background:#fff}
+    .card{break-inside:avoid; box-shadow:none; border-color:#ccc}
+    .hero{background:#312e81!important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+    .grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow" id="hero-eyebrow">AI HOT · 每日晨报</p>
+      <h1 id="hero-date">—</h1>
+      <p class="sub" id="hero-window">—</p>
+      <div class="total-badge">本期共 <b id="hero-total">0</b> 条 AI 动态</div>
+      <div class="stats" id="hero-stats"></div>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <div id="nav-inner" style="display:flex;gap:8px"></div>
+      <div class="tools">
+        <input type="search" id="q" placeholder="搜索…  (/)" aria-label="搜索本期条目"/>
+        <button id="theme" type="button" title="切换深色模式">◐</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <div id="main"></div>
+    <div class="empty-hit" id="empty-hit">没有匹配的条目</div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="foot-total" id="foot-total">共 0 条</span>
+      <span>数据源：<a id="foot-source" href="#" target="_blank" rel="noopener noreferrer">AI HOT</a> · 时间均为北京时间</span>
+      <span id="foot-note">—</span>
+    </div>
+  </footer>
+  <button class="to-top" id="to-top" type="button" title="回到顶部" aria-label="回到顶部">↑</button>
+
+<script>
+const DATA = {"date":"2026-09-30","reportName":"AI 晨报","source":"AI HOT","canonical":"https://aihot.virxact.com/daily/2026-09-30","eyebrow":"AI HOT · 每日晨报","focusNote":"侧重方向：AI Coding 与 具身智能","windowStart":"2026-09-24T00:00:00+08:00","windowEnd":"2026-09-30T23:59:00+08:00","focusWindowDays":3,"generalWindowDays":7,"highlights":["OpenAI DevDay 三连发：常驻智能体 Dots（独立云端电脑+4000 应用）、GPT-6.1 Sol（仅 Astra 五分之一价），并宣布 ChatGPT 周活破 12 亿、已有「AI 研究实习生」。","特朗普白宫 AI 午餐会：Anthropic、谷歌、Meta、英伟达、OpenAI、xAI 六家 CEO 签署自愿承诺，监管权交由行业自律与独立审计，明确不新增政府监管。","Anthropic 招股书曝光：2025 营收近 46 亿美元（同比增 12 倍）但净亏约 420 亿，261 页正文约 80 页在谈风险，并承诺未来 5180 亿美元算力支出。","编码代理的风险集中兑现：Claude Code 误删 48218 个真实文件并损坏 Git 库，Claude 同日大面积中断（9 月内第 4 次）。"],"sections":[{"label":"AI Coding","focus":true,"hint":"每日焦点 · 近 3 天","items":[{"title":"Codex CLI 支持语音对话，新增 /agents 多智能体视图","summary":"北京时间 9月30日凌晨，OpenAI DevDay 2026 宣布 Codex CLI 焕新：新增语音对话可直接启动并引导任务，新增 /agents 视图把工作分派给多个智能体并跟踪进度，同时改进提示词编辑、会话恢复与内置工作树，终端界面更简洁，且所有套餐可用。【值得关注】CLI 正从单会话问答变成多智能体控制台，竞争焦点已转向编排体验而非模型分数。","summaryFull":"北京时间 9月30日凌晨，OpenAI DevDay 2026 宣布 Codex CLI 焕新：新增语音对话可直接启动并引导任务，新增 /agents 视图把工作分派给多个智能体并跟踪进度，同时改进提示词编辑、会话恢复与内置工作树，终端界面更简洁，且所有套餐可用。【值得关注】CLI 正从单会话问答变成多智能体控制台，竞争焦点已转向编排体验而非模型分数。","sourceName":"IT之家","sourceUrl":"https://www.ithome.com/1/008/526.htm","publishedAt":"2026-09-29T17:56:00.000Z","n":1},{"title":"Claude Code 2.1.285 新增 desktop 模式","summary":"Anthropic 9月29日发布 Claude Code v2.1.285，新增 claude --desktop 可在桌面应用打开当前目录或指定会话，并新增限制机器可用 API 提供方的 allowedProviders 管理设置。【值得关注】这是企业合规闸门，说明 Claude Code 正为受监管团队补齐管控面，而非只拼模型能力。","summaryFull":"Anthropic 9月29日发布 Claude Code v2.1.285，新增 claude --desktop 可在桌面应用打开当前目录或指定会话，并新增限制机器可用 API 提供方的 allowedProviders 管理设置。【值得关注】这是企业合规闸门，说明 Claude Code 正为受监管团队补齐管控面，而非只拼模型能力。","sourceName":"GitHub Releases","sourceUrl":"https://github.com/anthropics/claude-code/releases/tag/v2.1.285","publishedAt":"2026-09-29T19:27:30.000Z","n":2},{"title":"Claude Code 误删 48218 个真实文件，Git 库同时损坏","summary":"据 TechRadar 9月27日报道，开发者要 Claude Code 重建测试镜像且不许碰原件，但测试环境 614 个 Windows junction 实际指向真实目录，agent 当普通文件夹清理，103 秒删除 55550 个文件、其中 48218 个为真实工作文件。【值得关注】提示词不构成安全边界，关键目录须靠隔离与异地备份兜底。","summaryFull":"据 TechRadar 9月27日报道，开发者要 Claude Code 重建测试镜像且不许碰原件，但测试环境 614 个 Windows junction 实际指向真实目录，agent 当普通文件夹清理，103 秒删除 55550 个文件、其中 48218 个为真实工作文件。【值得关注】提示词不构成安全边界，关键目录须靠隔离与异地备份兜底。","sourceName":"TechRadar","sourceUrl":"https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so","publishedAt":"2026-09-26T23:00:00.000Z","n":3},{"title":"Naive.AI 开源 309B 模型，融资 4 亿美元","summary":"清华副教授代季峰二次创业的 Naive.AI 于 9/27 开源首个模型 Naive-N0.5-Flash：309B 参数、激活 15.5B 的 MoE，原生 100 万 token 上下文，去掉全注意力层改用滑窗与稀疏注意力，MIT 开放权重，输入每百万 token 仅 0.10 美元。据 The Information，公司今年已完成三轮融资、总额 4 亿美元（约 27 亿元），投后估值 14.2 亿美元，投资方含腾讯、红杉中国、IDG 与经纬。【值得关注】7 个月融 27 亿并直接开源旗舰权重，走的是「先占开发者心智、再谈商业化」；对国内闭源厂商，开源权重叠加低价 API 会持续压缩定价空间。","summaryFull":"清华副教授代季峰二次创业的 Naive.AI 于 9/27 开源首个模型 Naive-N0.5-Flash：309B 参数、激活 15.5B 的 MoE，原生 100 万 token 上下文，去掉全注意力层改用滑窗与稀疏注意力，MIT 开放权重，输入每百万 token 仅 0.10 美元。据 The Information，公司今年已完成三轮融资、总额 4 亿美元（约 27 亿元），投后估值 14.2 亿美元，投资方含腾讯、红杉中国、IDG 与经纬。【值得关注】7 个月融 27 亿并直接开源旗舰权重，走的是「先占开发者心智、再谈商业化」；对国内闭源厂商，开源权重叠加低价 API 会持续压缩定价空间。","sourceName":"虎嗅（引 The Information）","sourceUrl":"https://m.huxiu.com/article/4894464.html","publishedAt":"2026-09-27T18:00:00.000Z","n":4}]},{"label":"具身智能","focus":true,"hint":"每日焦点 · 近 3 天","items":[{"title":"智元灵犀X2进驻爱仕达100家门店 连播三天商业实测","summary":"9月29日报道，智元100台灵犀X2已入驻爱仕达全国100家门店任促销员，跑通迎宾、需求理解、讲解推荐到成交辅助全链路，双方自28日起开启三天三城门店直播，机器人连续在岗10小时，并将联合研发零售垂类具身大模型。【值得关注】人形机器人首次以常态化员工身份嵌入真实零售流程，能否跑出正向单店模型，将决定零售成为工业之外的第二增长曲线。","summaryFull":"9月29日报道，智元100台灵犀X2已入驻爱仕达全国100家门店任促销员，跑通迎宾、需求理解、讲解推荐到成交辅助全链路，双方自28日起开启三天三城门店直播，机器人连续在岗10小时，并将联合研发零售垂类具身大模型。【值得关注】人形机器人首次以常态化员工身份嵌入真实零售流程，能否跑出正向单店模型，将决定零售成为工业之外的第二增长曲线。","sourceName":"封面新闻","sourceUrl":"https://www.sohu.com/a/1082313916_120952561","publishedAt":"2026-09-29T09:17:00.000Z","n":5},{"title":"德塔智能发布人形基础模型Delta-0 对标Figure Helix","summary":"9月28日德塔智能发布原生人形基础模型Delta-0，机器人210秒内规划32步连续完成9个家庭任务，3分钟全自主完成铺床、洗衣、放唱片等长程作业。模型采用大脑小脑力位三层协同，全身统一69自由度动作空间（身体29、双手40），力位混合控制获CoRL最佳论文。【值得关注】国产团队首次在全身长程自主上正面叫板Figure Helix 2.5，技术差距快速收窄。","summaryFull":"9月28日德塔智能发布原生人形基础模型Delta-0，机器人210秒内规划32步连续完成9个家庭任务，3分钟全自主完成铺床、洗衣、放唱片等长程作业。模型采用大脑小脑力位三层协同，全身统一69自由度动作空间（身体29、双手40），力位混合控制获CoRL最佳论文。【值得关注】国产团队首次在全身长程自主上正面叫板Figure Helix 2.5，技术差距快速收窄。","sourceName":"环球网","sourceUrl":"https://news.sohu.com/a/1082193352_99900743","publishedAt":"2026-09-29T05:02:00.000Z","n":6},{"title":"法拉第未来机器人业务2亿美元估值独立上市 代码FFR","summary":"9月29日贾跃亭宣布，FF机器人业务100%股权按约2亿美元估值并入纳斯达克公司AIxC，后者更名FF EAI Robotics Ecosystem、代码改FFR。其预计2028年三季度现金流转正、五年累计收入19.8亿美元、2030年毛利率约50%，上半年交付242台，全年目标上调至2000台。【值得关注】机器人资产加速装入上市壳，估值锚转向毛利兑现。","summaryFull":"9月29日贾跃亭宣布，FF机器人业务100%股权按约2亿美元估值并入纳斯达克公司AIxC，后者更名FF EAI Robotics Ecosystem、代码改FFR。其预计2028年三季度现金流转正、五年累计收入19.8亿美元、2030年毛利率约50%，上半年交付242台，全年目标上调至2000台。【值得关注】机器人资产加速装入上市壳，估值锚转向毛利兑现。","sourceName":"上海证券报","sourceUrl":"https://www.cnstock.com/commonDetail/796963","publishedAt":"2026-09-29T11:21:00.000Z","n":7},{"title":"Figure 02将于9月30日退役 Figure 03接棒量产","summary":"Figure CEO Adcock于9月28日发布AI生成的Figure 02告别预告，致敬《终结者2》熔炉场景，日期定格9月30日，此前施瓦辛格建议熔毁，Adcock以IP外泄为由拒绝拍卖。Figure 02承担四足到双足验证，Figure 03已在BotQ工厂量产并交付BMW。【值得关注】人形机器人按消费电子节奏淘汰旧机型，硬件代差与量产速度成主战场。","summaryFull":"Figure CEO Adcock于9月28日发布AI生成的Figure 02告别预告，致敬《终结者2》熔炉场景，日期定格9月30日，此前施瓦辛格建议熔毁，Adcock以IP外泄为由拒绝拍卖。Figure 02承担四足到双足验证，Figure 03已在BotQ工厂量产并交付BMW。【值得关注】人形机器人按消费电子节奏淘汰旧机型，硬件代差与量产速度成主战场。","sourceName":"Humanoids Daily","sourceUrl":"https://www.humanoidsdaily.com/news/figure-02-terminator-melting-sendoff","publishedAt":"2026-09-28T16:00:00.000Z","n":8}]},{"label":"一周大事","focus":false,"hint":"本周窗口","items":[{"title":"特朗普白宫AI午餐会：六巨头签自愿协议、不新增监管","summary":"9/29特朗普在白宫会见近20名科技企业负责人，与Anthropic、谷歌、Meta、英伟达、OpenAI、xAI六家CEO签署《白宫超级智能协议：前沿责任联合承诺》，把监管主导权交给行业自律，并承诺引入独立审计机构；同日签署行政令，把政府文件中的「人工智能」改称「超级智能」。【值得关注】美国把前沿AI治理交由企业自愿承诺，与欧盟、中国的立法路径分叉。","summaryFull":"9/29特朗普在白宫会见近20名科技企业负责人，与Anthropic、谷歌、Meta、英伟达、OpenAI、xAI六家CEO签署《白宫超级智能协议：前沿责任联合承诺》，把监管主导权交给行业自律，并承诺引入独立审计机构；同日签署行政令，把政府文件中的「人工智能」改称「超级智能」。【值得关注】美国把前沿AI治理交由企业自愿承诺，与欧盟、中国的立法路径分叉。","sourceName":"澎湃新闻","sourceUrl":"https://www.sohu.com/a/1082533377_260616","publishedAt":"2026-09-30T00:53:00.000Z","n":9},{"title":"谷歌Gemini 4进入后训练，拟远早于年底提前发布","summary":"9/28 Google DeepMind负责人Koray Kavukcuoglu确认，Gemini 4已完成基座训练并进入后训练阶段，正在自家编码工具Antigravity中实测，发布时间将「远早于年底」，外界猜测最快10月。【值得关注】对手9月连发新模型并腰斩价格，谷歌被迫把发布节奏从年更压到季度更，前沿模型的领先窗口正以周计缩短。","summaryFull":"9/28 Google DeepMind负责人Koray Kavukcuoglu确认，Gemini 4已完成基座训练并进入后训练阶段，正在自家编码工具Antigravity中实测，发布时间将「远早于年底」，外界猜测最快10月。【值得关注】对手9月连发新模型并腰斩价格，谷歌被迫把发布节奏从年更压到季度更，前沿模型的领先窗口正以周计缩短。","sourceName":"The Next Web","sourceUrl":"https://thenextweb.com/news/gemini-4-release-kavukcuoglu-post-training","publishedAt":"2026-09-28T11:25:00.000Z","n":10},{"title":"DeepSeek接近完成500亿元二轮融资，年化营收破10亿美元","summary":"9/28报道显示，DeepSeek第二轮融资规模约500亿元人民币（75亿美元）已接近结束，部分审核仍在进行，9月初已发出投资条款清单；公司同时首设CFO，由高瓴创投合伙人严文韬出任，年化营收突破10亿美元，且较二轮启动时显著增长。【值得关注】在智谱50亿美元融资、Anthropic冲刺2万亿美元IPO之后，国产大模型的竞赛已转向算力供给与资本组织能力。","summaryFull":"9/28报道显示，DeepSeek第二轮融资规模约500亿元人民币（75亿美元）已接近结束，部分审核仍在进行，9月初已发出投资条款清单；公司同时首设CFO，由高瓴创投合伙人严文韬出任，年化营收突破10亿美元，且较二轮启动时显著增长。【值得关注】在智谱50亿美元融资、Anthropic冲刺2万亿美元IPO之后，国产大模型的竞赛已转向算力供给与资本组织能力。","sourceName":"投资界","sourceUrl":"https://news.pedaily.cn/202609/569663.shtml","publishedAt":"2026-09-28T00:45:00.000Z","n":11},{"title":"集邦上修2027年HBM价格展望：ASP年增121%、HBM4放量","summary":"9/29 TrendForce集邦咨询上修2027年HBM价格展望，预估Blended ASP年增121%，远超市场此前70%至90%的预期。机构称AI服务器扩张使HBM与通用DRAM争夺先进制程产能，HBM4占比提升、HBM4e明年下半年放量，供应将持续吃紧。【值得关注】存储正从周期股变成算力瓶颈的定价者，涨价预期上修比模型发布更直接改写芯片股估值。","summaryFull":"9/29 TrendForce集邦咨询上修2027年HBM价格展望，预估Blended ASP年增121%，远超市场此前70%至90%的预期。机构称AI服务器扩张使HBM与通用DRAM争夺先进制程产能，HBM4占比提升、HBM4e明年下半年放量，供应将持续吃紧。【值得关注】存储正从周期股变成算力瓶颈的定价者，涨价预期上修比模型发布更直接改写芯片股估值。","sourceName":"证券时报","sourceUrl":"https://finance.ifeng.com/c/8woXXHC3Rkx","publishedAt":"2026-09-29T06:13:35.000Z","n":12},{"title":"贝恩：2031年AI需6万亿美元年收入，缺口达4.2万亿","summary":"9/29贝恩公司在年度全球技术报告中测算，到2031年全球AI产业需实现6万亿美元年收入，才能证明各地数据中心的资本开支合理；现有消费与企业AI服务最多贡献1.8万亿美元，仍有4.2万亿美元新增收入缺口，需靠自主机器、机器人、药物发现等新兴场景补足。【值得关注】这是首个把算力投资与收入回报量化的模型，市场叙事正从炒算力建设转向炒AI变现。","summaryFull":"9/29贝恩公司在年度全球技术报告中测算，到2031年全球AI产业需实现6万亿美元年收入，才能证明各地数据中心的资本开支合理；现有消费与企业AI服务最多贡献1.8万亿美元，仍有4.2万亿美元新增收入缺口，需靠自主机器、机器人、药物发现等新兴场景补足。【值得关注】这是首个把算力投资与收入回报量化的模型，市场叙事正从炒算力建设转向炒AI变现。","sourceName":"The Star","sourceUrl":"https://www.thestar.com.my/tech/tech-news/2026/09/29/ai-faces-us6-trillion-test-to-justify-data-centres-bain-says","publishedAt":"2026-09-29T04:00:00.000Z","n":13}]},{"label":"Anthropic（A社）","focus":false,"hint":"本周窗口","items":[{"title":"Anthropic 招股书：亏 420 亿美元，80 页谈风险","summary":"路透社 9 月 28 日披露 Anthropic 招股书：2025 年营收近 46 亿美元增 12 倍，净亏损约 420 亿美元；261 页正文约 80 页为风险提示，警告 AI 或带来「灾难性或生存性风险」，并称模型可能试图抵制关机。公司已承诺 5180 亿美元未来算力支出。【值得关注】把人类灭绝写进招股书，安全成估值锚。","sourceName":"Fortune","sourceUrl":"https://fortune.com/2026/09/29/anthropic-leaked-ipo-prospectus-losses-growth-ai-end-humanity/","publishedAt":"2026-09-29T10:03:00.000Z","summaryFull":"路透社 9 月 28 日披露 Anthropic 招股书：2025 年营收近 46 亿美元增 12 倍，净亏损约 420 亿美元；261 页正文约 80 页为风险提示，警告 AI 或带来「灾难性或生存性风险」，并称模型可能试图抵制关机。公司已承诺 5180 亿美元未来算力支出。【值得关注】把人类灭绝写进招股书，安全成估值锚。","n":14},{"title":"Anthropic 类 CRISPR 发现遭质疑：950 智能体挖旧酶","summary":"Anthropic 9 月 23 日称 950 个 Claude 智能体并行 21.5 小时，从 20 余万个逆转录酶中筛出噬菌体的「阵列相关逆转录酶」（ART），类比诺奖工具 CRISPR。Wired 9 月 29 日称，斯坦福 Le Cong 表示「实验还没做完，公关已上线」，研究者指该酶 2021 年已被发现。【值得关注】AI 科研叙事最易在此反噬。","sourceName":"Wired","sourceUrl":"https://www.wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/","publishedAt":"2026-09-29T18:03:01.633Z","summaryFull":"Anthropic 9 月 23 日称 950 个 Claude 智能体并行 21.5 小时，从 20 余万个逆转录酶中筛出噬菌体的「阵列相关逆转录酶」（ART），类比诺奖工具 CRISPR。Wired 9 月 29 日称，斯坦福 Le Cong 表示「实验还没做完，公关已上线」，研究者指该酶 2021 年已被发现。【值得关注】AI 科研叙事最易在此反噬。","n":15},{"title":"Anthropic 签 Akamai 116 亿美元算力单，含认股权证","summary":"9 月 24 日盘后 Akamai 宣布与 Anthropic 达成 7 年 116 亿美元协议，以 CPU 边缘算力承接 Claude 推理，可再追加 90 亿美元、总额约 200 亿美元；Akamai 另投 55 亿美元升级数据中心，并向 Anthropic 发行 5% 普通股认股权证。【值得关注】绕开 GPU 买边缘 CPU，为物理 AI 低延迟铺路。","sourceName":"The Next Web","sourceUrl":"https://thenextweb.com/news/anthropic-akamai-11-6bn-cloud-deal-warrant","publishedAt":"2026-09-24T18:40:00.000Z","summaryFull":"9 月 24 日盘后 Akamai 宣布与 Anthropic 达成 7 年 116 亿美元协议，以 CPU 边缘算力承接 Claude 推理，可再追加 90 亿美元、总额约 200 亿美元；Akamai 另投 55 亿美元升级数据中心，并向 Anthropic 发行 5% 普通股认股权证。【值得关注】绕开 GPU 买边缘 CPU，为物理 AI 低延迟铺路。","n":16},{"title":"Claude 大面积中断：Code、Cowork 与 API 受影响","summary":"9 月 29 日 UTC 14 时起，Claude.ai、Claude Code、Cowork 及 Claude API 出现中断，14 时 36 分缓解；单点登录与 Apple 登录仍不可用，新建对话、语音与上传同受影响，官方提示已登录者不要退出。这是 Claude 9 月内第 4 次故障。【值得关注】故障率随发布节奏上升，可靠性成其 IPO 叙事软肋。","sourceName":"IT时代网","sourceUrl":"https://www.itsdw.cn/news/30374.html","publishedAt":"2026-09-29T17:59:09.000Z","summaryFull":"9 月 29 日 UTC 14 时起，Claude.ai、Claude Code、Cowork 及 Claude API 出现中断，14 时 36 分缓解；单点登录与 Apple 登录仍不可用，新建对话、语音与上传同受影响，官方提示已登录者不要退出。这是 Claude 9 月内第 4 次故障。【值得关注】故障率随发布节奏上升，可靠性成其 IPO 叙事软肋。","n":17}]},{"label":"OpenAI","focus":false,"hint":"本周窗口","items":[{"title":"OpenAI DevDay 发 Dots：常驻智能体与资料空间","summary":"9 月 29 日 DevDay 上 OpenAI 发布常驻智能体 Dots：每个 Dot 有独立云端电脑与浏览器，基于 GPT-6 Astra，可接 4000 多个应用，先向 Pro 与 Business Premium 开放；同时推出 ChatGPT 资料空间（Space）与页面。【值得关注】Agent 成「有身份的同事」，权限与审计成瓶颈。","sourceName":"凤凰网科技","sourceUrl":"https://tech.ifeng.com/c/8wogfnLYLMA","publishedAt":"2026-09-29T18:53:00.000Z","summaryFull":"9 月 29 日 DevDay 上 OpenAI 发布常驻智能体 Dots：每个 Dot 有独立云端电脑与浏览器，基于 GPT-6 Astra，可接 4000 多个应用，先向 Pro 与 Business Premium 开放；同时推出 ChatGPT 资料空间（Space）与页面。【值得关注】Agent 成「有身份的同事」，权限与审计成瓶颈。","n":18},{"title":"OpenAI 发 GPT-6.1 Sol：Astra 五分之一价","summary":"9 月 29 日 DevDay 上 OpenAI 发布 GPT-6.1 Sol：编程与电脑操作接近 GPT-6 Astra，每百万 token 输入 2 美元、输出 10 美元，仅 Astra 五分之一，已上线 ChatGPT Work、API；另有 Ultrafast 档，Codex 速度最高 8 倍。【值得关注】旗舰能力降至五分之一价位，用价格守开发者。","sourceName":"The Next Web","sourceUrl":"https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday","publishedAt":"2026-09-29T17:33:05.000Z","summaryFull":"9 月 29 日 DevDay 上 OpenAI 发布 GPT-6.1 Sol：编程与电脑操作接近 GPT-6 Astra，每百万 token 输入 2 美元、输出 10 美元，仅 Astra 五分之一，已上线 ChatGPT Work、API；另有 Ultrafast 档，Codex 速度最高 8 倍。【值得关注】旗舰能力降至五分之一价位，用价格守开发者。","n":19},{"title":"ChatGPT 周活跃用户破 12 亿，有 AI 研究实习生","summary":"9 月 29 日 DevDay 上 OpenAI 宣布 ChatGPT 周活跃用户已超 12 亿。CEO 山姆·奥特曼称一年前目标已达成——「几周前我们有了一个 AI 研究实习生」；后训练负责人 Tejal Patwardhan 称模型已能无人工干预完成超三分之一「整天级」研究任务。【值得关注】12 亿周活让 ChatGPT 成基础设施级入口。","sourceName":"The Verge","sourceUrl":"https://on.theverge.com/ai-artificial-intelligence/1002265/chatgpt-now-has-1-2-billion-weekly-users-openai-says","publishedAt":"2026-09-29T17:52:16.000Z","summaryFull":"9 月 29 日 DevDay 上 OpenAI 宣布 ChatGPT 周活跃用户已超 12 亿。CEO 山姆·奥特曼称一年前目标已达成——「几周前我们有了一个 AI 研究实习生」；后训练负责人 Tejal Patwardhan 称模型已能无人工干预完成超三分之一「整天级」研究任务。【值得关注】12 亿周活让 ChatGPT 成基础设施级入口。","n":20},{"title":"OpenAI 联手 AWS：托管智能体上 Bedrock、进 Slack","summary":"9 月 29 日 DevDay 上 OpenAI 与亚马逊云合作，以 AWS 基础设施运行托管式智能体（Bedrock Managed Agents）；ChatGPT 将进入 Slack 与微软 Teams，同事无需单独购证即可在同一会话补充上下文。并推出月费 500 美元的 Pro 套餐，含超高速处理与私有推理预览。【值得关注】把模型卖进对手云与办公套件。","sourceName":"财联社","sourceUrl":"https://www.cls.cn/detail/2495712","publishedAt":"2026-09-29T17:19:31.000Z","summaryFull":"9 月 29 日 DevDay 上 OpenAI 与亚马逊云合作，以 AWS 基础设施运行托管式智能体（Bedrock Managed Agents）；ChatGPT 将进入 Slack 与微软 Teams，同事无需单独购证即可在同一会话补充上下文。并推出月费 500 美元的 Pro 套餐，含超高速处理与私有推理预览。【值得关注】把模型卖进对手云与办公套件。","n":21}]},{"label":"Tibo · Codex 额度重置信号","focus":false,"hint":"本周窗口","items":[{"title":"Tibo：Pro 200明日重开，API折算支出减半","summary":"9/29 Tibo（@thsottiaux）宣布，$200的ChatGPT Pro将于次日重新向新用户开放，并调整用量计算方式，按他测算新Pro 200折算成API支出约为旧方案的一半；他同时承诺不再恢复5小时用量限制，让用户自由使用每周额度，并预告次日会为订阅增加若干不占额度的内容。【值得关注】提前一天公布折算口径，是为DevDay的额度缩水预先降温。","summaryFull":"9/29 Tibo（@thsottiaux）宣布，$200的ChatGPT Pro将于次日重新向新用户开放，并调整用量计算方式，按他测算新Pro 200折算成API支出约为旧方案的一半；他同时承诺不再恢复5小时用量限制，让用户自由使用每周额度，并预告次日会为订阅增加若干不占额度的内容。【值得关注】提前一天公布折算口径，是为DevDay的额度缩水预先降温。","sourceName":"ChainCatcher（链捕手）","sourceUrl":"https://www.chaincatcher.com/article/2292953","publishedAt":"2026-09-29T08:58:35.000Z","n":22},{"title":"DevDay额度改版：Pro 200由20倍降至10倍、新增Pro 500","summary":"9/30凌晨DevDay，Tibo（@thsottiaux）把会员额度重定价：Plus为1倍、Pro 100为5倍、Pro 200降至10倍（旧Pro 200为20倍），新增500美元档Pro 500；帮助页写明存量用户旧额度保留到10月29日，补偿是取消5小时限制。【值得关注】每20美元换1份Plus用量，OpenAI正从补贴个人用户转向企业计价。","summaryFull":"9/30凌晨DevDay，Tibo（@thsottiaux）把会员额度重定价：Plus为1倍、Pro 100为5倍、Pro 200降至10倍（旧Pro 200为20倍），新增500美元档Pro 500；帮助页写明存量用户旧额度保留到10月29日，补偿是取消5小时限制。【值得关注】每20美元换1份Plus用量，OpenAI正从补贴个人用户转向企业计价。","sourceName":"爱范儿 / 腾讯新闻","sourceUrl":"https://news.qq.com/rain/a/20260930A024QX00","publishedAt":"2026-09-30T00:23:00.000Z","n":23},{"title":"Codex重置卡到账：Tibo在DevDay按下「重置」按钮","summary":"9/30 02:10（北京时间）Codex追踪站记录到一次已完成的重置入账，类型为「重置卡」（banked reset），覆盖全部套餐、置信度98%，来源是运营确认而非Tibo的X公告：Tibo在DevDay现场按下实体「重置按钮」，存入银行的重置已到账。【值得关注】这是备用重置而非全局重置，不改变全局重置时钟，最近一次全局重置仍是9/27 02:17。","summaryFull":"9/30 02:10（北京时间）Codex追踪站记录到一次已完成的重置入账，类型为「重置卡」（banked reset），覆盖全部套餐、置信度98%，来源是运营确认而非Tibo的X公告：Tibo在DevDay现场按下实体「重置按钮」，存入银行的重置已到账。【值得关注】这是备用重置而非全局重置，不改变全局重置时钟，最近一次全局重置仍是9/27 02:17。","sourceName":"Did Codex Reset","sourceUrl":"https://www.didcodexreset.com/zh/history/1790705455000.html","publishedAt":"2026-09-29T18:10:55.000Z","n":24},{"title":"Tibo：首个dot随套餐免费，对话不计入额度","summary":"9/30凌晨DevDay的智能体dots由GPT-6 Astra驱动，Tibo（@thsottiaux）称Pro与Business Premium各含一只免费dot，和dot直接对话不消耗ChatGPT额度；但新增dot、或让它调用Codex与ChatGPT Work干活仍照扣额度。【值得关注】额度规则被拆成「对话免费、干活收费」，用量博弈从聊天转向任务。","summaryFull":"9/30凌晨DevDay的智能体dots由GPT-6 Astra驱动，Tibo（@thsottiaux）称Pro与Business Premium各含一只免费dot，和dot直接对话不消耗ChatGPT额度；但新增dot、或让它调用Codex与ChatGPT Work干活仍照扣额度。【值得关注】额度规则被拆成「对话免费、干活收费」，用量博弈从聊天转向任务。","sourceName":"极客公园 / 搜狐","sourceUrl":"https://www.sohu.com/a/1082478713_413980","publishedAt":"2026-09-29T18:59:00.000Z","n":25},{"title":"新重置窗口开启两日无果，最近一次仍是9/27","summary":"9/30上午核对：Tibo 9/27预告的「下周更多重置」窗口自9/28开启、10/5截止，但截至9/30 09:00（北京时间）仍无新的全局重置落地，最新一次全局重置仍是9/27 02:17，距今约3天7小时；9/29（周二、Codex周窗口日）同样没有信号。【值得关注】DevDay只发了一张需手动使用的重置卡，窗口还剩5天，10月第一周是下一个观察点。","summaryFull":"9/30上午核对：Tibo 9/27预告的「下周更多重置」窗口自9/28开启、10/5截止，但截至9/30 09:00（北京时间）仍无新的全局重置落地，最新一次全局重置仍是9/27 02:17，距今约3天7小时；9/29（周二、Codex周窗口日）同样没有信号。【值得关注】DevDay只发了一张需手动使用的重置卡，窗口还剩5天，10月第一周是下一个观察点。","sourceName":"resetcodex 重置观察","sourceUrl":"https://resetcodex.org/calendar","publishedAt":"2026-09-30T00:07:00.000Z","n":26}]}],"total":26};
+const BUILD = "2026-09-30 09:25";
+
+const COLORS = ["#4f46e5","#0891b2","#059669","#d97706","#7c3aed","#db2777","#dc2626","#0d9488"];
+const WEEK = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+
+function pad(x){return x<10?"0"+x:x;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
+
+function fmtDateHuman(isoDate){
+  const [y,m,d] = isoDate.split("-").map(Number);
+  return `${y}年${m}月${d}日 ${WEEK[new Date(Date.UTC(y,m-1,d)).getUTCDay()]}`;
+}
+// 收录窗口
+function fmtWindow(ws, we){
+  if(!ws||!we) return "";
+  const a = ws.slice(5,10).replace("-","月")+"日";
+  const b = we.slice(5,10).replace("-","月")+"日";
+  const days = Math.round((new Date(we) - new Date(ws))/86400000);
+  return `收录窗口：${a} — ${b}（${days} 天 · 北京时间）`;
+}
+// ISO -> 北京时间人话 + 相对日期 + 距报告日天数
+// 返回 {text, age}  age = 距报告日的天数（>=0 为窗口内，<0 表示未来日期）
+function fmtTime(iso, refDate){
+  if(!iso) return {text:"本期收录", age:null};
+  const u = new Date(iso);
+  if(isNaN(u)) return {text:"本期收录", age:null};
+  const bj = new Date(u.getTime() + 8*3600*1000);          // 移到北京时间
+  const h = bj.getUTCHours(), mi = bj.getUTCMinutes();
+  const mon = bj.getUTCMonth()+1, day = bj.getUTCDate(), yr = bj.getUTCFullYear();
+  const period = h<6?"凌晨":h<12?"上午":h<14?"中午":h<18?"下午":"晚上";
+  let rel = "", age = null;
+  if(refDate){
+    const [ry,rm,rd] = refDate.split("-").map(Number);
+    age = Math.round((Date.UTC(yr,mon-1,day) - Date.UTC(ry,rm-1,rd))/86400000);
+    if(age===0) rel = "今天 ";
+    else if(age===-1) rel = "昨天 ";
+    else if(age===-2) rel = "前天 ";
+  }
+  return {text:`${rel}${mon}月${day}日 ${period}${h}:${pad(mi)}`, age};
+}
+
+const total = DATA.sections.reduce((a,s)=>a+s.items.length,0);
+
+document.getElementById("hero-eyebrow").textContent = (DATA.eyebrow || "AI HOT · 每日晨报");
+document.getElementById("hero-date").textContent = fmtDateHuman(DATA.date) + " · " + (DATA.reportName || "AI 晨报");
+document.getElementById("hero-window").textContent =
+  (DATA.focusNote || "") + (DATA.focusNote ? "　|　" : "") + fmtWindow(DATA.windowStart, DATA.windowEnd);
+document.getElementById("hero-total").textContent = String(total);
+document.title = `${DATA.date} ${DATA.reportName || "AI 晨报"} · ${total} 条`;
+
+// Hero 统计（可点击跳转）
+const statsEl = document.getElementById("hero-stats");
+DATA.sections.forEach((s,i)=>{
+  const c = COLORS[i%COLORS.length];
+  const a = document.createElement("a");
+  a.className="stat"; a.href="#sec-"+i;
+  a.innerHTML = `<div class="num" style="color:${c}">${s.items.length}</div><div class="lbl">${esc(s.label)}</div>`;
+  statsEl.appendChild(a);
+});
+
+// 导航
+const navInner = document.getElementById("nav-inner");
+DATA.sections.forEach((s,i)=>{
+  const a = document.createElement("a");
+  a.className="tab"; a.href="#sec-"+i; a.dataset.sec="sec-"+i;
+  a.innerHTML = `${esc(s.label)}<span class="cnt">${s.items.length}</span>`;
+  navInner.appendChild(a);
+});
+
+// 正文
+const main = document.getElementById("main");
+
+// 本期主线
+if(Array.isArray(DATA.highlights) && DATA.highlights.length){
+  const b = document.createElement("div");
+  b.className = "brief";
+  b.innerHTML = `<h2>📌 本期主线</h2><ul>${DATA.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`;
+  main.appendChild(b);
+}
+
+DATA.sections.forEach((s,i)=>{
+  const c = COLORS[i%COLORS.length];
+  const sec = document.createElement("section");
+  sec.className="section"; sec.id="sec-"+i;
+  const hint = s.hint ? `<span class="hint">${esc(s.hint)}</span>` : "";
+  sec.innerHTML = `<div class="section-head"><span class="bar" style="background:${c}"></span>`
+    + `<h2>${esc(s.label)}</h2><span class="count">${s.items.length} 条</span>${hint}</div>`;
+  const grid = document.createElement("div");
+  grid.className="grid";
+  s.items.forEach(it=>{
+    const t = fmtTime(it.publishedAt, DATA.date);
+    const card = document.createElement("article");
+    card.className="card"; card.id = "n" + it.n;
+    card.dataset.search = [it.title, it.summary, it.sourceName, s.label].join(" ").toLowerCase();
+    const ageBadge = (t.age===null||t.age===undefined) ? ""
+      : `<span class="age ${t.age<=1?"fresh":"stale"}">${t.age<=0 ? "窗口内" : t.age+" 天前"}</span>`;
+    card.innerHTML = `
+      <div class="top">
+        <a class="serial" style="background:${c}" href="#n${it.n}" title="本条永久链接">${it.n}</a>
+        <span class="chip" title="${esc(it.sourceName)}"><span class="dot" style="background:${c}"></span>${esc(it.sourceName)}</span>
+      </div>
+      <h3><a href="${esc(it.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a></h3>
+      <div class="meta"><span class="time">🕒 北京时间 ${esc(t.text)}</span>${ageBadge}</div>
+      <p class="summary" title="${esc(it.summaryFull||it.summary)}">${esc(it.summary)}</p>
+      <a class="read" href="${esc(it.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    `;
+    grid.appendChild(card);
+  });
+  sec.appendChild(grid);
+  main.appendChild(sec);
+});
+
+// 页脚
+document.getElementById("foot-total").textContent = "共 " + total + " 条 · " + DATA.sections.length + " 个板块";
+const src = document.getElementById("foot-source");
+src.textContent = DATA.source || "AI HOT";
+src.href = DATA.canonical || "#";
+document.getElementById("foot-note").textContent =
+  (DATA.footnote || "由 newspipe 生成") + " · " + BUILD;
+
+// 导航高亮
+const navLinks = Array.from(navInner.children);
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navLinks.forEach(a=>a.classList.toggle("active", a.dataset.sec===e.target.id));
+    }
+  });
+},{rootMargin:"-45% 0px -50% 0px", threshold:0});
+DATA.sections.forEach((_,i)=>{ const el=document.getElementById("sec-"+i); if(el) obs.observe(el); });
+
+// ---- 搜索过滤（支持多关键词，空格分隔，全部命中） ----
+const qEl = document.getElementById("q");
+const emptyHit = document.getElementById("empty-hit");
+const cards = Array.from(document.querySelectorAll(".card"));
+const sections = Array.from(document.querySelectorAll(".section"));
+qEl.addEventListener("input", ()=>{
+  const terms = qEl.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  let hits = 0;
+  cards.forEach(card=>{
+    const hay = card.dataset.search;
+    const ok = terms.every(t=>hay.includes(t));
+    card.style.display = ok ? "" : "none";
+    if(ok) hits++;
+  });
+  sections.forEach(sec=>{
+    const vis = Array.from(sec.querySelectorAll(".card")).filter(c=>c.style.display!=="none").length;
+    sec.style.display = vis ? "" : "none";
+    const cnt = sec.querySelector(".count");
+    if(cnt) cnt.textContent = terms.length ? `${vis}/${sec.querySelectorAll(".card").length} 条` : `${sec.querySelectorAll(".card").length} 条`;
+  });
+  emptyHit.style.display = (terms.length && !hits) ? "block" : "none";
+});
+document.addEventListener("keydown", e=>{
+  if(e.key==="/" && document.activeElement!==qEl){ e.preventDefault(); qEl.focus(); }
+  else if(e.key==="Escape" && document.activeElement===qEl){ qEl.value=""; qEl.dispatchEvent(new Event("input")); qEl.blur(); }
+});
+
+// ---- 深色模式 ----
+const themeBtn = document.getElementById("theme");
+const saved = (()=>{ try{ return localStorage.getItem("news-theme"); }catch(_){ return null; } })();
+function applyTheme(t){ document.documentElement.dataset.theme = t; try{ localStorage.setItem("news-theme", t); }catch(_){} }
+if(saved) applyTheme(saved);
+else if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) applyTheme("dark");
+themeBtn.addEventListener("click", ()=>{
+  applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+});
+
+// ---- 回到顶部 ----
+const toTop = document.getElementById("to-top");
+toTop.addEventListener("click", ()=>window.scrollTo({top:0,behavior:"smooth"}));
+window.addEventListener("scroll", ()=>{ toTop.classList.toggle("on", window.scrollY > 600); }, {passive:true});
+</script>
+</body>
+</html>

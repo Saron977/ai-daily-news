@@ -1,34 +1,34 @@
 [
   {
-    "title": "Claude Code 2.1.284：Sonnet 5.5 成默认模型",
-    "summary": "9月28日 Claude Code 2.1.284 发布，Sonnet 5.5 成为默认模型，$2/$10 每百万 token。新版在状态栏与 /usage 显示网关花费，Auto mode 新增“下次再问”，并可 /mcp reconnect all。【值得关注】成本可视化比跑分更能左右团队选型，按 token 计费者应重估默认档位。",
-    "summaryFull": "9月28日 Claude Code 2.1.284 发布，Sonnet 5.5 成为默认模型，$2/$10 每百万 token。新版在状态栏与 /usage 显示网关花费，Auto mode 新增“下次再问”，并可 /mcp reconnect all。【值得关注】成本可视化比跑分更能左右团队选型，按 token 计费者应重估默认档位。",
-    "sourceName": "Anthropic GitHub Releases",
-    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
-    "publishedAt": "2026-09-28T18:01:46.000Z"
+    "title": "Codex CLI 支持语音对话，新增 /agents 多智能体视图",
+    "summary": "北京时间 9月30日凌晨，OpenAI DevDay 2026 宣布 Codex CLI 焕新：新增语音对话可直接启动并引导任务，新增 /agents 视图把工作分派给多个智能体并跟踪进度，同时改进提示词编辑、会话恢复与内置工作树，终端界面更简洁，且所有套餐可用。【值得关注】CLI 正从单会话问答变成多智能体控制台，竞争焦点已转向编排体验而非模型分数。",
+    "summaryFull": "北京时间 9月30日凌晨，OpenAI DevDay 2026 宣布 Codex CLI 焕新：新增语音对话可直接启动并引导任务，新增 /agents 视图把工作分派给多个智能体并跟踪进度，同时改进提示词编辑、会话恢复与内置工作树，终端界面更简洁，且所有套餐可用。【值得关注】CLI 正从单会话问答变成多智能体控制台，竞争焦点已转向编排体验而非模型分数。",
+    "sourceName": "IT之家",
+    "sourceUrl": "https://www.ithome.com/1/008/526.htm",
+    "publishedAt": "2026-09-29T17:56:00.000Z"
   },
   {
-    "title": "OpenAI Codex CLI 0.158.0 转正：审批默认开启",
-    "summary": "9月28日 OpenAI 发布 Codex CLI 0.158.0：提权命令的终端输入审批默认开启，并支持用 codex mcp add --oauth-client-secret 接入需预注册 OAuth 密钥的 MCP 服务器。【值得关注】审批默认值转向保守、MCP 密钥接入标准化，企业应重查智能体的凭据与审批策略。",
-    "summaryFull": "9月28日 OpenAI 发布 Codex CLI 0.158.0：提权命令的终端输入审批默认开启，并支持用 codex mcp add --oauth-client-secret 接入需预注册 OAuth 密钥的 MCP 服务器。【值得关注】审批默认值转向保守、MCP 密钥接入标准化，企业应重查智能体的凭据与审批策略。",
-    "sourceName": "OpenAI GitHub Releases",
-    "sourceUrl": "https://github.com/openai/codex/releases/tag/rust-v0.158.0",
-    "publishedAt": "2026-09-28T05:10:36.000Z"
+    "title": "Claude Code 2.1.285 新增 desktop 模式",
+    "summary": "Anthropic 9月29日发布 Claude Code v2.1.285，新增 claude --desktop 可在桌面应用打开当前目录或指定会话，并新增限制机器可用 API 提供方的 allowedProviders 管理设置。【值得关注】这是企业合规闸门，说明 Claude Code 正为受监管团队补齐管控面，而非只拼模型能力。",
+    "summaryFull": "Anthropic 9月29日发布 Claude Code v2.1.285，新增 claude --desktop 可在桌面应用打开当前目录或指定会话，并新增限制机器可用 API 提供方的 allowedProviders 管理设置。【值得关注】这是企业合规闸门，说明 Claude Code 正为受监管团队补齐管控面，而非只拼模型能力。",
+    "sourceName": "GitHub Releases",
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
+    "publishedAt": "2026-09-29T19:27:30.000Z"
   },
   {
-    "title": "GitHub Copilot 接入 Sonnet 5.5，全付费档可用",
-    "summary": "9月28日 GitHub 宣布 Claude Sonnet 5.5 在 Copilot 全面可用，覆盖 Pro、Max、Business 与 Enterprise，VS Code、JetBrains、Xcode 及 Copilot CLI 均可选择，按用量与厂商目录价计费。【值得关注】多模型汇入同一订阅，选型关键正从“谁更聪明”转向单位任务成本。",
-    "summaryFull": "9月28日 GitHub 宣布 Claude Sonnet 5.5 在 Copilot 全面可用，覆盖 Pro、Max、Business 与 Enterprise，VS Code、JetBrains、Xcode 及 Copilot CLI 均可选择，按用量与厂商目录价计费。【值得关注】多模型汇入同一订阅，选型关键正从“谁更聪明”转向单位任务成本。",
-    "sourceName": "GitHub Changelog",
-    "sourceUrl": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot/",
-    "publishedAt": "2026-09-28T08:00:00.000Z"
+    "title": "Claude Code 误删 48218 个真实文件，Git 库同时损坏",
+    "summary": "据 TechRadar 9月27日报道，开发者要 Claude Code 重建测试镜像且不许碰原件，但测试环境 614 个 Windows junction 实际指向真实目录，agent 当普通文件夹清理，103 秒删除 55550 个文件、其中 48218 个为真实工作文件。【值得关注】提示词不构成安全边界，关键目录须靠隔离与异地备份兜底。",
+    "summaryFull": "据 TechRadar 9月27日报道，开发者要 Claude Code 重建测试镜像且不许碰原件，但测试环境 614 个 Windows junction 实际指向真实目录，agent 当普通文件夹清理，103 秒删除 55550 个文件、其中 48218 个为真实工作文件。【值得关注】提示词不构成安全边界，关键目录须靠隔离与异地备份兜底。",
+    "sourceName": "TechRadar",
+    "sourceUrl": "https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so",
+    "publishedAt": "2026-09-26T23:00:00.000Z"
   },
   {
-    "title": "MiniMax M3.1-Flash-Preview 上线自家编码平台",
-    "summary": "9/28 MiniMax 最新文本模型 M3.1-Flash-Preview 上线其编码平台 MiniMax Code（上海证券报报道）。这是本周继小米 MiMo-V2.6 之后，又一家国产厂商把新模型直接落到自家编码工具而非只开 API。【值得关注】国产厂商正把「模型+编码 agent」打包成一体交付，用工具链绑定开发者；对只提供 API 的厂商，这会让模型能力更难单独定价，也更容易被替换。",
-    "sourceName": "上海证券报·中国证券网",
-    "sourceUrl": "https://www.cnstock.com/commonDetail/796059",
-    "publishedAt": "2026-09-28T05:44:00.000Z",
-    "summaryFull": "9/28 MiniMax 最新文本模型 M3.1-Flash-Preview 上线其编码平台 MiniMax Code（上海证券报报道）。这是本周继小米 MiMo-V2.6 之后，又一家国产厂商把新模型直接落到自家编码工具而非只开 API。【值得关注】国产厂商正把「模型+编码 agent」打包成一体交付，用工具链绑定开发者；对只提供 API 的厂商，这会让模型能力更难单独定价，也更容易被替换。"
+    "title": "Naive.AI 开源 309B 模型，融资 4 亿美元",
+    "summary": "清华副教授代季峰二次创业的 Naive.AI 于 9/27 开源首个模型 Naive-N0.5-Flash：309B 参数、激活 15.5B 的 MoE，原生 100 万 token 上下文，去掉全注意力层改用滑窗与稀疏注意力，MIT 开放权重，输入每百万 token 仅 0.10 美元。据 The Information，公司今年已完成三轮融资、总额 4 亿美元（约 27 亿元），投后估值 14.2 亿美元，投资方含腾讯、红杉中国、IDG 与经纬。【值得关注】7 个月融 27 亿并直接开源旗舰权重，走的是「先占开发者心智、再谈商业化」；对国内闭源厂商，开源权重叠加低价 API 会持续压缩定价空间。",
+    "summaryFull": "清华副教授代季峰二次创业的 Naive.AI 于 9/27 开源首个模型 Naive-N0.5-Flash：309B 参数、激活 15.5B 的 MoE，原生 100 万 token 上下文，去掉全注意力层改用滑窗与稀疏注意力，MIT 开放权重，输入每百万 token 仅 0.10 美元。据 The Information，公司今年已完成三轮融资、总额 4 亿美元（约 27 亿元），投后估值 14.2 亿美元，投资方含腾讯、红杉中国、IDG 与经纬。【值得关注】7 个月融 27 亿并直接开源旗舰权重，走的是「先占开发者心智、再谈商业化」；对国内闭源厂商，开源权重叠加低价 API 会持续压缩定价空间。",
+    "sourceName": "虎嗅（引 The Information）",
+    "sourceUrl": "https://m.huxiu.com/article/4894464.html",
+    "publishedAt": "2026-09-27T18:00:00.000Z"
   }
 ]
