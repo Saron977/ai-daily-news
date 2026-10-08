@@ -1,0 +1,70 @@
+{
+  "anthropic": [
+    {
+      "title": "Anthropic 招股书：亏 420 亿美元，80 页谈风险",
+      "summary": "路透社 9 月 28 日披露 Anthropic 招股书：2025 年营收近 46 亿美元增 12 倍，净亏损约 420 亿美元；261 页正文约 80 页为风险提示，警告 AI 或带来「灾难性或生存性风险」，并称模型可能试图抵制关机。公司已承诺 5180 亿美元未来算力支出。【值得关注】把人类灭绝写进招股书，安全成估值锚。",
+      "sourceName": "Fortune",
+      "sourceUrl": "https://fortune.com/2026/09/29/anthropic-leaked-ipo-prospectus-losses-growth-ai-end-humanity/",
+      "publishedAt": "2026-09-29T10:03:00.000Z",
+      "summaryFull": "路透社 9 月 28 日披露 Anthropic 招股书：2025 年营收近 46 亿美元增 12 倍，净亏损约 420 亿美元；261 页正文约 80 页为风险提示，警告 AI 或带来「灾难性或生存性风险」，并称模型可能试图抵制关机。公司已承诺 5180 亿美元未来算力支出。【值得关注】把人类灭绝写进招股书，安全成估值锚。"
+    },
+    {
+      "title": "Anthropic 类 CRISPR 发现遭质疑：950 智能体挖旧酶",
+      "summary": "Anthropic 9 月 23 日称 950 个 Claude 智能体并行 21.5 小时，从 20 余万个逆转录酶中筛出噬菌体的「阵列相关逆转录酶」（ART），类比诺奖工具 CRISPR。Wired 9 月 29 日称，斯坦福 Le Cong 表示「实验还没做完，公关已上线」，研究者指该酶 2021 年已被发现。【值得关注】AI 科研叙事最易在此反噬。",
+      "sourceName": "Wired",
+      "sourceUrl": "https://www.wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/",
+      "publishedAt": "2026-09-29T18:03:01.633Z",
+      "summaryFull": "Anthropic 9 月 23 日称 950 个 Claude 智能体并行 21.5 小时，从 20 余万个逆转录酶中筛出噬菌体的「阵列相关逆转录酶」（ART），类比诺奖工具 CRISPR。Wired 9 月 29 日称，斯坦福 Le Cong 表示「实验还没做完，公关已上线」，研究者指该酶 2021 年已被发现。【值得关注】AI 科研叙事最易在此反噬。"
+    },
+    {
+      "title": "Anthropic 签 Akamai 116 亿美元算力单，含认股权证",
+      "summary": "9 月 24 日盘后 Akamai 宣布与 Anthropic 达成 7 年 116 亿美元协议，以 CPU 边缘算力承接 Claude 推理，可再追加 90 亿美元、总额约 200 亿美元；Akamai 另投 55 亿美元升级数据中心，并向 Anthropic 发行 5% 普通股认股权证。【值得关注】绕开 GPU 买边缘 CPU，为物理 AI 低延迟铺路。",
+      "sourceName": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/anthropic-akamai-11-6bn-cloud-deal-warrant",
+      "publishedAt": "2026-09-24T18:40:00.000Z",
+      "summaryFull": "9 月 24 日盘后 Akamai 宣布与 Anthropic 达成 7 年 116 亿美元协议，以 CPU 边缘算力承接 Claude 推理，可再追加 90 亿美元、总额约 200 亿美元；Akamai 另投 55 亿美元升级数据中心，并向 Anthropic 发行 5% 普通股认股权证。【值得关注】绕开 GPU 买边缘 CPU，为物理 AI 低延迟铺路。"
+    },
+    {
+      "title": "Claude 大面积中断：Code、Cowork 与 API 受影响",
+      "summary": "9 月 29 日 UTC 14 时起，Claude.ai、Claude Code、Cowork 及 Claude API 出现中断，14 时 36 分缓解；单点登录与 Apple 登录仍不可用，新建对话、语音与上传同受影响，官方提示已登录者不要退出。这是 Claude 9 月内第 4 次故障。【值得关注】故障率随发布节奏上升，可靠性成其 IPO 叙事软肋。",
+      "sourceName": "IT时代网",
+      "sourceUrl": "https://www.itsdw.cn/news/30374.html",
+      "publishedAt": "2026-09-29T17:59:09.000Z",
+      "summaryFull": "9 月 29 日 UTC 14 时起，Claude.ai、Claude Code、Cowork 及 Claude API 出现中断，14 时 36 分缓解；单点登录与 Apple 登录仍不可用，新建对话、语音与上传同受影响，官方提示已登录者不要退出。这是 Claude 9 月内第 4 次故障。【值得关注】故障率随发布节奏上升，可靠性成其 IPO 叙事软肋。"
+    }
+  ],
+  "openai": [
+    {
+      "title": "OpenAI DevDay 发 Dots：常驻智能体与资料空间",
+      "summary": "9 月 29 日 DevDay 上 OpenAI 发布常驻智能体 Dots：每个 Dot 有独立云端电脑与浏览器，基于 GPT-6 Astra，可接 4000 多个应用，先向 Pro 与 Business Premium 开放；同时推出 ChatGPT 资料空间（Space）与页面。【值得关注】Agent 成「有身份的同事」，权限与审计成瓶颈。",
+      "sourceName": "凤凰网科技",
+      "sourceUrl": "https://tech.ifeng.com/c/8wogfnLYLMA",
+      "publishedAt": "2026-09-29T18:53:00.000Z",
+      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 发布常驻智能体 Dots：每个 Dot 有独立云端电脑与浏览器，基于 GPT-6 Astra，可接 4000 多个应用，先向 Pro 与 Business Premium 开放；同时推出 ChatGPT 资料空间（Space）与页面。【值得关注】Agent 成「有身份的同事」，权限与审计成瓶颈。"
+    },
+    {
+      "title": "OpenAI 发 GPT-6.1 Sol：Astra 五分之一价",
+      "summary": "9 月 29 日 DevDay 上 OpenAI 发布 GPT-6.1 Sol：编程与电脑操作接近 GPT-6 Astra，每百万 token 输入 2 美元、输出 10 美元，仅 Astra 五分之一，已上线 ChatGPT Work、API；另有 Ultrafast 档，Codex 速度最高 8 倍。【值得关注】旗舰能力降至五分之一价位，用价格守开发者。",
+      "sourceName": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday",
+      "publishedAt": "2026-09-29T17:33:05.000Z",
+      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 发布 GPT-6.1 Sol：编程与电脑操作接近 GPT-6 Astra，每百万 token 输入 2 美元、输出 10 美元，仅 Astra 五分之一，已上线 ChatGPT Work、API；另有 Ultrafast 档，Codex 速度最高 8 倍。【值得关注】旗舰能力降至五分之一价位，用价格守开发者。"
+    },
+    {
+      "title": "ChatGPT 周活跃用户破 12 亿，有 AI 研究实习生",
+      "summary": "9 月 29 日 DevDay 上 OpenAI 宣布 ChatGPT 周活跃用户已超 12 亿。CEO 山姆·奥特曼称一年前目标已达成——「几周前我们有了一个 AI 研究实习生」；后训练负责人 Tejal Patwardhan 称模型已能无人工干预完成超三分之一「整天级」研究任务。【值得关注】12 亿周活让 ChatGPT 成基础设施级入口。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://on.theverge.com/ai-artificial-intelligence/1002265/chatgpt-now-has-1-2-billion-weekly-users-openai-says",
+      "publishedAt": "2026-09-29T17:52:16.000Z",
+      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 宣布 ChatGPT 周活跃用户已超 12 亿。CEO 山姆·奥特曼称一年前目标已达成——「几周前我们有了一个 AI 研究实习生」；后训练负责人 Tejal Patwardhan 称模型已能无人工干预完成超三分之一「整天级」研究任务。【值得关注】12 亿周活让 ChatGPT 成基础设施级入口。"
+    },
+    {
+      "title": "OpenAI 联手 AWS：托管智能体上 Bedrock、进 Slack",
+      "summary": "9 月 29 日 DevDay 上 OpenAI 与亚马逊云合作，以 AWS 基础设施运行托管式智能体（Bedrock Managed Agents）；ChatGPT 将进入 Slack 与微软 Teams，同事无需单独购证即可在同一会话补充上下文。并推出月费 500 美元的 Pro 套餐，含超高速处理与私有推理预览。【值得关注】把模型卖进对手云与办公套件。",
+      "sourceName": "财联社",
+      "sourceUrl": "https://www.cls.cn/detail/2495712",
+      "publishedAt": "2026-09-29T17:19:31.000Z",
+      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 与亚马逊云合作，以 AWS 基础设施运行托管式智能体（Bedrock Managed Agents）；ChatGPT 将进入 Slack 与微软 Teams，同事无需单独购证即可在同一会话补充上下文。并推出月费 500 美元的 Pro 套餐，含超高速处理与私有推理预览。【值得关注】把模型卖进对手云与办公套件。"
+    }
+  ]
+}

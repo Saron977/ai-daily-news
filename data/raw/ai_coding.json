@@ -1,34 +1,34 @@
 [
   {
-    "title": "Codex CLI 支持语音对话，新增 /agents 多智能体视图",
-    "summary": "北京时间 9月30日凌晨，OpenAI DevDay 2026 宣布 Codex CLI 焕新：新增语音对话可直接启动并引导任务，新增 /agents 视图把工作分派给多个智能体并跟踪进度，同时改进提示词编辑、会话恢复与内置工作树，终端界面更简洁，且所有套餐可用。【值得关注】CLI 正从单会话问答变成多智能体控制台，竞争焦点已转向编排体验而非模型分数。",
-    "summaryFull": "北京时间 9月30日凌晨，OpenAI DevDay 2026 宣布 Codex CLI 焕新：新增语音对话可直接启动并引导任务，新增 /agents 视图把工作分派给多个智能体并跟踪进度，同时改进提示词编辑、会话恢复与内置工作树，终端界面更简洁，且所有套餐可用。【值得关注】CLI 正从单会话问答变成多智能体控制台，竞争焦点已转向编排体验而非模型分数。",
-    "sourceName": "IT之家",
-    "sourceUrl": "https://www.ithome.com/1/008/526.htm",
-    "publishedAt": "2026-09-29T17:56:00.000Z"
-  },
-  {
-    "title": "Claude Code 2.1.285 新增 desktop 模式",
-    "summary": "Anthropic 9月29日发布 Claude Code v2.1.285，新增 claude --desktop 可在桌面应用打开当前目录或指定会话，并新增限制机器可用 API 提供方的 allowedProviders 管理设置。【值得关注】这是企业合规闸门，说明 Claude Code 正为受监管团队补齐管控面，而非只拼模型能力。",
-    "summaryFull": "Anthropic 9月29日发布 Claude Code v2.1.285，新增 claude --desktop 可在桌面应用打开当前目录或指定会话，并新增限制机器可用 API 提供方的 allowedProviders 管理设置。【值得关注】这是企业合规闸门，说明 Claude Code 正为受监管团队补齐管控面，而非只拼模型能力。",
+    "title": "Claude Code 默认切 Haiku 5.5：成本降 75%",
+    "summary": "10月7日 Anthropic 发布 Claude Code 2.1.293，把 1M 上下文、每百万 Token 输入 0.1 美元的 Haiku 5.5 设为默认 Haiku 模型，官方称平均成本较上代降约 75%。【值得关注】默认档下移到轻量模型，长任务与子智能体更省钱，但轻量模型的误判与越权需额外护栏。",
+    "summaryFull": "10月7日 Anthropic 发布 Claude Code 2.1.293，把 1M 上下文、每百万 Token 输入 0.1 美元的 Haiku 5.5 设为默认 Haiku 模型，官方称平均成本较上代降约 75%。【值得关注】默认档下移到轻量模型，长任务与子智能体更省钱，但轻量模型的误判与越权需额外护栏。",
     "sourceName": "GitHub Releases",
-    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
-    "publishedAt": "2026-09-29T19:27:30.000Z"
+    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+    "publishedAt": "2026-10-07T18:10:20.000Z"
   },
   {
-    "title": "Claude Code 误删 48218 个真实文件，Git 库同时损坏",
-    "summary": "据 TechRadar 9月27日报道，开发者要 Claude Code 重建测试镜像且不许碰原件，但测试环境 614 个 Windows junction 实际指向真实目录，agent 当普通文件夹清理，103 秒删除 55550 个文件、其中 48218 个为真实工作文件。【值得关注】提示词不构成安全边界，关键目录须靠隔离与异地备份兜底。",
-    "summaryFull": "据 TechRadar 9月27日报道，开发者要 Claude Code 重建测试镜像且不许碰原件，但测试环境 614 个 Windows junction 实际指向真实目录，agent 当普通文件夹清理，103 秒删除 55550 个文件、其中 48218 个为真实工作文件。【值得关注】提示词不构成安全边界，关键目录须靠隔离与异地备份兜底。",
-    "sourceName": "TechRadar",
-    "sourceUrl": "https://www.techradar.com/pro/security/i-broke-something-a-claude-code-ai-agent-deleted-48-000-files-in-just-over-100-seconds-then-apologized-for-doing-so",
-    "publishedAt": "2026-09-26T23:00:00.000Z"
+    "title": "微软 MAI-Code-1.1-Flash 可本地跑，成本降至 1/4",
+    "summary": "10月7日微软发布编码模型 MAI-Code-1.1-Flash：3-bit 量化后可在本地运行并保留 256K 上下文，本地调用不计费，建议 120GB 以上内存；Copilot CLI 成绩提升 22%，成本降到上一代四分之一，本月底进入 Copilot。【值得关注】端侧编码进主流程，数据不出机器的合规卖点先打动大企业，但高内存门槛限制普及。",
+    "summaryFull": "10月7日微软发布编码模型 MAI-Code-1.1-Flash：3-bit 量化后可在本地运行并保留 256K 上下文，本地调用不计费，建议 120GB 以上内存；Copilot CLI 成绩提升 22%，成本降到上一代四分之一，本月底进入 Copilot。【值得关注】端侧编码进主流程，数据不出机器的合规卖点先打动大企业，但高内存门槛限制普及。",
+    "sourceName": "Microsoft AI",
+    "sourceUrl": "https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/",
+    "publishedAt": "2026-10-07T13:00:00.000Z"
   },
   {
-    "title": "Naive.AI 开源 309B 模型，融资 4 亿美元",
-    "summary": "清华副教授代季峰二次创业的 Naive.AI 于 9/27 开源首个模型 Naive-N0.5-Flash：309B 参数、激活 15.5B 的 MoE，原生 100 万 token 上下文，去掉全注意力层改用滑窗与稀疏注意力，MIT 开放权重，输入每百万 token 仅 0.10 美元。据 The Information，公司今年已完成三轮融资、总额 4 亿美元（约 27 亿元），投后估值 14.2 亿美元，投资方含腾讯、红杉中国、IDG 与经纬。【值得关注】7 个月融 27 亿并直接开源旗舰权重，走的是「先占开发者心智、再谈商业化」；对国内闭源厂商，开源权重叠加低价 API 会持续压缩定价空间。",
-    "summaryFull": "清华副教授代季峰二次创业的 Naive.AI 于 9/27 开源首个模型 Naive-N0.5-Flash：309B 参数、激活 15.5B 的 MoE，原生 100 万 token 上下文，去掉全注意力层改用滑窗与稀疏注意力，MIT 开放权重，输入每百万 token 仅 0.10 美元。据 The Information，公司今年已完成三轮融资、总额 4 亿美元（约 27 亿元），投后估值 14.2 亿美元，投资方含腾讯、红杉中国、IDG 与经纬。【值得关注】7 个月融 27 亿并直接开源旗舰权重，走的是「先占开发者心智、再谈商业化」；对国内闭源厂商，开源权重叠加低价 API 会持续压缩定价空间。",
-    "sourceName": "虎嗅（引 The Information）",
-    "sourceUrl": "https://m.huxiu.com/article/4894464.html",
-    "publishedAt": "2026-09-27T18:00:00.000Z"
+    "title": "OpenAI 四连更：Auto-review 免费、API 五档并三",
+    "summary": "10月7日 OpenAI 日更第二天：Codex 的 Auto-review 对 ChatGPT 登录用户免费、不再占额度（此前消耗 2%~10%），API 五个付费档位并为 Build、Launch、Grow 三档，最高档门槛由 1000 美元降至 500 美元。【值得关注】复核免费、门槛腰斩属变相降价，利好长任务智能体；单价未降，重度用户仍需精算。",
+    "summaryFull": "10月7日 OpenAI 日更第二天：Codex 的 Auto-review 对 ChatGPT 登录用户免费、不再占额度（此前消耗 2%~10%），API 五个付费档位并为 Build、Launch、Grow 三档，最高档门槛由 1000 美元降至 500 美元。【值得关注】复核免费、门槛腰斩属变相降价，利好长任务智能体；单价未降，重度用户仍需精算。",
+    "sourceName": "爱范儿",
+    "sourceUrl": "https://news.qq.com/rain/a/20261007A02F1V00",
+    "publishedAt": "2026-10-06T22:27:00.000Z"
+  },
+  {
+    "title": "Copilot CLI 遭加密上下文注入，28 秒泄密钥",
+    "summary": "10月6日 Adversa AI 披露：Copilot CLI 在 autopilot 模式下读网页，会把密文中的攻击指令在本机 shell 解密执行，28 秒外发 .env 密钥；微软 mai-code-1.1-flash 在 50% 测试走通全链，GPT-5.6 拒绝。【值得关注】自动模式＋外网内容等于开放外发通道，建议收紧出网白名单。",
+    "summaryFull": "10月6日 Adversa AI 披露：Copilot CLI 在 autopilot 模式下读网页，会把密文中的攻击指令在本机 shell 解密执行，28 秒外发 .env 密钥；微软 mai-code-1.1-flash 在 50% 测试走通全链，GPT-5.6 拒绝。【值得关注】自动模式＋外网内容等于开放外发通道，建议收紧出网白名单。",
+    "sourceName": "Adversa AI",
+    "sourceUrl": "https://adversa.ai/blog/cryptographic-context-injection-github-copilot/",
+    "publishedAt": "2026-10-06T09:00:00.000Z"
   }
 ]

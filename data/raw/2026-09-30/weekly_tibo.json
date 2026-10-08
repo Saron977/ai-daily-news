@@ -1,0 +1,86 @@
+{
+  "weekly": [
+    {
+      "title": "特朗普白宫AI午餐会：六巨头签自愿协议、不新增监管",
+      "summary": "9/29特朗普在白宫会见近20名科技企业负责人，与Anthropic、谷歌、Meta、英伟达、OpenAI、xAI六家CEO签署《白宫超级智能协议：前沿责任联合承诺》，把监管主导权交给行业自律，并承诺引入独立审计机构；同日签署行政令，把政府文件中的「人工智能」改称「超级智能」。【值得关注】美国把前沿AI治理交由企业自愿承诺，与欧盟、中国的立法路径分叉。",
+      "summaryFull": "9/29特朗普在白宫会见近20名科技企业负责人，与Anthropic、谷歌、Meta、英伟达、OpenAI、xAI六家CEO签署《白宫超级智能协议：前沿责任联合承诺》，把监管主导权交给行业自律，并承诺引入独立审计机构；同日签署行政令，把政府文件中的「人工智能」改称「超级智能」。【值得关注】美国把前沿AI治理交由企业自愿承诺，与欧盟、中国的立法路径分叉。",
+      "sourceName": "澎湃新闻",
+      "sourceUrl": "https://www.sohu.com/a/1082533377_260616",
+      "publishedAt": "2026-09-30T00:53:00.000Z"
+    },
+    {
+      "title": "谷歌Gemini 4进入后训练，拟远早于年底提前发布",
+      "summary": "9/28 Google DeepMind负责人Koray Kavukcuoglu确认，Gemini 4已完成基座训练并进入后训练阶段，正在自家编码工具Antigravity中实测，发布时间将「远早于年底」，外界猜测最快10月。【值得关注】对手9月连发新模型并腰斩价格，谷歌被迫把发布节奏从年更压到季度更，前沿模型的领先窗口正以周计缩短。",
+      "summaryFull": "9/28 Google DeepMind负责人Koray Kavukcuoglu确认，Gemini 4已完成基座训练并进入后训练阶段，正在自家编码工具Antigravity中实测，发布时间将「远早于年底」，外界猜测最快10月。【值得关注】对手9月连发新模型并腰斩价格，谷歌被迫把发布节奏从年更压到季度更，前沿模型的领先窗口正以周计缩短。",
+      "sourceName": "The Next Web",
+      "sourceUrl": "https://thenextweb.com/news/gemini-4-release-kavukcuoglu-post-training",
+      "publishedAt": "2026-09-28T11:25:00.000Z"
+    },
+    {
+      "title": "DeepSeek接近完成500亿元二轮融资，年化营收破10亿美元",
+      "summary": "9/28报道显示，DeepSeek第二轮融资规模约500亿元人民币（75亿美元）已接近结束，部分审核仍在进行，9月初已发出投资条款清单；公司同时首设CFO，由高瓴创投合伙人严文韬出任，年化营收突破10亿美元，且较二轮启动时显著增长。【值得关注】在智谱50亿美元融资、Anthropic冲刺2万亿美元IPO之后，国产大模型的竞赛已转向算力供给与资本组织能力。",
+      "summaryFull": "9/28报道显示，DeepSeek第二轮融资规模约500亿元人民币（75亿美元）已接近结束，部分审核仍在进行，9月初已发出投资条款清单；公司同时首设CFO，由高瓴创投合伙人严文韬出任，年化营收突破10亿美元，且较二轮启动时显著增长。【值得关注】在智谱50亿美元融资、Anthropic冲刺2万亿美元IPO之后，国产大模型的竞赛已转向算力供给与资本组织能力。",
+      "sourceName": "投资界",
+      "sourceUrl": "https://news.pedaily.cn/202609/569663.shtml",
+      "publishedAt": "2026-09-28T00:45:00.000Z"
+    },
+    {
+      "title": "集邦上修2027年HBM价格展望：ASP年增121%、HBM4放量",
+      "summary": "9/29 TrendForce集邦咨询上修2027年HBM价格展望，预估Blended ASP年增121%，远超市场此前70%至90%的预期。机构称AI服务器扩张使HBM与通用DRAM争夺先进制程产能，HBM4占比提升、HBM4e明年下半年放量，供应将持续吃紧。【值得关注】存储正从周期股变成算力瓶颈的定价者，涨价预期上修比模型发布更直接改写芯片股估值。",
+      "summaryFull": "9/29 TrendForce集邦咨询上修2027年HBM价格展望，预估Blended ASP年增121%，远超市场此前70%至90%的预期。机构称AI服务器扩张使HBM与通用DRAM争夺先进制程产能，HBM4占比提升、HBM4e明年下半年放量，供应将持续吃紧。【值得关注】存储正从周期股变成算力瓶颈的定价者，涨价预期上修比模型发布更直接改写芯片股估值。",
+      "sourceName": "证券时报",
+      "sourceUrl": "https://finance.ifeng.com/c/8woXXHC3Rkx",
+      "publishedAt": "2026-09-29T06:13:35.000Z"
+    },
+    {
+      "title": "贝恩：2031年AI需6万亿美元年收入，缺口达4.2万亿",
+      "summary": "9/29贝恩公司在年度全球技术报告中测算，到2031年全球AI产业需实现6万亿美元年收入，才能证明各地数据中心的资本开支合理；现有消费与企业AI服务最多贡献1.8万亿美元，仍有4.2万亿美元新增收入缺口，需靠自主机器、机器人、药物发现等新兴场景补足。【值得关注】这是首个把算力投资与收入回报量化的模型，市场叙事正从炒算力建设转向炒AI变现。",
+      "summaryFull": "9/29贝恩公司在年度全球技术报告中测算，到2031年全球AI产业需实现6万亿美元年收入，才能证明各地数据中心的资本开支合理；现有消费与企业AI服务最多贡献1.8万亿美元，仍有4.2万亿美元新增收入缺口，需靠自主机器、机器人、药物发现等新兴场景补足。【值得关注】这是首个把算力投资与收入回报量化的模型，市场叙事正从炒算力建设转向炒AI变现。",
+      "sourceName": "The Star",
+      "sourceUrl": "https://www.thestar.com.my/tech/tech-news/2026/09/29/ai-faces-us6-trillion-test-to-justify-data-centres-bain-says",
+      "publishedAt": "2026-09-29T04:00:00.000Z"
+    }
+  ],
+  "tibo": [
+    {
+      "title": "Tibo：Pro 200明日重开，API折算支出减半",
+      "summary": "9/29 Tibo（@thsottiaux）宣布，$200的ChatGPT Pro将于次日重新向新用户开放，并调整用量计算方式，按他测算新Pro 200折算成API支出约为旧方案的一半；他同时承诺不再恢复5小时用量限制，让用户自由使用每周额度，并预告次日会为订阅增加若干不占额度的内容。【值得关注】提前一天公布折算口径，是为DevDay的额度缩水预先降温。",
+      "summaryFull": "9/29 Tibo（@thsottiaux）宣布，$200的ChatGPT Pro将于次日重新向新用户开放，并调整用量计算方式，按他测算新Pro 200折算成API支出约为旧方案的一半；他同时承诺不再恢复5小时用量限制，让用户自由使用每周额度，并预告次日会为订阅增加若干不占额度的内容。【值得关注】提前一天公布折算口径，是为DevDay的额度缩水预先降温。",
+      "sourceName": "ChainCatcher（链捕手）",
+      "sourceUrl": "https://www.chaincatcher.com/article/2292953",
+      "publishedAt": "2026-09-29T08:58:35.000Z"
+    },
+    {
+      "title": "DevDay额度改版：Pro 200由20倍降至10倍、新增Pro 500",
+      "summary": "9/30凌晨DevDay，Tibo（@thsottiaux）把会员额度重定价：Plus为1倍、Pro 100为5倍、Pro 200降至10倍（旧Pro 200为20倍），新增500美元档Pro 500；帮助页写明存量用户旧额度保留到10月29日，补偿是取消5小时限制。【值得关注】每20美元换1份Plus用量，OpenAI正从补贴个人用户转向企业计价。",
+      "summaryFull": "9/30凌晨DevDay，Tibo（@thsottiaux）把会员额度重定价：Plus为1倍、Pro 100为5倍、Pro 200降至10倍（旧Pro 200为20倍），新增500美元档Pro 500；帮助页写明存量用户旧额度保留到10月29日，补偿是取消5小时限制。【值得关注】每20美元换1份Plus用量，OpenAI正从补贴个人用户转向企业计价。",
+      "sourceName": "爱范儿 / 腾讯新闻",
+      "sourceUrl": "https://news.qq.com/rain/a/20260930A024QX00",
+      "publishedAt": "2026-09-30T00:23:00.000Z"
+    },
+    {
+      "title": "Codex重置卡到账：Tibo在DevDay按下「重置」按钮",
+      "summary": "9/30 02:10（北京时间）Codex追踪站记录到一次已完成的重置入账，类型为「重置卡」（banked reset），覆盖全部套餐、置信度98%，来源是运营确认而非Tibo的X公告：Tibo在DevDay现场按下实体「重置按钮」，存入银行的重置已到账。【值得关注】这是备用重置而非全局重置，不改变全局重置时钟，最近一次全局重置仍是9/27 02:17。",
+      "summaryFull": "9/30 02:10（北京时间）Codex追踪站记录到一次已完成的重置入账，类型为「重置卡」（banked reset），覆盖全部套餐、置信度98%，来源是运营确认而非Tibo的X公告：Tibo在DevDay现场按下实体「重置按钮」，存入银行的重置已到账。【值得关注】这是备用重置而非全局重置，不改变全局重置时钟，最近一次全局重置仍是9/27 02:17。",
+      "sourceName": "Did Codex Reset",
+      "sourceUrl": "https://www.didcodexreset.com/zh/history/1790705455000.html",
+      "publishedAt": "2026-09-29T18:10:55.000Z"
+    },
+    {
+      "title": "Tibo：首个dot随套餐免费，对话不计入额度",
+      "summary": "9/30凌晨DevDay的智能体dots由GPT-6 Astra驱动，Tibo（@thsottiaux）称Pro与Business Premium各含一只免费dot，和dot直接对话不消耗ChatGPT额度；但新增dot、或让它调用Codex与ChatGPT Work干活仍照扣额度。【值得关注】额度规则被拆成「对话免费、干活收费」，用量博弈从聊天转向任务。",
+      "summaryFull": "9/30凌晨DevDay的智能体dots由GPT-6 Astra驱动，Tibo（@thsottiaux）称Pro与Business Premium各含一只免费dot，和dot直接对话不消耗ChatGPT额度；但新增dot、或让它调用Codex与ChatGPT Work干活仍照扣额度。【值得关注】额度规则被拆成「对话免费、干活收费」，用量博弈从聊天转向任务。",
+      "sourceName": "极客公园 / 搜狐",
+      "sourceUrl": "https://www.sohu.com/a/1082478713_413980",
+      "publishedAt": "2026-09-29T18:59:00.000Z"
+    },
+    {
+      "title": "新重置窗口开启两日无果，最近一次仍是9/27",
+      "summary": "9/30上午核对：Tibo 9/27预告的「下周更多重置」窗口自9/28开启、10/5截止，但截至9/30 09:00（北京时间）仍无新的全局重置落地，最新一次全局重置仍是9/27 02:17，距今约3天7小时；9/29（周二、Codex周窗口日）同样没有信号。【值得关注】DevDay只发了一张需手动使用的重置卡，窗口还剩5天，10月第一周是下一个观察点。",
+      "summaryFull": "9/30上午核对：Tibo 9/27预告的「下周更多重置」窗口自9/28开启、10/5截止，但截至9/30 09:00（北京时间）仍无新的全局重置落地，最新一次全局重置仍是9/27 02:17，距今约3天7小时；9/29（周二、Codex周窗口日）同样没有信号。【值得关注】DevDay只发了一张需手动使用的重置卡，窗口还剩5天，10月第一周是下一个观察点。",
+      "sourceName": "resetcodex 重置观察",
+      "sourceUrl": "https://resetcodex.org/calendar",
+      "publishedAt": "2026-09-30T00:07:00.000Z"
+    }
+  ]
+}

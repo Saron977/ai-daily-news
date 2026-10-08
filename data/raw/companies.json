@@ -1,70 +1,70 @@
 {
   "anthropic": [
     {
-      "title": "Anthropic 招股书：亏 420 亿美元，80 页谈风险",
-      "summary": "路透社 9 月 28 日披露 Anthropic 招股书：2025 年营收近 46 亿美元增 12 倍，净亏损约 420 亿美元；261 页正文约 80 页为风险提示，警告 AI 或带来「灾难性或生存性风险」，并称模型可能试图抵制关机。公司已承诺 5180 亿美元未来算力支出。【值得关注】把人类灭绝写进招股书，安全成估值锚。",
-      "sourceName": "Fortune",
-      "sourceUrl": "https://fortune.com/2026/09/29/anthropic-leaked-ipo-prospectus-losses-growth-ai-end-humanity/",
-      "publishedAt": "2026-09-29T10:03:00.000Z",
-      "summaryFull": "路透社 9 月 28 日披露 Anthropic 招股书：2025 年营收近 46 亿美元增 12 倍，净亏损约 420 亿美元；261 页正文约 80 页为风险提示，警告 AI 或带来「灾难性或生存性风险」，并称模型可能试图抵制关机。公司已承诺 5180 亿美元未来算力支出。【值得关注】把人类灭绝写进招股书，安全成估值锚。"
+      "title": "Anthropic发布Claude Haiku 5.5：单价仅前代1/10",
+      "summary": "10月7日，Anthropic发布小模型Claude Haiku 5.5：10万Token以内请求输入/输出价降至每百万Token 0.10/0.50美元，仅为Haiku 4.5的十分之一，平均运行成本降约75%，并首次支持可调推理强度，可作Opus 5.5、Sonnet 5.5的子智能体。【值得关注】Anthropic正以轻量模型降价抢占智能体规模化入口。",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5",
+      "publishedAt": "2026-10-07T16:00:00.000Z",
+      "summaryFull": "10月7日，Anthropic发布小模型Claude Haiku 5.5：10万Token以内请求输入/输出价降至每百万Token 0.10/0.50美元，仅为Haiku 4.5的十分之一，平均运行成本降约75%，并首次支持可调推理强度，可作Opus 5.5、Sonnet 5.5的子智能体。【值得关注】Anthropic正以轻量模型降价抢占智能体规模化入口。"
     },
     {
-      "title": "Anthropic 类 CRISPR 发现遭质疑：950 智能体挖旧酶",
-      "summary": "Anthropic 9 月 23 日称 950 个 Claude 智能体并行 21.5 小时，从 20 余万个逆转录酶中筛出噬菌体的「阵列相关逆转录酶」（ART），类比诺奖工具 CRISPR。Wired 9 月 29 日称，斯坦福 Le Cong 表示「实验还没做完，公关已上线」，研究者指该酶 2021 年已被发现。【值得关注】AI 科研叙事最易在此反噬。",
-      "sourceName": "Wired",
-      "sourceUrl": "https://www.wired.com/story/anthropic-says-it-discovered-a-crispr-like-system-now-what/",
-      "publishedAt": "2026-09-29T18:03:01.633Z",
-      "summaryFull": "Anthropic 9 月 23 日称 950 个 Claude 智能体并行 21.5 小时，从 20 余万个逆转录酶中筛出噬菌体的「阵列相关逆转录酶」（ART），类比诺奖工具 CRISPR。Wired 9 月 29 日称，斯坦福 Le Cong 表示「实验还没做完，公关已上线」，研究者指该酶 2021 年已被发现。【值得关注】AI 科研叙事最易在此反噬。"
+      "title": "Anthropic：Claude进驻Google文档/表格/幻灯片公测",
+      "summary": "10月7日，Anthropic宣布Claude for Google Workspace进入公开测试。用户可从Workspace应用市场安装插件，在Docs、Sheets、Slides的扩展菜单唤出侧边栏，由Claude直接读取并改写文档、表格与幻灯片，编辑权限可自设，涉及安全的操作仍需人工批准。【值得关注】办公套件正成为大模型争夺日常入口的必争之地。",
+      "sourceName": "DigitalToday",
+      "sourceUrl": "https://www.digitaltoday.co.kr/en/view/111862/anthropic-launches-public-beta-of-claude-for-google-workspace",
+      "publishedAt": "2026-10-07T05:31:00.000Z",
+      "summaryFull": "10月7日，Anthropic宣布Claude for Google Workspace进入公开测试。用户可从Workspace应用市场安装插件，在Docs、Sheets、Slides的扩展菜单唤出侧边栏，由Claude直接读取并改写文档、表格与幻灯片，编辑权限可自设，涉及安全的操作仍需人工批准。【值得关注】办公套件正成为大模型争夺日常入口的必争之地。"
     },
     {
-      "title": "Anthropic 签 Akamai 116 亿美元算力单，含认股权证",
-      "summary": "9 月 24 日盘后 Akamai 宣布与 Anthropic 达成 7 年 116 亿美元协议，以 CPU 边缘算力承接 Claude 推理，可再追加 90 亿美元、总额约 200 亿美元；Akamai 另投 55 亿美元升级数据中心，并向 Anthropic 发行 5% 普通股认股权证。【值得关注】绕开 GPU 买边缘 CPU，为物理 AI 低延迟铺路。",
-      "sourceName": "The Next Web",
-      "sourceUrl": "https://thenextweb.com/news/anthropic-akamai-11-6bn-cloud-deal-warrant",
-      "publishedAt": "2026-09-24T18:40:00.000Z",
-      "summaryFull": "9 月 24 日盘后 Akamai 宣布与 Anthropic 达成 7 年 116 亿美元协议，以 CPU 边缘算力承接 Claude 推理，可再追加 90 亿美元、总额约 200 亿美元；Akamai 另投 55 亿美元升级数据中心，并向 Anthropic 发行 5% 普通股认股权证。【值得关注】绕开 GPU 买边缘 CPU，为物理 AI 低延迟铺路。"
+      "title": "微软Meta削减Claude内部用量：预算砍超三分之一",
+      "summary": "据The Information 10月6日报道，Anthropic两大企业客户微软和Meta正压缩内部Claude用量：微软把2026年Claude内部预算从至少10亿美元下调逾三分之一，并将编程工具默认模型换成OpenAI；Meta的Claude Code内部用户从年初约6万人降至约3万人。【值得关注】上市前夕，大客户控费给其营收故事添变数。",
+      "sourceName": "DigitalToday",
+      "sourceUrl": "https://www.digitaltoday.co.kr/cn/view/111431/microsoft-meta-to-sharply-cut-in-house-claude-spending",
+      "publishedAt": "2026-10-06T23:00:00.000Z",
+      "summaryFull": "据The Information 10月6日报道，Anthropic两大企业客户微软和Meta正压缩内部Claude用量：微软把2026年Claude内部预算从至少10亿美元下调逾三分之一，并将编程工具默认模型换成OpenAI；Meta的Claude Code内部用户从年初约6万人降至约3万人。【值得关注】上市前夕，大客户控费给其营收故事添变数。"
     },
     {
-      "title": "Claude 大面积中断：Code、Cowork 与 API 受影响",
-      "summary": "9 月 29 日 UTC 14 时起，Claude.ai、Claude Code、Cowork 及 Claude API 出现中断，14 时 36 分缓解；单点登录与 Apple 登录仍不可用，新建对话、语音与上传同受影响，官方提示已登录者不要退出。这是 Claude 9 月内第 4 次故障。【值得关注】故障率随发布节奏上升，可靠性成其 IPO 叙事软肋。",
-      "sourceName": "IT时代网",
-      "sourceUrl": "https://www.itsdw.cn/news/30374.html",
-      "publishedAt": "2026-09-29T17:59:09.000Z",
-      "summaryFull": "9 月 29 日 UTC 14 时起，Claude.ai、Claude Code、Cowork 及 Claude API 出现中断，14 时 36 分缓解；单点登录与 Apple 登录仍不可用，新建对话、语音与上传同受影响，官方提示已登录者不要退出。这是 Claude 9 月内第 4 次故障。【值得关注】故障率随发布节奏上升，可靠性成其 IPO 叙事软肋。"
+      "title": "Anthropic拟11月IPO：估值1.8万亿至2万亿美元",
+      "summary": "10月2日，财联社援引知情人士称，Anthropic正冲刺最快11月中旬上市，或于11月9日当周启动IPO推介，力争11月26日感恩节前挂牌交易，10月14日将在旧金山总部会见潜在投资者。投资者认为其合理估值在1.8万亿至2万亿美元之间。【值得关注】尽管仍在大举烧钱，市场对这家Claude开发商的上市热情并未降温。",
+      "sourceName": "财联社",
+      "sourceUrl": "https://www.chinastarmarket.cn/detail/2497177",
+      "publishedAt": "2026-10-02T02:01:00.000Z",
+      "summaryFull": "10月2日，财联社援引知情人士称，Anthropic正冲刺最快11月中旬上市，或于11月9日当周启动IPO推介，力争11月26日感恩节前挂牌交易，10月14日将在旧金山总部会见潜在投资者。投资者认为其合理估值在1.8万亿至2万亿美元之间。【值得关注】尽管仍在大举烧钱，市场对这家Claude开发商的上市热情并未降温。"
     }
   ],
   "openai": [
     {
-      "title": "OpenAI DevDay 发 Dots：常驻智能体与资料空间",
-      "summary": "9 月 29 日 DevDay 上 OpenAI 发布常驻智能体 Dots：每个 Dot 有独立云端电脑与浏览器，基于 GPT-6 Astra，可接 4000 多个应用，先向 Pro 与 Business Premium 开放；同时推出 ChatGPT 资料空间（Space）与页面。【值得关注】Agent 成「有身份的同事」，权限与审计成瓶颈。",
-      "sourceName": "凤凰网科技",
-      "sourceUrl": "https://tech.ifeng.com/c/8wogfnLYLMA",
-      "publishedAt": "2026-09-29T18:53:00.000Z",
-      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 发布常驻智能体 Dots：每个 Dot 有独立云端电脑与浏览器，基于 GPT-6 Astra，可接 4000 多个应用，先向 Pro 与 Business Premium 开放；同时推出 ChatGPT 资料空间（Space）与页面。【值得关注】Agent 成「有身份的同事」，权限与审计成瓶颈。"
+      "title": "OpenAI向免费用户开放GPT-6，上线智能UI",
+      "summary": "10月7日起OpenAI向付费用户推送GPT-6 Sol，10月8日起向免费及Go用户推送GPT-6 Luna，覆盖周活超12亿人。此次主推Intelligent UI：ChatGPT可按问题生成图表、按钮、表单乃至计算器与小游戏；需联网搜索时，GPT-6 Instant开始作答比上代平均早44%。【值得关注】聊天框正从纯文本框变成随问题伸缩的交互界面。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://www.qbitai.com/2026/10/501834.html",
+      "publishedAt": "2026-10-08T01:07:00.000Z",
+      "summaryFull": "10月7日起OpenAI向付费用户推送GPT-6 Sol，10月8日起向免费及Go用户推送GPT-6 Luna，覆盖周活超12亿人。此次主推Intelligent UI：ChatGPT可按问题生成图表、按钮、表单乃至计算器与小游戏；需联网搜索时，GPT-6 Instant开始作答比上代平均早44%。【值得关注】聊天框正从纯文本框变成随问题伸缩的交互界面。"
     },
     {
-      "title": "OpenAI 发 GPT-6.1 Sol：Astra 五分之一价",
-      "summary": "9 月 29 日 DevDay 上 OpenAI 发布 GPT-6.1 Sol：编程与电脑操作接近 GPT-6 Astra，每百万 token 输入 2 美元、输出 10 美元，仅 Astra 五分之一，已上线 ChatGPT Work、API；另有 Ultrafast 档，Codex 速度最高 8 倍。【值得关注】旗舰能力降至五分之一价位，用价格守开发者。",
-      "sourceName": "The Next Web",
-      "sourceUrl": "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday",
-      "publishedAt": "2026-09-29T17:33:05.000Z",
-      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 发布 GPT-6.1 Sol：编程与电脑操作接近 GPT-6 Astra，每百万 token 输入 2 美元、输出 10 美元，仅 Astra 五分之一，已上线 ChatGPT Work、API；另有 Ultrafast 档，Codex 速度最高 8 倍。【值得关注】旗舰能力降至五分之一价位，用价格守开发者。"
+      "title": "OpenAI：ChatGPT生成文本植入隐形水印，欧盟先行",
+      "summary": "10月5日，OpenAI宣布为遵守欧盟《人工智能法案》透明度义务上线文本识别技术TextGrain，在选词中嵌入细微统计信号，未来数周先覆盖欧盟地区ChatGPT与Codex输出，API默认关闭、机构可自行开启，检测工具仅向获准研究者开放；同日宣布在美国部分广告主的图像生成结果中试点视觉广告。【值得关注】生成内容标识正从合规负担变成行业标配。",
+      "sourceName": "韩联社",
+      "sourceUrl": "https://www.yna.co.kr/view/AKR20261006003900091",
+      "publishedAt": "2026-10-05T19:59:00.000Z",
+      "summaryFull": "10月5日，OpenAI宣布为遵守欧盟《人工智能法案》透明度义务上线文本识别技术TextGrain，在选词中嵌入细微统计信号，未来数周先覆盖欧盟地区ChatGPT与Codex输出，API默认关闭、机构可自行开启，检测工具仅向获准研究者开放；同日宣布在美国部分广告主的图像生成结果中试点视觉广告。【值得关注】生成内容标识正从合规负担变成行业标配。"
     },
     {
-      "title": "ChatGPT 周活跃用户破 12 亿，有 AI 研究实习生",
-      "summary": "9 月 29 日 DevDay 上 OpenAI 宣布 ChatGPT 周活跃用户已超 12 亿。CEO 山姆·奥特曼称一年前目标已达成——「几周前我们有了一个 AI 研究实习生」；后训练负责人 Tejal Patwardhan 称模型已能无人工干预完成超三分之一「整天级」研究任务。【值得关注】12 亿周活让 ChatGPT 成基础设施级入口。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://on.theverge.com/ai-artificial-intelligence/1002265/chatgpt-now-has-1-2-billion-weekly-users-openai-says",
-      "publishedAt": "2026-09-29T17:52:16.000Z",
-      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 宣布 ChatGPT 周活跃用户已超 12 亿。CEO 山姆·奥特曼称一年前目标已达成——「几周前我们有了一个 AI 研究实习生」；后训练负责人 Tejal Patwardhan 称模型已能无人工干预完成超三分之一「整天级」研究任务。【值得关注】12 亿周活让 ChatGPT 成基础设施级入口。"
+      "title": "OpenAI拟再融300亿美元，投前估值1.4万亿",
+      "summary": "10月6日，财联社援引知情人士称，包括MGX在内的多家阿联酋基金正洽谈参与OpenAI最新一轮至少300亿美元融资，合计投资最高达100亿美元，贝莱德也在商谈入局。此轮投前估值约1.4万亿美元，远高于3月那轮融资后的8520亿美元；因专注AI安全，OpenAI已把IPO至少推迟到明年。【值得关注】资本仍在为巨额算力与人才开支买单。",
+      "sourceName": "东方财富网",
+      "sourceUrl": "https://finance.eastmoney.com/a/202610063888716953.html",
+      "publishedAt": "2026-10-05T23:50:00.000Z",
+      "summaryFull": "10月6日，财联社援引知情人士称，包括MGX在内的多家阿联酋基金正洽谈参与OpenAI最新一轮至少300亿美元融资，合计投资最高达100亿美元，贝莱德也在商谈入局。此轮投前估值约1.4万亿美元，远高于3月那轮融资后的8520亿美元；因专注AI安全，OpenAI已把IPO至少推迟到明年。【值得关注】资本仍在为巨额算力与人才开支买单。"
     },
     {
-      "title": "OpenAI 联手 AWS：托管智能体上 Bedrock、进 Slack",
-      "summary": "9 月 29 日 DevDay 上 OpenAI 与亚马逊云合作，以 AWS 基础设施运行托管式智能体（Bedrock Managed Agents）；ChatGPT 将进入 Slack 与微软 Teams，同事无需单独购证即可在同一会话补充上下文。并推出月费 500 美元的 Pro 套餐，含超高速处理与私有推理预览。【值得关注】把模型卖进对手云与办公套件。",
-      "sourceName": "财联社",
-      "sourceUrl": "https://www.cls.cn/detail/2495712",
-      "publishedAt": "2026-09-29T17:19:31.000Z",
-      "summaryFull": "9 月 29 日 DevDay 上 OpenAI 与亚马逊云合作，以 AWS 基础设施运行托管式智能体（Bedrock Managed Agents）；ChatGPT 将进入 Slack 与微软 Teams，同事无需单独购证即可在同一会话补充上下文。并推出月费 500 美元的 Pro 套餐，含超高速处理与私有推理预览。【值得关注】把模型卖进对手云与办公套件。"
+      "title": "OpenAI自研芯片Jalapeño量产，搭AMD Turin",
+      "summary": "10月2日，Tom's Hardware报道称OpenAI已在内部部署自研Jalapeño ASIC，与配备1.5TB内存的AMD EPYC Turin主机配合使用。硬件主管Richard Ho称选AMD是出于“务实”考虑，芯片目前仅供内部使用，暂不对外销售。【值得关注】自研芯片加多元CPU路线，OpenAI正试图压低单位算力成本。",
+      "sourceName": "IT之家",
+      "sourceUrl": "https://m.ithome.com/html/1009430.htm",
+      "publishedAt": "2026-10-03T04:38:00.000Z",
+      "summaryFull": "10月2日，Tom's Hardware报道称OpenAI已在内部部署自研Jalapeño ASIC，与配备1.5TB内存的AMD EPYC Turin主机配合使用。硬件主管Richard Ho称选AMD是出于“务实”考虑，芯片目前仅供内部使用，暂不对外销售。【值得关注】自研芯片加多元CPU路线，OpenAI正试图压低单位算力成本。"
     }
   ]
 }
