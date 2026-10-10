@@ -1,34 +1,34 @@
 [
   {
-    "title": "Sol Ultrafast 上线：Codex 提速 8 倍、单价 6 倍",
-    "summary": "10月9日，OpenAI 在 API、Codex 与 ChatGPT Work 上线 GPT-6.1 Sol Ultrafast：Codex 内速度最高达标准版 8 倍，价格涨到每百万输入 12 美元、输出 60 美元（标准档 6 倍），Codex 端仅月付 500 美元的 Pro 可用。【值得关注】速度被单独定价，竞争焦点正从跑分转向单位任务总成本。",
-    "sourceName": "C114 通信网",
-    "sourceUrl": "https://www.c114.com.cn/ai/5339/a1318836.html",
-    "publishedAt": "2026-10-09T00:50:00.000Z",
-    "summaryFull": "10月9日，OpenAI 在 API、Codex 与 ChatGPT Work 上线 GPT-6.1 Sol Ultrafast：Codex 内速度最高达标准版 8 倍，价格涨到每百万输入 12 美元、输出 60 美元（标准档 6 倍），Codex 端仅月付 500 美元的 Pro 可用。【值得关注】速度被单独定价，竞争焦点正从跑分转向单位任务总成本。"
+    "title": "Claude 托管代理上线动态工作流：单次最多 1000 个子代理",
+    "summary": "10 月 9 日，Anthropic 把 Claude 托管代理的动态工作流转为公测：主导代理先写计划，再分阶段拉起子代理并汇总，单次最多 1000 个。官方在 11.6 万行代码埋 70 个 bug，动态工作流三次均找出 66 个。【值得关注】多代理编排被平台收编，但 Anthropic 承认很吃 token，成绩又出自并行友好的自设基准，通用性待验证。",
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/",
+    "publishedAt": "2026-10-09T18:28:25.000Z",
+    "summaryFull": "10 月 9 日，Anthropic 把 Claude 托管代理的动态工作流转为公测：主导代理先写计划，再分阶段拉起子代理并汇总，单次最多 1000 个。官方在 11.6 万行代码埋 70 个 bug，动态工作流三次均找出 66 个。【值得关注】多代理编排被平台收编，但 Anthropic 承认很吃 token，成绩又出自并行友好的自设基准，通用性待验证。"
   },
   {
-    "title": "Claude Code 2.1.295：钩子失败可阻断，新增终端状态协议",
-    "summary": "北京时间 10月9日凌晨，Anthropic 发布 Claude Code 2.1.295：钩子新增 onFailure block，无法启动、超时或异常退出时阻断动作而非放行；新增终端状态协议 OSC 7501，可显示 Claude 正在工作、等待输入还是已完成。【值得关注】钩子从记录升级为拦截，正是自动批准模式敢放开的前提。",
-    "sourceName": "GitHub Releases",
-    "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
-    "publishedAt": "2026-10-08T19:48:38.000Z",
-    "summaryFull": "北京时间 10月9日凌晨，Anthropic 发布 Claude Code 2.1.295：钩子新增 onFailure block，无法启动、超时或异常退出时阻断动作而非放行；新增终端状态协议 OSC 7501，可显示 Claude 正在工作、等待输入还是已完成。【值得关注】钩子从记录升级为拦截，正是自动批准模式敢放开的前提。"
+    "title": "哈佛研究：编码代理让代码量涨三成，软件交付却没增加",
+    "summary": "10 月 9 日，Ars Technica 报道哈佛团队基于 Jellyfish 的研究：覆盖 700 余家公司、70 余万名员工、3 亿条事件。引入编码代理后代码行数增 30%、提交增 20%、PR 增 23%，但 Jira 议题完成率无显著变化，提交到合并耗时反增 49%。【值得关注】瓶颈已从写代码移到验收代码，团队该把投入转向评审与测试，而非堆量。",
+    "sourceName": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "publishedAt": "2026-10-09T19:43:00.000Z",
+    "summaryFull": "10 月 9 日，Ars Technica 报道哈佛团队基于 Jellyfish 的研究：覆盖 700 余家公司、70 余万名员工、3 亿条事件。引入编码代理后代码行数增 30%、提交增 20%、PR 增 23%，但 Jira 议题完成率无显著变化，提交到合并耗时反增 49%。【值得关注】瓶颈已从写代码移到验收代码，团队该把投入转向评审与测试，而非堆量。"
   },
   {
-    "title": "SuperCLUE 中文智能体编程榜：小米 MiMo V2.6 Pro 登顶",
-    "summary": "10月9日，SuperCLUE 智能体终端编程中文榜发布，统一以 Claude Code 为框架。小米 MiMo V2.6 Pro 以 64.65 分、1.52 元/题登顶，Kimi、GLM、腾讯 Hy4 列二至四位，MiMo V2.6 Flash 以 0.67 元/题成本最低。【值得关注】国产模型在中文终端任务上已能追上海外前沿，选型要把每题成本一起算。",
-    "sourceName": "ZOL 中关村在线",
-    "sourceUrl": "https://ai.zol.com.cn/1257/12576049.html",
-    "publishedAt": "2026-10-08T23:40:00.000Z",
-    "summaryFull": "10月9日，SuperCLUE 智能体终端编程中文榜发布，统一以 Claude Code 为框架。小米 MiMo V2.6 Pro 以 64.65 分、1.52 元/题登顶，Kimi、GLM、腾讯 Hy4 列二至四位，MiMo V2.6 Flash 以 0.67 元/题成本最低。【值得关注】国产模型在中文终端任务上已能追上海外前沿，选型要把每题成本一起算。"
+    "title": "Windows 版 Codex 换用微软 MXC 沙箱，不再需要管理员",
+    "summary": "10 月 9 日，OpenAI 为 Windows 版 Codex 接入微软 MXC 沙箱：命令在用户账户下运行，无需管理员预先批准。Codex 优先推荐 MXC，否则回退旧模式；前提是兼容的 Windows 11 设备，如 24H2 build 26100.9278。【值得关注】Windows 首次有系统自带的代理围栏，但安全声明全来自厂商，缺第三方复现。",
+    "sourceName": "Nerd's Chalk",
+    "sourceUrl": "https://nerdschalk.com/codex-windows-mxc-sandbox-pc-support/",
+    "publishedAt": "2026-10-09T19:00:28.000Z",
+    "summaryFull": "10 月 9 日，OpenAI 为 Windows 版 Codex 接入微软 MXC 沙箱：命令在用户账户下运行，无需管理员预先批准。Codex 优先推荐 MXC，否则回退旧模式；前提是兼容的 Windows 11 设备，如 24H2 build 26100.9278。【值得关注】Windows 首次有系统自带的代理围栏，但安全声明全来自厂商，缺第三方复现。"
   },
   {
-    "title": "Cursor 公布 Haiku 5.5 定价：输入降至每百万 $0.10",
-    "summary": "10月8日，Cursor 公布 Claude Haiku 5.5 定价：每百万输入 0.10 美元、输出 0.50 美元，超 10 万 token 后跳到 0.50/2.50 美元；Sonnet 5.5 缓存读取价从 0.20 美元腰斩至 0.10 美元。【值得关注】对反复喂同一份代码库的智能体，缓存打五折比降单价更省钱，成本战已打到缓存命中率。",
-    "sourceName": "AlphaSignal",
-    "sourceUrl": "https://alphasignal.ai/news/cursor-adds-claude-haiku-5-5-at-10x-cheaper-rates-for-coding-tasks",
-    "publishedAt": "2026-10-07T18:14:03.000Z",
-    "summaryFull": "10月8日，Cursor 公布 Claude Haiku 5.5 定价：每百万输入 0.10 美元、输出 0.50 美元，超 10 万 token 后跳到 0.50/2.50 美元；Sonnet 5.5 缓存读取价从 0.20 美元腰斩至 0.10 美元。【值得关注】对反复喂同一份代码库的智能体，缓存打五折比降单价更省钱，成本战已打到缓存命中率。"
+    "title": "Harness 收购 Augment Code，Cosmos 更名入列",
+    "summary": "10 月 8 日 Harness 收购 Augment Code 的 Cosmos、Auggie CLI，10 月 9 日媒体跟进。Cosmos 更名 Harness Cosmos 软件工厂代理：可把工单转成可合并代码，代理跑在独立虚拟机，人工只做审批合并。【值得关注】AI 编程整合正从补全代码转向接管交付流水线，独立工具玩家被 DevOps 平台吸收。",
+    "sourceName": "IT Brief India",
+    "sourceUrl": "https://itbrief.in/story/harness-acquires-augment-assets-to-expand-ai-coding",
+    "publishedAt": "2026-10-09T06:26:00.000Z",
+    "summaryFull": "10 月 8 日 Harness 收购 Augment Code 的 Cosmos、Auggie CLI，10 月 9 日媒体跟进。Cosmos 更名 Harness Cosmos 软件工厂代理：可把工单转成可合并代码，代理跑在独立虚拟机，人工只做审批合并。【值得关注】AI 编程整合正从补全代码转向接管交付流水线，独立工具玩家被 DevOps 平台吸收。"
   }
 ]
