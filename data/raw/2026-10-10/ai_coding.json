@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Claude 托管代理上线动态工作流：单次最多 1000 个子代理",
+    "summary": "10 月 9 日，Anthropic 把 Claude 托管代理的动态工作流转为公测：主导代理先写计划，再分阶段拉起子代理并汇总，单次最多 1000 个。官方在 11.6 万行代码埋 70 个 bug，动态工作流三次均找出 66 个。【值得关注】多代理编排被平台收编，但 Anthropic 承认很吃 token，成绩又出自并行友好的自设基准，通用性待验证。",
+    "sourceName": "The Decoder",
+    "sourceUrl": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/",
+    "publishedAt": "2026-10-09T18:28:25.000Z",
+    "summaryFull": "10 月 9 日，Anthropic 把 Claude 托管代理的动态工作流转为公测：主导代理先写计划，再分阶段拉起子代理并汇总，单次最多 1000 个。官方在 11.6 万行代码埋 70 个 bug，动态工作流三次均找出 66 个。【值得关注】多代理编排被平台收编，但 Anthropic 承认很吃 token，成绩又出自并行友好的自设基准，通用性待验证。"
+  },
+  {
+    "title": "哈佛研究：编码代理让代码量涨三成，软件交付却没增加",
+    "summary": "10 月 9 日，Ars Technica 报道哈佛团队基于 Jellyfish 的研究：覆盖 700 余家公司、70 余万名员工、3 亿条事件。引入编码代理后代码行数增 30%、提交增 20%、PR 增 23%，但 Jira 议题完成率无显著变化，提交到合并耗时反增 49%。【值得关注】瓶颈已从写代码移到验收代码，团队该把投入转向评审与测试，而非堆量。",
+    "sourceName": "Ars Technica",
+    "sourceUrl": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+    "publishedAt": "2026-10-09T19:43:00.000Z",
+    "summaryFull": "10 月 9 日，Ars Technica 报道哈佛团队基于 Jellyfish 的研究：覆盖 700 余家公司、70 余万名员工、3 亿条事件。引入编码代理后代码行数增 30%、提交增 20%、PR 增 23%，但 Jira 议题完成率无显著变化，提交到合并耗时反增 49%。【值得关注】瓶颈已从写代码移到验收代码，团队该把投入转向评审与测试，而非堆量。"
+  },
+  {
+    "title": "Windows 版 Codex 换用微软 MXC 沙箱，不再需要管理员",
+    "summary": "10 月 9 日，OpenAI 为 Windows 版 Codex 接入微软 MXC 沙箱：命令在用户账户下运行，无需管理员预先批准。Codex 优先推荐 MXC，否则回退旧模式；前提是兼容的 Windows 11 设备，如 24H2 build 26100.9278。【值得关注】Windows 首次有系统自带的代理围栏，但安全声明全来自厂商，缺第三方复现。",
+    "sourceName": "Nerd's Chalk",
+    "sourceUrl": "https://nerdschalk.com/codex-windows-mxc-sandbox-pc-support/",
+    "publishedAt": "2026-10-09T19:00:28.000Z",
+    "summaryFull": "10 月 9 日，OpenAI 为 Windows 版 Codex 接入微软 MXC 沙箱：命令在用户账户下运行，无需管理员预先批准。Codex 优先推荐 MXC，否则回退旧模式；前提是兼容的 Windows 11 设备，如 24H2 build 26100.9278。【值得关注】Windows 首次有系统自带的代理围栏，但安全声明全来自厂商，缺第三方复现。"
+  },
+  {
+    "title": "Harness 收购 Augment Code，Cosmos 更名入列",
+    "summary": "10 月 8 日 Harness 收购 Augment Code 的 Cosmos、Auggie CLI，10 月 9 日媒体跟进。Cosmos 更名 Harness Cosmos 软件工厂代理：可把工单转成可合并代码，代理跑在独立虚拟机，人工只做审批合并。【值得关注】AI 编程整合正从补全代码转向接管交付流水线，独立工具玩家被 DevOps 平台吸收。",
+    "sourceName": "IT Brief India",
+    "sourceUrl": "https://itbrief.in/story/harness-acquires-augment-assets-to-expand-ai-coding",
+    "publishedAt": "2026-10-09T06:26:00.000Z",
+    "summaryFull": "10 月 8 日 Harness 收购 Augment Code 的 Cosmos、Auggie CLI，10 月 9 日媒体跟进。Cosmos 更名 Harness Cosmos 软件工厂代理：可把工单转成可合并代码，代理跑在独立虚拟机，人工只做审批合并。【值得关注】AI 编程整合正从补全代码转向接管交付流水线，独立工具玩家被 DevOps 平台吸收。"
+  }
+]

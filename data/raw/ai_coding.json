@@ -1,34 +1,34 @@
 [
   {
-    "title": "Claude 托管代理上线动态工作流：单次最多 1000 个子代理",
-    "summary": "10 月 9 日，Anthropic 把 Claude 托管代理的动态工作流转为公测：主导代理先写计划，再分阶段拉起子代理并汇总，单次最多 1000 个。官方在 11.6 万行代码埋 70 个 bug，动态工作流三次均找出 66 个。【值得关注】多代理编排被平台收编，但 Anthropic 承认很吃 token，成绩又出自并行友好的自设基准，通用性待验证。",
-    "sourceName": "The Decoder",
-    "sourceUrl": "https://the-decoder.com/anthropics-claude-can-now-orchestrate-up-to-1000-ai-agents-in-parallel-through-dynamic-workflows/",
-    "publishedAt": "2026-10-09T18:28:25.000Z",
-    "summaryFull": "10 月 9 日，Anthropic 把 Claude 托管代理的动态工作流转为公测：主导代理先写计划，再分阶段拉起子代理并汇总，单次最多 1000 个。官方在 11.6 万行代码埋 70 个 bug，动态工作流三次均找出 66 个。【值得关注】多代理编排被平台收编，但 Anthropic 承认很吃 token，成绩又出自并行友好的自设基准，通用性待验证。"
+    "title": "Codex 内 GPT-6.1 Sol 默认上下文提至 500k",
+    "summary": "10 月 12 日，OpenAI 的 Tibo 宣布 Codex 与 ChatGPT Work 里 GPT-6.1 Sol 默认上下文由 272k 提至 500k（约 +80%），上限仍为 1M；用订阅额度调用不再收长上下文费。编程智能体读大仓库时压缩上下文、丢细节的次数将明显减少。【值得关注】长上下文正从付费卖点变默认能力，为躲压缩拆碎的任务可合并重跑。",
+    "summaryFull": "10 月 12 日，OpenAI 的 Tibo 宣布 Codex 与 ChatGPT Work 里 GPT-6.1 Sol 默认上下文由 272k 提至 500k（约 +80%），上限仍为 1M；用订阅额度调用不再收长上下文费。编程智能体读大仓库时压缩上下文、丢细节的次数将明显减少。【值得关注】长上下文正从付费卖点变默认能力，为躲压缩拆碎的任务可合并重跑。",
+    "sourceName": "IT之家",
+    "sourceUrl": "https://tech.ifeng.com/c/8x9jYKuaAce",
+    "publishedAt": "2026-10-12T00:29:50.000Z"
   },
   {
-    "title": "哈佛研究：编码代理让代码量涨三成，软件交付却没增加",
-    "summary": "10 月 9 日，Ars Technica 报道哈佛团队基于 Jellyfish 的研究：覆盖 700 余家公司、70 余万名员工、3 亿条事件。引入编码代理后代码行数增 30%、提交增 20%、PR 增 23%，但 Jira 议题完成率无显著变化，提交到合并耗时反增 49%。【值得关注】瓶颈已从写代码移到验收代码，团队该把投入转向评审与测试，而非堆量。",
-    "sourceName": "Ars Technica",
-    "sourceUrl": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-    "publishedAt": "2026-10-09T19:43:00.000Z",
-    "summaryFull": "10 月 9 日，Ars Technica 报道哈佛团队基于 Jellyfish 的研究：覆盖 700 余家公司、70 余万名员工、3 亿条事件。引入编码代理后代码行数增 30%、提交增 20%、PR 增 23%，但 Jira 议题完成率无显著变化，提交到合并耗时反增 49%。【值得关注】瓶颈已从写代码移到验收代码，团队该把投入转向评审与测试，而非堆量。"
+    "title": "JetBrains 版 Copilot：企业托管默认模型与 MCP 开关",
+    "summary": "10 月 10 日晚（北京时间 11 日凌晨），Copilot for JetBrains 更新：企业可用托管设置指定新会话默认模型，用户仍可切换；新增 MCP 自动启动开关，诊断菜单加 Fix 一键修复，并停用 JetBrains 2025.1（需 2025.2+）。【值得关注】默认模型与 MCP 开关同批落地，IDE 插件竞争点正从补全质量转向可管控性。",
+    "summaryFull": "10 月 10 日晚（北京时间 11 日凌晨），Copilot for JetBrains 更新：企业可用托管设置指定新会话默认模型，用户仍可切换；新增 MCP 自动启动开关，诊断菜单加 Fix 一键修复，并停用 JetBrains 2025.1（需 2025.2+）。【值得关注】默认模型与 MCP 开关同批落地，IDE 插件竞争点正从补全质量转向可管控性。",
+    "sourceName": "GitHub Blog",
+    "sourceUrl": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
+    "publishedAt": "2026-10-10T18:53:39.000Z"
   },
   {
-    "title": "Windows 版 Codex 换用微软 MXC 沙箱，不再需要管理员",
-    "summary": "10 月 9 日，OpenAI 为 Windows 版 Codex 接入微软 MXC 沙箱：命令在用户账户下运行，无需管理员预先批准。Codex 优先推荐 MXC，否则回退旧模式；前提是兼容的 Windows 11 设备，如 24H2 build 26100.9278。【值得关注】Windows 首次有系统自带的代理围栏，但安全声明全来自厂商，缺第三方复现。",
-    "sourceName": "Nerd's Chalk",
-    "sourceUrl": "https://nerdschalk.com/codex-windows-mxc-sandbox-pc-support/",
-    "publishedAt": "2026-10-09T19:00:28.000Z",
-    "summaryFull": "10 月 9 日，OpenAI 为 Windows 版 Codex 接入微软 MXC 沙箱：命令在用户账户下运行，无需管理员预先批准。Codex 优先推荐 MXC，否则回退旧模式；前提是兼容的 Windows 11 设备，如 24H2 build 26100.9278。【值得关注】Windows 首次有系统自带的代理围栏，但安全声明全来自厂商，缺第三方复现。"
+    "title": "OpenCode v1.19.0：自动更新关停，升 2 代须手动",
+    "summary": "10 月 11 日，OpenCode 发布 v1.19.0：TUI 不再自动装更新，改用 /update 手动安装；跨到 OpenCode 2 须显式执行 opencode upgrade --major；同版放行 OpenAI ultrafast 服务档。【值得关注】升级决定权交还用户是开源编程代理的共识，升级前应先锁版本、读迁移说明。",
+    "summaryFull": "10 月 11 日，OpenCode 发布 v1.19.0：TUI 不再自动装更新，改用 /update 手动安装；跨到 OpenCode 2 须显式执行 opencode upgrade --major；同版放行 OpenAI ultrafast 服务档。【值得关注】升级决定权交还用户是开源编程代理的共识，升级前应先锁版本、读迁移说明。",
+    "sourceName": "OpenCode (GitHub Releases)",
+    "sourceUrl": "https://github.com/anomalyco/opencode/releases/tag/v1.19.0",
+    "publishedAt": "2026-10-11T01:39:22.000Z"
   },
   {
-    "title": "Harness 收购 Augment Code，Cosmos 更名入列",
-    "summary": "10 月 8 日 Harness 收购 Augment Code 的 Cosmos、Auggie CLI，10 月 9 日媒体跟进。Cosmos 更名 Harness Cosmos 软件工厂代理：可把工单转成可合并代码，代理跑在独立虚拟机，人工只做审批合并。【值得关注】AI 编程整合正从补全代码转向接管交付流水线，独立工具玩家被 DevOps 平台吸收。",
-    "sourceName": "IT Brief India",
-    "sourceUrl": "https://itbrief.in/story/harness-acquires-augment-assets-to-expand-ai-coding",
-    "publishedAt": "2026-10-09T06:26:00.000Z",
-    "summaryFull": "10 月 8 日 Harness 收购 Augment Code 的 Cosmos、Auggie CLI，10 月 9 日媒体跟进。Cosmos 更名 Harness Cosmos 软件工厂代理：可把工单转成可合并代码，代理跑在独立虚拟机，人工只做审批合并。【值得关注】AI 编程整合正从补全代码转向接管交付流水线，独立工具玩家被 DevOps 平台吸收。"
+    "title": "阿里 Qwen Code v0.25.1：Agent 加后台 Shell",
+    "summary": "10 月 11 日，阿里 Qwen Code 发布 v0.25.1：托管 Agent 运行时新增后台 Shell 与 Monitor，可持久运行后台会话并上报任务事件；新增实验性 Kubernetes CSI 运行时，校验工作区并持久化 Pod 身份。【值得关注】国产编程 Agent 的竞争点已压到长任务运行时与可审计审批，这正是企业采购最看重的部分。",
+    "summaryFull": "10 月 11 日，阿里 Qwen Code 发布 v0.25.1：托管 Agent 运行时新增后台 Shell 与 Monitor，可持久运行后台会话并上报任务事件；新增实验性 Kubernetes CSI 运行时，校验工作区并持久化 Pod 身份。【值得关注】国产编程 Agent 的竞争点已压到长任务运行时与可审计审批，这正是企业采购最看重的部分。",
+    "sourceName": "Qwen Code (GitHub Releases)",
+    "sourceUrl": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
+    "publishedAt": "2026-10-11T11:39:21.000Z"
   }
 ]
