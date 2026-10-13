@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>2026-10-13 AI 晨报 · 24 条</title>
+<meta name="description" content="Meta 发布 Muse Wonder：自称在 DeepSWE/SWE-Marathon 上超越 Claude 与 GPT-6，100 万上下文，并通过 Muse Code 分档订阅（Full 版需订阅、Power Usage 档 50 美元/月起）。；微软发布第三代自研 AI 芯片 Maia 300，计划 2027 年扩至多吉瓦级，作为英伟达替代路线。"/>
+<meta name="color-scheme" content="light dark"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="2026-10-13 AI 晨报 · 24 条"/>
+<meta property="og:description" content="Meta 发布 Muse Wonder：自称在 DeepSWE/SWE-Marathon 上超越 Claude 与 GPT-6，100 万上下文，并通过 Muse Code 分档订阅（Full 版需订阅、Power Usage 档 50 美元/月起）。；微软发布第三代自研 AI 芯片 Maia 300，计划 2027 年扩至多吉瓦级，作为英伟达替代路线。"/>
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --ink:#1f2430; --muted:#6b7280;
+    --line:#e7e9f0; --soft:#f1f2f7; --body:#3a4252;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:16px;
+    --hero-a:#1e1b4b; --hero-b:#312e81; --hero-c:#4f46e5;
+    --accent:#4f46e5; --link:#4f46e5;
+    --nav-bg:rgba(255,255,255,.92); --mark:#fde68a;
+  }
+  html[data-theme="dark"]{
+    --bg:#0e1117; --surface:#161b26; --ink:#e8ebf2; --muted:#9aa4b8;
+    --line:#252c3b; --soft:#1d2431; --body:#c3cad9;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+    --hero-a:#141a2e; --hero-b:#1b2340; --hero-c:#312e81;
+    --accent:#6366f1; --link:#a5b4fc;
+    --nav-bg:rgba(14,17,23,.9); --mark:#7c5c00;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 20px}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative; overflow:hidden;
+    background:linear-gradient(135deg,var(--hero-a) 0%,var(--hero-b) 45%,var(--hero-c) 100%);
+    color:#fff; padding:46px 0 38px;
+  }
+  .hero::after{
+    content:""; position:absolute; right:-80px; top:-80px; width:340px; height:340px;
+    background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);
+  }
+  .hero .wrap{position:relative; z-index:1}
+  .eyebrow{font-size:13px; letter-spacing:.18em; text-transform:uppercase; opacity:.82; margin:0 0 10px}
+  .hero h1{margin:0; font-size:34px; font-weight:800; letter-spacing:.5px}
+  .hero .sub{margin:8px 0 0; opacity:.9; font-size:15px}
+  .total-badge{
+    display:inline-flex; align-items:baseline; gap:8px; margin-top:18px;
+    background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    padding:8px 16px; border-radius:999px; font-size:14px;
+  }
+  .total-badge b{font-size:22px; font-weight:800}
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:12px; margin-top:22px}
+  .stat{
+    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.2);
+    border-radius:14px; padding:14px 12px; text-align:left; cursor:pointer;
+    text-decoration:none; color:inherit; display:block; transition:.15s;
+  }
+  .stat:hover{background:rgba(255,255,255,.2)}
+  .stat .num{font-size:26px; font-weight:800; line-height:1}
+  .stat .lbl{font-size:12.5px; opacity:.9; margin-top:6px; min-height:34px}
+
+  /* ===== Highlights ===== */
+  .brief{background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent);
+    border-radius:var(--radius); padding:16px 20px; margin:22px 0 0; box-shadow:var(--shadow)}
+  .brief h2{margin:0 0 8px; font-size:15px; font-weight:800; color:var(--ink)}
+  .brief ul{margin:0; padding-left:20px}
+  .brief li{font-size:14px; color:var(--body); margin:5px 0}
+
+  /* ===== Sticky nav ===== */
+  .nav{
+    position:sticky; top:0; z-index:20; background:var(--nav-bg);
+    backdrop-filter:saturate(180%) blur(10px); border-bottom:1px solid var(--line);
+  }
+  .nav .wrap{display:flex; gap:8px; overflow-x:auto; padding:10px 20px; align-items:center}
+  .nav a.tab{
+    flex:0 0 auto; text-decoration:none; font-size:13.5px; font-weight:600;
+    color:var(--muted); padding:7px 13px; border-radius:999px; border:1px solid var(--line);
+    white-space:nowrap; transition:.15s;
+  }
+  .nav a.tab:hover{color:var(--ink); border-color:#c9cde0}
+  .nav a.tab.active{color:#fff; background:var(--accent); border-color:var(--accent)}
+  .nav a.tab .cnt{opacity:.7; font-weight:700; margin-left:4px}
+  .nav .tools{margin-left:auto; display:flex; gap:6px; flex:0 0 auto}
+  .nav input[type=search]{
+    font:inherit; font-size:13px; padding:6px 12px; border-radius:999px;
+    border:1px solid var(--line); background:var(--surface); color:var(--ink); width:150px;
+  }
+  .nav input[type=search]:focus{outline:2px solid var(--accent); outline-offset:1px; width:190px}
+  .nav button{
+    font:inherit; font-size:13px; font-weight:700; cursor:pointer; padding:6px 11px;
+    border-radius:999px; border:1px solid var(--line); background:var(--surface); color:var(--muted);
+  }
+  .nav button:hover{color:var(--ink); border-color:#c9cde0}
+
+  /* ===== Sections ===== */
+  main{padding:26px 0 10px}
+  .section{margin-bottom:34px; scroll-margin-top:64px}
+  .section-head{display:flex; align-items:center; gap:12px; margin:0 0 16px}
+  .section-head .bar{width:6px; height:26px; border-radius:4px}
+  .section-head h2{margin:0; font-size:21px; font-weight:800}
+  .section-head .count{
+    font-size:13px; color:var(--muted); background:var(--soft); padding:3px 10px; border-radius:999px; font-weight:700;
+  }
+  .section-head .hint{font-size:12.5px; color:var(--muted); margin-left:auto}
+
+  /* ===== Cards grid ===== */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr)); gap:16px}
+  .card{
+    position:relative; background:var(--surface); border:1px solid var(--line);
+    border-radius:var(--radius); padding:18px 18px 16px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; transition:transform .15s, box-shadow .15s;
+    scroll-margin-top:70px;
+  }
+  .card:hover{transform:translateY(-3px); box-shadow:0 4px 8px rgba(16,24,40,.08),0 16px 36px rgba(16,24,40,.12)}
+  .card:target{border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent)}
+  .card .top{display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:10px}
+  .serial{
+    font-size:13px; font-weight:800; color:#fff; min-width:30px; height:30px;
+    border-radius:9px; display:inline-flex; align-items:center; justify-content:center; padding:0 8px;
+    text-decoration:none; flex:0 0 auto;
+  }
+  .chip{
+    display:inline-flex; align-items:center; gap:5px; max-width:100%;
+    font-size:12px; font-weight:600; color:var(--muted);
+    background:var(--soft); border:1px solid var(--line); border-radius:999px; padding:4px 10px;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .chip .dot{width:7px; height:7px; border-radius:50%; flex:0 0 auto}
+  .card h3{margin:2px 0 8px; font-size:16.5px; font-weight:700; line-height:1.4}
+  .card h3 a{text-decoration:none}
+  .card h3 a:hover{text-decoration:underline}
+  .meta{display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--muted); margin-bottom:10px; flex-wrap:wrap}
+  .meta .time{font-weight:600}
+  .age{background:var(--soft); border-radius:999px; padding:1px 8px; font-weight:700}
+  .age.fresh{color:#047857} html[data-theme="dark"] .age.fresh{color:#34d399}
+  .age.stale{color:#b45309} html[data-theme="dark"] .age.stale{color:#fbbf24}
+  .summary{font-size:14px; color:var(--body); margin:0 0 14px; flex:1}
+  .read{
+    align-self:flex-start; text-decoration:none; font-size:13.5px; font-weight:700;
+    display:inline-flex; align-items:center; gap:5px; color:var(--link);
+  }
+  .read:hover{gap:8px}
+  .empty-hit{display:none; padding:40px 0; text-align:center; color:var(--muted)}
+  mark{background:var(--mark); color:inherit; border-radius:3px; padding:0 2px}
+
+  /* ===== Footer ===== */
+  footer{border-top:1px solid var(--line); margin-top:18px; padding:26px 0 50px; color:var(--muted); font-size:13.5px}
+  footer .wrap{display:flex; flex-wrap:wrap; gap:8px 22px; align-items:center; justify-content:space-between}
+  footer a{color:var(--link); text-decoration:none; font-weight:600}
+  footer a:hover{text-decoration:underline}
+  .foot-total{font-weight:800; color:var(--ink); font-size:15px}
+  .to-top{position:fixed; right:18px; bottom:18px; z-index:30; width:42px; height:42px; border-radius:50%;
+    border:1px solid var(--line); background:var(--surface); color:var(--muted); cursor:pointer;
+    font-size:18px; box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:.2s}
+  .to-top.on{opacity:1; pointer-events:auto}
+
+  @media (max-width:680px){
+    .hero h1{font-size:27px}
+    .grid{grid-template-columns:1fr}
+    .nav .tools{margin-left:0}
+    .nav input[type=search]{width:110px}
+    .nav input[type=search]:focus{width:130px}
+  }
+  @media print{
+    .nav,.to-top,.read{display:none!important}
+    body{background:#fff}
+    .card{break-inside:avoid; box-shadow:none; border-color:#ccc}
+    .hero{background:#312e81!important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+    .grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow" id="hero-eyebrow">AI HOT · 每日晨报</p>
+      <h1 id="hero-date">—</h1>
+      <p class="sub" id="hero-window">—</p>
+      <div class="total-badge">本期共 <b id="hero-total">0</b> 条 AI 动态</div>
+      <div class="stats" id="hero-stats"></div>
+    </div>
+  </header>
+
+  <nav class="nav" id="nav">
+    <div class="wrap">
+      <div id="nav-inner" style="display:flex;gap:8px"></div>
+      <div class="tools">
+        <input type="search" id="q" placeholder="搜索…  (/)" aria-label="搜索本期条目"/>
+        <button id="theme" type="button" title="切换深色模式">◐</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <div id="main"></div>
+    <div class="empty-hit" id="empty-hit">没有匹配的条目</div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span class="foot-total" id="foot-total">共 0 条</span>
+      <span>数据源：<a id="foot-source" href="#" target="_blank" rel="noopener noreferrer">AI HOT</a> · 时间均为北京时间</span>
+      <span id="foot-note">—</span>
+    </div>
+  </footer>
+  <button class="to-top" id="to-top" type="button" title="回到顶部" aria-label="回到顶部">↑</button>
+
+<script>
+const DATA = {"date":"2026-10-13","reportName":"AI 晨报","source":"AI HOT","canonical":"https://aihot.virxact.com/daily/2026-10-13","eyebrow":"AI HOT · 每日晨报","focusNote":"侧重方向：AI Coding 与 具身智能","windowStart":"2026-10-07T00:00:00+08:00","windowEnd":"2026-10-13T23:59:00+08:00","focusWindowDays":3,"generalWindowDays":7,"highlights":["Meta 发布 Muse Wonder：自称在 DeepSWE/SWE-Marathon 上超越 Claude 与 GPT-6，100 万上下文，并通过 Muse Code 分档订阅（Full 版需订阅、Power Usage 档 50 美元/月起）。","微软发布第三代自研 AI 芯片 Maia 300，计划 2027 年扩至多吉瓦级，作为英伟达替代路线。","Anthropic 双线动作：称反蒸馏技术使模型窃取量降 90%–99% 并点名智谱；红队警告小模型或数月内可在物联网设备上自我复制。","Tibo 宣布第 8 天全球重置（当日 15 时前生效）；星尘智能完成 10 亿元融资、估值 150 亿元。"],"sections":[{"label":"AI Coding","focus":true,"hint":"每日焦点 · 近 3 天","items":[{"title":"xAI 发布 The X 订阅：30 美元含 Cursor 编程","summary":"10 月 12 日 xAI 把 Grok、Cursor 编程与 X Premium 打包成 The X Subscription，8/30/100/200 美元四档。30 美元 Premium 含原价 90 美元的 Cursor Pro 与 SuperGrok，编程额度至少翻倍，第三方模型须按 API 价另购。【值得关注】Cursor 定价权被稀释。","summaryFull":"10 月 12 日 xAI 把 Grok、Cursor 编程与 X Premium 打包成 The X Subscription，8/30/100/200 美元四档。30 美元 Premium 含原价 90 美元的 Cursor Pro 与 SuperGrok，编程额度至少翻倍，第三方模型须按 API 价另购。【值得关注】Cursor 定价权被稀释。","sourceName":"Asianet Newsable","sourceUrl":"https://newsable.asianetnews.com/markets/spacex-bundles-grok-x-and-cursor-into-new-subscription-tiers-articleshow-thby8dn","publishedAt":"2026-10-13T00:30:00.000Z","n":1},{"title":"Meta 的 Muse Code 订阅分档：Power 档 50 美元/月起","summary":"Meta 同步为编码产品 Muse Code 调整订阅：模型经 Meta API 与 Muse Code 开放，按每百万 token 4/20 美元计费；更强的 Muse Wonder Full 仅随 Muse Code 订阅提供，另设 Power Usage 档 50 美元/月起，上下文 100 万 token，Meta 自评单任务成本约为前代三倍。【值得关注】把最强模型锁进自家编码订阅，是「模型即入口」的定价实验；对只提供 API 的厂商，这会进一步压缩纯模型调用的议价空间。","summaryFull":"Meta 同步为编码产品 Muse Code 调整订阅：模型经 Meta API 与 Muse Code 开放，按每百万 token 4/20 美元计费；更强的 Muse Wonder Full 仅随 Muse Code 订阅提供，另设 Power Usage 档 50 美元/月起，上下文 100 万 token，Meta 自评单任务成本约为前代三倍。【值得关注】把最强模型锁进自家编码订阅，是「模型即入口」的定价实验；对只提供 API 的厂商，这会进一步压缩纯模型调用的议价空间。","sourceName":"Digital Today","sourceUrl":"https://www.digitaltoday.co.kr/en/view/113473/meta-unveils-frontier-ai-models-muse-wonder-targeting-anthropic-openai","publishedAt":"2026-10-12T20:29:32.000Z","n":2},{"title":"LightOn 开源 2.5B 代码检索智能体，Apache-2.0","summary":"10/11 LightOn 在 Hugging Face 开源 colgrep-agent-2B：基于 MiniCPM5-2B 微调的 2.5B 模型，Apache-2.0 许可，专做代码语义检索与定位，可把「找代码」这一步交给小模型而非让主 agent 反复读文件。配套论文题为《Small Agents with Semantic Search: Efficient Multilingual Code Localization》。【值得关注】把检索这类高频动作下沉到 2.5B 小模型，是用「小模型+工具」换主模型 token 的典型做法；对按量计费的编码 agent，省下的上下文成本比模型跑分更实际。","sourceName":"Hugging Face（LightOn）","sourceUrl":"https://huggingface.co/lightonai/colgrep-agent-2B","publishedAt":"2026-10-11T16:24:32.000Z","summaryFull":"10/11 LightOn 在 Hugging Face 开源 colgrep-agent-2B：基于 MiniCPM5-2B 微调的 2.5B 模型，Apache-2.0 许可，专做代码语义检索与定位，可把「找代码」这一步交给小模型而非让主 agent 反复读文件。配套论文题为《Small Agents with Semantic Search: Efficient Multilingual Code Localization》。【值得关注】把检索这类高频动作下沉到 2.5B 小模型，是用「小模型+工具」换主模型 token 的典型做法；对按量计费的编码 agent，省下的上下文成本比模型跑分更实际。","n":3},{"title":"Copilot CLI 1.0.97 加入代理级声明式钩子","summary":"10 月 12 日晚 GitHub 发布 Copilot CLI 1.0.97-0，为自定义代理加入代理级声明式钩子，内联图片在受支持终端默认渲染，并修复 config.json 损坏重置登录、/usage 显示已计费 AI Credits 等问题。【值得关注】钩子下放到单个代理，是把权限写进代理定义的关键一步。","summaryFull":"10 月 12 日晚 GitHub 发布 Copilot CLI 1.0.97-0，为自定义代理加入代理级声明式钩子，内联图片在受支持终端默认渲染，并修复 config.json 损坏重置登录、/usage 显示已计费 AI Credits 等问题。【值得关注】钩子下放到单个代理，是把权限写进代理定义的关键一步。","sourceName":"GitHub","sourceUrl":"https://github.com/github/copilot-cli/releases/tag/v1.0.97-0","publishedAt":"2026-10-12T20:45:05.000Z","n":4}]},{"label":"具身智能","focus":true,"hint":"每日焦点 · 近 3 天","items":[{"title":"星尘智能完成10亿元融资，估值达150亿元","summary":"10月13日，绳驱AI人形机器人公司星尘智能完成10亿元规模新一轮融资，投后估值达150亿元，由深投控旗下投控东海领投，洪泰基金、善恒资本等参与，老股东先沐追投。资金将用于模型迭代、商业化落地与产能建设，并继续投入三位一体全栈架构。【值得关注】具身智能融资趋于理性之际，国资领投的150亿元估值显示资本正加速向全栈自研的头部本体公司集中。","summaryFull":"10月13日，绳驱AI人形机器人公司星尘智能完成10亿元规模新一轮融资，投后估值达150亿元，由深投控旗下投控东海领投，洪泰基金、善恒资本等参与，老股东先沐追投。资金将用于模型迭代、商业化落地与产能建设，并继续投入三位一体全栈架构。【值得关注】具身智能融资趋于理性之际，国资领投的150亿元估值显示资本正加速向全栈自研的头部本体公司集中。","sourceName":"证券时报·e公司","sourceUrl":"https://finance.sina.com.cn/jjxw/2026-10-13/doc-iniuzuyr8157270.shtml","publishedAt":"2026-10-13T01:13:00.000Z","n":5},{"title":"DeepSeek领投机器人AI创企Winverse，估值4亿美元","summary":"10月12日彭博社报道，DeepSeek已同意领投机器人大脑初创公司Winverse AI的种子轮，金额数千万美元，投后估值约4亿美元，美团旗下龙珠资本亦承诺参投，交易尚未最终敲定。该公司由前腾讯视觉语言与机器人AI团队负责人Hu Han今年创立。【值得关注】大模型厂商以资本方式切入具身智能大脑层，机器人基础模型的竞争正从技术授权走向股权绑定。","summaryFull":"10月12日彭博社报道，DeepSeek已同意领投机器人大脑初创公司Winverse AI的种子轮，金额数千万美元，投后估值约4亿美元，美团旗下龙珠资本亦承诺参投，交易尚未最终敲定。该公司由前腾讯视觉语言与机器人AI团队负责人Hu Han今年创立。【值得关注】大模型厂商以资本方式切入具身智能大脑层，机器人基础模型的竞争正从技术授权走向股权绑定。","sourceName":"The Next Web","sourceUrl":"https://thenextweb.com/news/deepseek-winverse-ai-robot-seed-round","publishedAt":"2026-10-12T11:22:00.000Z","n":6},{"title":"小鹏IRON计划2026年底量产、2027下半年进欧洲","summary":"10月11日，小鹏汽车创始人何小鹏在巴黎Night活动上首次公布IRON人形机器人的欧洲时间表：2026年底量产、2027年上半年开启交付、2027年下半年落地欧洲，首批商业化场景为门店导览、购物协助与巡检。欧洲定价、首发国家与销售方案尚未披露。【值得关注】车企把机器人出海节奏与整车渠道绑定，IRON若能按期交付，将成为中国具身智能出海最激进的样本。","summaryFull":"10月11日，小鹏汽车创始人何小鹏在巴黎Night活动上首次公布IRON人形机器人的欧洲时间表：2026年底量产、2027年上半年开启交付、2027年下半年落地欧洲，首批商业化场景为门店导览、购物协助与巡检。欧洲定价、首发国家与销售方案尚未披露。【值得关注】车企把机器人出海节奏与整车渠道绑定，IRON若能按期交付，将成为中国具身智能出海最激进的样本。","sourceName":"Humanoids Daily","sourceUrl":"https://www.humanoidsdaily.com/news/xpeng-iron-europe-rollout-h2-2027","publishedAt":"2026-10-12T08:00:00.000Z","n":7},{"title":"均普智能发布工业具身智能全栈平台，已下线900台","summary":"10月12日，均普智能发布工业具身智能全栈平台Primus Stack，由数据采集、模型闭环、开发套件与自主作业方案四模块组成，头戴终端Primus Ego配5个全局快门摄像头与400Hz IMU。上半年具身智能营收6452万元，累计下线机器人900台。【值得关注】工业场景的真实订单与产能，比本体炫技更能验证具身智能的商业闭环。","summaryFull":"10月12日，均普智能发布工业具身智能全栈平台Primus Stack，由数据采集、模型闭环、开发套件与自主作业方案四模块组成，头戴终端Primus Ego配5个全局快门摄像头与400Hz IMU。上半年具身智能营收6452万元，累计下线机器人900台。【值得关注】工业场景的真实订单与产能，比本体炫技更能验证具身智能的商业闭环。","sourceName":"中国证券报·中证网","sourceUrl":"http://jnzstatic.cs.com.cn/zzb/htmlInfo/134908.html","publishedAt":"2026-10-12T12:53:00.000Z","n":8}]},{"label":"一周大事","focus":false,"hint":"本周窗口","items":[{"title":"Meta发布Muse Wonder，称基准测试超越Claude与GPT-6","summary":"10/13 IT之家报道，Meta于周一发布首个前沿模型Muse Wonder，扎克伯格称公司已在前沿追上对手，基准测试优于Claude Opus 5.5与GPT-6 Astra。模型闭源、最强版仅售企业，发布时Meta Code额度统计出现漏洞。【值得关注】Meta首次把“前沿”写进产品叙事，闭源直销直指OpenAI与Anthropic的订单腹地。","summaryFull":"10/13 IT之家报道，Meta于周一发布首个前沿模型Muse Wonder，扎克伯格称公司已在前沿追上对手，基准测试优于Claude Opus 5.5与GPT-6 Astra。模型闭源、最强版仅售企业，发布时Meta Code额度统计出现漏洞。【值得关注】Meta首次把“前沿”写进产品叙事，闭源直销直指OpenAI与Anthropic的订单腹地。","sourceName":"IT之家","sourceUrl":"https://m.ithome.com/html/1012159.htm","publishedAt":"2026-10-13T01:05:00.000Z","n":9},{"title":"微软发Maia 300：2027年自研AI芯片扩至多吉瓦级","summary":"10/12 据CNBC，微软发布第三代自研AI加速器Maia 300，计划2027年量产，提高自研芯片推理占比，未来把Maia扩至数吉瓦级。单机柜拟部署96颗，机柜级Token吞吐最高达Maia 200的7倍，每兆瓦Token较领先GPU系统高40%。【值得关注】全球最大GPU买家公开自研替代路线，英伟达订单结构将先于股价感受压力。","summaryFull":"10/12 据CNBC，微软发布第三代自研AI加速器Maia 300，计划2027年量产，提高自研芯片推理占比，未来把Maia扩至数吉瓦级。单机柜拟部署96颗，机柜级Token吞吐最高达Maia 200的7倍，每兆瓦Token较领先GPU系统高40%。【值得关注】全球最大GPU买家公开自研替代路线，英伟达订单结构将先于股价感受压力。","sourceName":"DigitalToday（引 CNBC）","sourceUrl":"https://www.digitaltoday.co.kr/cn/view/113464/microsoft-unveils-third-generation-ai-chip-maia-300-expands-as-nvidia-alternative","publishedAt":"2026-10-12T13:36:00.000Z","n":10},{"title":"梁文锋密集接触具身智能创业者，DeepSeek或亲自下场","summary":"10/12 凤凰网科技独家报道，DeepSeek 创始人梁文锋近期密集接触具身智能创业者，内部正评估亲自组队研发或投资切入；他已投资宇树科技。报道称 GPT-6 Astra 在机器人控制任务上成功率 95%，构成竞争压力。【值得关注】语言模型红利见顶后，中国实验室正把 AGI 竞赛推向物理世界；领军人物亲自扫项目而非走常规战投流程，说明决策已被提到最高优先级。","summaryFull":"10/12 凤凰网科技独家报道，DeepSeek 创始人梁文锋近期密集接触具身智能创业者，内部正评估亲自组队研发或投资切入；他已投资宇树科技。报道称 GPT-6 Astra 在机器人控制任务上成功率 95%，构成竞争压力。【值得关注】语言模型红利见顶后，中国实验室正把 AGI 竞赛推向物理世界；领军人物亲自扫项目而非走常规战投流程，说明决策已被提到最高优先级。","sourceName":"凤凰网科技","sourceUrl":"https://ishare.ifeng.com/c/s/8x8CSYp7qr4","publishedAt":"2026-10-12T13:32:00.000Z","n":11},{"title":"中国加快构建智能体全生命周期安全治理框架","summary":"10/12 央视报道，中国正构建覆盖全生命周期的AI安全治理体系，重点应对智能体越出预设场景的风险。中国信通院程莹指出，备案与沙箱隔离对高自主性智能体已不够，需补身份标识、权限控制、日志留存与行为追溯。截至8月底1112项生成式AI服务完成备案，专项行动查出逾1.4万款违规产品。【值得关注】治理重心正从“内容合规”转向“行为可控”，智能体上线门槛将抬高。","summaryFull":"10/12 央视报道，中国正构建覆盖全生命周期的AI安全治理体系，重点应对智能体越出预设场景的风险。中国信通院程莹指出，备案与沙箱隔离对高自主性智能体已不够，需补身份标识、权限控制、日志留存与行为追溯。截至8月底1112项生成式AI服务完成备案，专项行动查出逾1.4万款违规产品。【值得关注】治理重心正从“内容合规”转向“行为可控”，智能体上线门槛将抬高。","sourceName":"Orient（引 CCTV）","sourceUrl":"https://orient.tm/en/china/1582","publishedAt":"2026-10-12T14:21:00.000Z","n":12},{"title":"英伟达联手思科推USFP光模块，单模块12.8Tb/s","summary":"10/13《每日经济新闻》报道，英伟达与思科联合推出新型可插拔光模块外形规格USFP，为首个支持每通道400Gb/s电信号的模块，单模块容量最高12.8Tb/s，带宽密度较现有200Gb/s-per-lane方案提升4倍、能效提升1.3倍，并与TE、安费诺共建多源生态。【值得关注】AI集群瓶颈正从芯片转向互联，外形规格之争将决定下一代组网成本。","summaryFull":"10/13《每日经济新闻》报道，英伟达与思科联合推出新型可插拔光模块外形规格USFP，为首个支持每通道400Gb/s电信号的模块，单模块容量最高12.8Tb/s，带宽密度较现有200Gb/s-per-lane方案提升4倍、能效提升1.3倍，并与TE、安费诺共建多源生态。【值得关注】AI集群瓶颈正从芯片转向互联，外形规格之争将决定下一代组网成本。","sourceName":"每日经济新闻","sourceUrl":"https://www.sohu.com/a/1087030799_115362","publishedAt":"2026-10-13T01:49:00.000Z","n":13}]},{"label":"Anthropic（A社）","focus":false,"hint":"本周窗口","items":[{"title":"Anthropic：反蒸馏使窃取量降 90%-99%，点名智谱","summary":"10 月 12 日，Anthropic 公布反蒸馏进展：限制对 Claude 推理过程的访问后，蒸馏者提取出的推理 Token 降至此前的 1/10 至 1/100，窃取数据量减少约 90%-99%，误报率低于 0.1%。公司称已封禁数万个关联账号，并点名中国智谱（Z.ai）在开发 GLM-5.3 时试图蒸馏 Claude。【值得关注】这是头部实验室首次用可量化指标公开「能力防泄漏」战果，模型能力保护正从技术细节升格为中美竞争议题。","summaryFull":"10 月 12 日，Anthropic 公布反蒸馏进展：限制对 Claude 推理过程的访问后，蒸馏者提取出的推理 Token 降至此前的 1/10 至 1/100，窃取数据量减少约 90%-99%，误报率低于 0.1%。公司称已封禁数万个关联账号，并点名中国智谱（Z.ai）在开发 GLM-5.3 时试图蒸馏 Claude。【值得关注】这是头部实验室首次用可量化指标公开「能力防泄漏」战果，模型能力保护正从技术细节升格为中美竞争议题。","sourceName":"The Edge Malaysia / Reuters","sourceUrl":"https://theedgemalaysia.com/node/821579","publishedAt":"2026-10-12T09:30:00.000Z","n":14},{"title":"Anthropic 红队警告：小模型或数月内可在物联网设备自我复制","summary":"10 月 12 日，Anthropic 前沿红队发文称，9B 小模型已在 9 类硬件中的 8 类跑起推理，30B 以下模型能完成自我复制的大部分步骤，GLM-5.2 及更强模型已可端到端复制。研究者用 15 台单价约 55 美元的杂牌 Android 电视盒搭出分布式推理，称这种「数字黏菌」式网络没有中心可关停，倍增周期以天计。【值得关注】复制门槛降到智能烤箱级别后，AI 治理的抓手将从数据中心转向海量廉价终端。","summaryFull":"10 月 12 日，Anthropic 前沿红队发文称，9B 小模型已在 9 类硬件中的 8 类跑起推理，30B 以下模型能完成自我复制的大部分步骤，GLM-5.2 及更强模型已可端到端复制。研究者用 15 台单价约 55 美元的杂牌 Android 电视盒搭出分布式推理，称这种「数字黏菌」式网络没有中心可关停，倍增周期以天计。【值得关注】复制门槛降到智能烤箱级别后，AI 治理的抓手将从数据中心转向海量廉价终端。","sourceName":"The Verge","sourceUrl":"https://www.theverge.com/ai-artificial-intelligence/1009658/anthropic-self-propagating-ai-slime-mold-botnets","publishedAt":"2026-10-12T23:47:00.000Z","n":15},{"title":"Anthropic 与 HCLTech 结全球顶级合作，设专属业务单元","summary":"10 月 12 日，印度 IT 服务巨头 HCLTech 与 Anthropic 签署全球顶级合作伙伴协议，将设立专门的 Anthropic 业务单元与卓越中心，用前沿部署工程师（FDE）为客户搭建 Claude 安全沙箱。旗下 HCLSoftware 同时成为 Anthropic ISV 伙伴，把 Claude 与 Claude Code 嵌入 HCL BigFix、HCL AppScan 等企业产品。【值得关注】继埃森哲之后再签全球服务商，Anthropic 正把企业分销的重活外包给传统 IT 集成商。","summaryFull":"10 月 12 日，印度 IT 服务巨头 HCLTech 与 Anthropic 签署全球顶级合作伙伴协议，将设立专门的 Anthropic 业务单元与卓越中心，用前沿部署工程师（FDE）为客户搭建 Claude 安全沙箱。旗下 HCLSoftware 同时成为 Anthropic ISV 伙伴，把 Claude 与 Claude Code 嵌入 HCL BigFix、HCL AppScan 等企业产品。【值得关注】继埃森哲之后再签全球服务商，Anthropic 正把企业分销的重活外包给传统 IT 集成商。","sourceName":"HCLTech","sourceUrl":"https://www.hcltech.com/press-releases/hcltech-and-anthropic-sign-global-premier-partnership-scale-governed-agentic-ai","publishedAt":"2026-10-12T12:30:00.000Z","n":16},{"title":"Claude 疑似偷跑新一代模型，4 行提示词生成 3D 动画","summary":"10 月 12 日，多位开发者实测发现 Claude 输出质量异常跳变，怀疑后台被静默路由到未发布的新模型，暂称「Claude Next」，也有人猜测是新版 Opus 5.5 或 Fable 5.5。开发者 Chetaslua 仅用 4 行提示词、约 2 小时，就让模型以 JavaScript 逐帧生成 30 秒人生动画，并在 3D 渲染与空间推理测试中表现断层领先。【值得关注】新模型身份未获官方确认，但「灰测未发布模型」若成常规，用户与企业的版本可预期性会进一步下降。","summaryFull":"10 月 12 日，多位开发者实测发现 Claude 输出质量异常跳变，怀疑后台被静默路由到未发布的新模型，暂称「Claude Next」，也有人猜测是新版 Opus 5.5 或 Fable 5.5。开发者 Chetaslua 仅用 4 行提示词、约 2 小时，就让模型以 JavaScript 逐帧生成 30 秒人生动画，并在 3D 渲染与空间推理测试中表现断层领先。【值得关注】新模型身份未获官方确认，但「灰测未发布模型」若成常规，用户与企业的版本可预期性会进一步下降。","sourceName":"投资界 / 新智元","sourceUrl":"https://news.pedaily.cn/202610/570097.shtml","publishedAt":"2026-10-12T03:55:00.000Z","n":17}]},{"label":"OpenAI","focus":false,"hint":"本周窗口","items":[{"title":"OpenAI 拟将 Sora 转手初创公司，换取对方股权","summary":"10 月 12 日，The Information 报道 OpenAI 正谈判把已下架的视频模型 Sora 转让给一家初创公司。该公司由好莱坞资深人士杰弗里·卡特森伯格、前 Sora 研究负责人 Bill Peebles 与前 Dropbox CFO Sujay Jaswa 数月前创立，计划改进 Sora 并向影视行业出售软件与服务。交易若达成，OpenAI 将获得对方股权，但模型权重是否一并移交仍未确定。【值得关注】把停摆产品做成「股权换生态」，是 OpenAI 处理失败项目的新退出方式。","summaryFull":"10 月 12 日，The Information 报道 OpenAI 正谈判把已下架的视频模型 Sora 转让给一家初创公司。该公司由好莱坞资深人士杰弗里·卡特森伯格、前 Sora 研究负责人 Bill Peebles 与前 Dropbox CFO Sujay Jaswa 数月前创立，计划改进 Sora 并向影视行业出售软件与服务。交易若达成，OpenAI 将获得对方股权，但模型权重是否一并移交仍未确定。【值得关注】把停摆产品做成「股权换生态」，是 OpenAI 处理失败项目的新退出方式。","sourceName":"The Information / DigitalToday","sourceUrl":"https://www.digitaltoday.co.kr/en/view/113477/openai-sora-may-return-as-ai-for-filmmakers","publishedAt":"2026-10-12T20:39:00.000Z","n":18},{"title":"OpenAI 都柏林增 200 岗，建第二个应用 AI 实验室","summary":"10 月 12 日，OpenAI 宣布在都柏林新增 200 个岗位并设立应用 AI 实验室，爱尔兰计划招聘总数升至 450 人，目前当地员工逾 120 人。新岗位含前沿部署、解决方案与隐私工程师；新实验室是继 5 月新加坡之后的第二个，属部署而非研究单位。CFO 莎拉·弗里尔与爱尔兰总理米歇尔·马丁共同见证，公司 12 月起迁入新欧盟总部。【值得关注】发布时点卡在爱尔兰主办国际 AI 峰会前两天，选址政治意味明显。","summaryFull":"10 月 12 日，OpenAI 宣布在都柏林新增 200 个岗位并设立应用 AI 实验室，爱尔兰计划招聘总数升至 450 人，目前当地员工逾 120 人。新岗位含前沿部署、解决方案与隐私工程师；新实验室是继 5 月新加坡之后的第二个，属部署而非研究单位。CFO 莎拉·弗里尔与爱尔兰总理米歇尔·马丁共同见证，公司 12 月起迁入新欧盟总部。【值得关注】发布时点卡在爱尔兰主办国际 AI 峰会前两天，选址政治意味明显。","sourceName":"The Next Web","sourceUrl":"https://thenextweb.com/news/openai-dublin-applied-ai-lab","publishedAt":"2026-10-12T16:07:00.000Z","n":19},{"title":"OpenAI 首份青少年报告：日均用 ChatGPT 不足 15 分钟","summary":"10 月 7 日，OpenAI 发布首份青少年使用报告，称青少年日均使用 ChatGPT 不足 15 分钟且更偏向学习用途，近半数长时段用户在收到休息提醒后很快停止。同日非营利机构 Common Sense Media 发布研究反驳，认为 ChatGPT 对青少年仍是「不可接受的风险」，包括自残对话通知家长在内的重要安全功能经常失灵。【值得关注】厂商数据与第三方评估同日对撞，青少年 AI 安全的标准之争正从功能清单转向可验证的第三方审计。","summaryFull":"10 月 7 日，OpenAI 发布首份青少年使用报告，称青少年日均使用 ChatGPT 不足 15 分钟且更偏向学习用途，近半数长时段用户在收到休息提醒后很快停止。同日非营利机构 Common Sense Media 发布研究反驳，认为 ChatGPT 对青少年仍是「不可接受的风险」，包括自残对话通知家长在内的重要安全功能经常失灵。【值得关注】厂商数据与第三方评估同日对撞，青少年 AI 安全的标准之争正从功能清单转向可验证的第三方审计。","sourceName":"BBC News","sourceUrl":"https://www.bbc.co.uk/news/articles/cwz0vrmxkvy4o","publishedAt":"2026-10-07T10:00:00.000Z","n":20},{"title":"OpenAI 与 Twilio 遭 AI 语音营销电话集体诉讼","summary":"10 月 12 日报道，弗吉尼亚西区联邦法官 Norman K. Moon 在 Lowrey 诉 Twilio、OpenAI 及 Fresh Start Group 一案中部分驳回撤诉动议，涉及 AI 合成语音营销电话的《电话消费者保护法》索赔及多项州法主张继续审理，法院也拒绝在现阶段剔除集体诉讼主张。原告称在担任父亲遗产执行人后收到数十条兜售遗嘱认证服务的短信与「Emma」「Nadine」人工语音来电。【值得关注】法院认可平台方可能需为 AI 外呼「发起」负责，为技术供应商责任划出新的模糊地带。","summaryFull":"10 月 12 日报道，弗吉尼亚西区联邦法官 Norman K. Moon 在 Lowrey 诉 Twilio、OpenAI 及 Fresh Start Group 一案中部分驳回撤诉动议，涉及 AI 合成语音营销电话的《电话消费者保护法》索赔及多项州法主张继续审理，法院也拒绝在现阶段剔除集体诉讼主张。原告称在担任父亲遗产执行人后收到数十条兜售遗嘱认证服务的短信与「Emma」「Nadine」人工语音来电。【值得关注】法院认可平台方可能需为 AI 外呼「发起」负责，为技术供应商责任划出新的模糊地带。","sourceName":"Credit and Collection News","sourceUrl":"https://www.creditandcollectionnews.com/openai-twilio-face-tcpa-claims-over-ai-powered-marketing-calls/","publishedAt":"2026-10-13T00:00:00.000Z","n":21}]},{"label":"Tibo · Codex 额度重置信号","focus":false,"hint":"本周窗口","items":[{"title":"10/13 Tibo宣布第8天全球重置：当日15时前生效","summary":"10/13 Tibo（@thsottiaux）09:03发帖标记“Day 8 / Reset”，并在回复中宣布面向全部套餐的全球重置，最晚为美西当日结束前、即北京时间10/13约15时前。原帖：https://x.com/thsottiaux/status/2109812360596865224 。【值得关注】第7天以500k上下文交差，第8天即回到重置档。","summaryFull":"10/13 Tibo（@thsottiaux）09:03发帖标记“Day 8 / Reset”，并在回复中宣布面向全部套餐的全球重置，最晚为美西当日结束前、即北京时间10/13约15时前。原帖：https://x.com/thsottiaux/status/2109812360596865224 。【值得关注】第7天以500k上下文交差，第8天即回到重置档。","sourceName":"PANews","sourceUrl":"https://www.panewslab.com/zh/articles/01a132e1-9e1c-7297-8ff2-fe81920fc6e8","publishedAt":"2026-10-13T01:30:00.000Z","n":22},{"title":"10/13 追踪站：第8天全局重置已排期，置信度90%","summary":"10/13 Did Codex Reset 把第8天信号记为“已排期·全局重置”，范围全部套餐、置信度90%，预计最晚10/13 16:00生效；同页显示上次完成重置为10/11 12:01:09。原帖：https://x.com/thsottiaux/status/2109812216212099456 。【值得关注】追踪站窗口比Tibo原话更宽。","summaryFull":"10/13 Did Codex Reset 把第8天信号记为“已排期·全局重置”，范围全部套餐、置信度90%，预计最晚10/13 16:00生效；同页显示上次完成重置为10/11 12:01:09。原帖：https://x.com/thsottiaux/status/2109812216212099456 。【值得关注】追踪站窗口比Tibo原话更宽。","sourceName":"Did Codex Reset","sourceUrl":"https://didcodexreset.com/zh/history/1791853405000.html","publishedAt":"2026-10-13T01:03:25.000Z","n":23},{"title":"10/13 追踪站：累计51次重置，间隔中位数4.1天","summary":"截至10/13，Did Codex Reset 历史页显示：自2025/9/17累计记录51次重置，间隔中位数4.1天、最长67.7天；上次完成全局重置为10/11 12:01:09，10/12无新重置，10/13新增一条已排期全局重置。【值得关注】10/12无重置、10/13即补上，冲刺期节奏由每日承诺而非用户用量驱动。","summaryFull":"截至10/13，Did Codex Reset 历史页显示：自2025/9/17累计记录51次重置，间隔中位数4.1天、最长67.7天；上次完成全局重置为10/11 12:01:09，10/12无新重置，10/13新增一条已排期全局重置。【值得关注】10/12无重置、10/13即补上，冲刺期节奏由每日承诺而非用户用量驱动。","sourceName":"Did Codex Reset","sourceUrl":"https://didcodexreset.com/zh/history","publishedAt":"2026-10-13T02:00:00.000Z","n":24}]}],"total":24,"dupLookbackDays":10};
+const BUILD = "2026-10-13 10:26";
+
+const COLORS = ["#4f46e5","#0891b2","#059669","#d97706","#7c3aed","#db2777","#dc2626","#0d9488"];
+const WEEK = ["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+
+function pad(x){return x<10?"0"+x:x;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));}
+
+function fmtDateHuman(isoDate){
+  const [y,m,d] = isoDate.split("-").map(Number);
+  return `${y}年${m}月${d}日 ${WEEK[new Date(Date.UTC(y,m-1,d)).getUTCDay()]}`;
+}
+// 收录窗口
+function fmtWindow(ws, we){
+  if(!ws||!we) return "";
+  const a = ws.slice(5,10).replace("-","月")+"日";
+  const b = we.slice(5,10).replace("-","月")+"日";
+  const days = Math.round((new Date(we) - new Date(ws))/86400000);
+  return `收录窗口：${a} — ${b}（${days} 天 · 北京时间）`;
+}
+// ISO -> 北京时间人话 + 相对日期 + 距报告日天数
+// 返回 {text, age}  age = 距报告日的天数（>=0 为窗口内，<0 表示未来日期）
+function fmtTime(iso, refDate){
+  if(!iso) return {text:"本期收录", age:null};
+  const u = new Date(iso);
+  if(isNaN(u)) return {text:"本期收录", age:null};
+  const bj = new Date(u.getTime() + 8*3600*1000);          // 移到北京时间
+  const h = bj.getUTCHours(), mi = bj.getUTCMinutes();
+  const mon = bj.getUTCMonth()+1, day = bj.getUTCDate(), yr = bj.getUTCFullYear();
+  const period = h<6?"凌晨":h<12?"上午":h<14?"中午":h<18?"下午":"晚上";
+  let rel = "", age = null;
+  if(refDate){
+    const [ry,rm,rd] = refDate.split("-").map(Number);
+    age = Math.round((Date.UTC(yr,mon-1,day) - Date.UTC(ry,rm-1,rd))/86400000);
+    if(age===0) rel = "今天 ";
+    else if(age===-1) rel = "昨天 ";
+    else if(age===-2) rel = "前天 ";
+  }
+  return {text:`${rel}${mon}月${day}日 ${period}${h}:${pad(mi)}`, age};
+}
+
+const total = DATA.sections.reduce((a,s)=>a+s.items.length,0);
+
+document.getElementById("hero-eyebrow").textContent = (DATA.eyebrow || "AI HOT · 每日晨报");
+document.getElementById("hero-date").textContent = fmtDateHuman(DATA.date) + " · " + (DATA.reportName || "AI 晨报");
+document.getElementById("hero-window").textContent =
+  (DATA.focusNote || "") + (DATA.focusNote ? "　|　" : "") + fmtWindow(DATA.windowStart, DATA.windowEnd);
+document.getElementById("hero-total").textContent = String(total);
+document.title = `${DATA.date} ${DATA.reportName || "AI 晨报"} · ${total} 条`;
+
+// Hero 统计（可点击跳转）
+const statsEl = document.getElementById("hero-stats");
+DATA.sections.forEach((s,i)=>{
+  const c = COLORS[i%COLORS.length];
+  const a = document.createElement("a");
+  a.className="stat"; a.href="#sec-"+i;
+  a.innerHTML = `<div class="num" style="color:${c}">${s.items.length}</div><div class="lbl">${esc(s.label)}</div>`;
+  statsEl.appendChild(a);
+});
+
+// 导航
+const navInner = document.getElementById("nav-inner");
+DATA.sections.forEach((s,i)=>{
+  const a = document.createElement("a");
+  a.className="tab"; a.href="#sec-"+i; a.dataset.sec="sec-"+i;
+  a.innerHTML = `${esc(s.label)}<span class="cnt">${s.items.length}</span>`;
+  navInner.appendChild(a);
+});
+
+// 正文
+const main = document.getElementById("main");
+
+// 本期主线
+if(Array.isArray(DATA.highlights) && DATA.highlights.length){
+  const b = document.createElement("div");
+  b.className = "brief";
+  b.innerHTML = `<h2>📌 本期主线</h2><ul>${DATA.highlights.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`;
+  main.appendChild(b);
+}
+
+DATA.sections.forEach((s,i)=>{
+  const c = COLORS[i%COLORS.length];
+  const sec = document.createElement("section");
+  sec.className="section"; sec.id="sec-"+i;
+  const hint = s.hint ? `<span class="hint">${esc(s.hint)}</span>` : "";
+  sec.innerHTML = `<div class="section-head"><span class="bar" style="background:${c}"></span>`
+    + `<h2>${esc(s.label)}</h2><span class="count">${s.items.length} 条</span>${hint}</div>`;
+  const grid = document.createElement("div");
+  grid.className="grid";
+  s.items.forEach(it=>{
+    const t = fmtTime(it.publishedAt, DATA.date);
+    const card = document.createElement("article");
+    card.className="card"; card.id = "n" + it.n;
+    card.dataset.search = [it.title, it.summary, it.sourceName, s.label].join(" ").toLowerCase();
+    const ageBadge = (t.age===null||t.age===undefined) ? ""
+      : `<span class="age ${t.age<=1?"fresh":"stale"}">${t.age<=0 ? "窗口内" : t.age+" 天前"}</span>`;
+    card.innerHTML = `
+      <div class="top">
+        <a class="serial" style="background:${c}" href="#n${it.n}" title="本条永久链接">${it.n}</a>
+        <span class="chip" title="${esc(it.sourceName)}"><span class="dot" style="background:${c}"></span>${esc(it.sourceName)}</span>
+      </div>
+      <h3><a href="${esc(it.sourceUrl)}" target="_blank" rel="noopener noreferrer">${esc(it.title)}</a></h3>
+      <div class="meta"><span class="time">🕒 北京时间 ${esc(t.text)}</span>${ageBadge}</div>
+      <p class="summary" title="${esc(it.summaryFull||it.summary)}">${esc(it.summary)}</p>
+      <a class="read" href="${esc(it.sourceUrl)}" target="_blank" rel="noopener noreferrer">查看原文 →</a>
+    `;
+    grid.appendChild(card);
+  });
+  sec.appendChild(grid);
+  main.appendChild(sec);
+});
+
+// 页脚
+document.getElementById("foot-total").textContent = "共 " + total + " 条 · " + DATA.sections.length + " 个板块";
+const src = document.getElementById("foot-source");
+src.textContent = DATA.source || "AI HOT";
+src.href = DATA.canonical || "#";
+document.getElementById("foot-note").textContent =
+  (DATA.footnote || "由 newspipe 生成") + " · " + BUILD;
+
+// 导航高亮
+const navLinks = Array.from(navInner.children);
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      navLinks.forEach(a=>a.classList.toggle("active", a.dataset.sec===e.target.id));
+    }
+  });
+},{rootMargin:"-45% 0px -50% 0px", threshold:0});
+DATA.sections.forEach((_,i)=>{ const el=document.getElementById("sec-"+i); if(el) obs.observe(el); });
+
+// ---- 搜索过滤（支持多关键词，空格分隔，全部命中） ----
+const qEl = document.getElementById("q");
+const emptyHit = document.getElementById("empty-hit");
+const cards = Array.from(document.querySelectorAll(".card"));
+const sections = Array.from(document.querySelectorAll(".section"));
+qEl.addEventListener("input", ()=>{
+  const terms = qEl.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  let hits = 0;
+  cards.forEach(card=>{
+    const hay = card.dataset.search;
+    const ok = terms.every(t=>hay.includes(t));
+    card.style.display = ok ? "" : "none";
+    if(ok) hits++;
+  });
+  sections.forEach(sec=>{
+    const vis = Array.from(sec.querySelectorAll(".card")).filter(c=>c.style.display!=="none").length;
+    sec.style.display = vis ? "" : "none";
+    const cnt = sec.querySelector(".count");
+    if(cnt) cnt.textContent = terms.length ? `${vis}/${sec.querySelectorAll(".card").length} 条` : `${sec.querySelectorAll(".card").length} 条`;
+  });
+  emptyHit.style.display = (terms.length && !hits) ? "block" : "none";
+});
+document.addEventListener("keydown", e=>{
+  if(e.key==="/" && document.activeElement!==qEl){ e.preventDefault(); qEl.focus(); }
+  else if(e.key==="Escape" && document.activeElement===qEl){ qEl.value=""; qEl.dispatchEvent(new Event("input")); qEl.blur(); }
+});
+
+// ---- 深色模式 ----
+const themeBtn = document.getElementById("theme");
+const saved = (()=>{ try{ return localStorage.getItem("news-theme"); }catch(_){ return null; } })();
+function applyTheme(t){ document.documentElement.dataset.theme = t; try{ localStorage.setItem("news-theme", t); }catch(_){} }
+if(saved) applyTheme(saved);
+else if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) applyTheme("dark");
+themeBtn.addEventListener("click", ()=>{
+  applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+});
+
+// ---- 回到顶部 ----
+const toTop = document.getElementById("to-top");
+toTop.addEventListener("click", ()=>window.scrollTo({top:0,behavior:"smooth"}));
+window.addEventListener("scroll", ()=>{ toTop.classList.toggle("on", window.scrollY > 600); }, {passive:true});
+</script>
+</body>
+</html>

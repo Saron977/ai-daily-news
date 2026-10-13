@@ -43,6 +43,22 @@ if git diff --cached --quiet; then
   exit 0
 fi
 
+# 护栏：git add -A 会把工作区里「被误删的历史报告」一并暂存并提交，导致它们从仓库永久消失。
+# 2026-10-13 实际发生过一次（11 份报告在工作区被删、仅存于 git 历史），
+# 若不拦下，一次 publish 就会把历史全部删掉。归档提交不应删除任何已入库报告。
+# 注意：必须带 core.quotePath=false —— git 默认把非 ASCII 文件名转义成 "AI\346\226\260..."，
+# 不带这个参数直接 grep 中文会匹配不到，护栏会形同虚设。
+DELETED_REPORTS="$(git -c core.quotePath=false diff --cached --name-only --diff-filter=D \
+  | grep '^AI新闻速览_' || true)"
+if [ -n "$DELETED_REPORTS" ]; then
+  echo "  ✗ 本期将删除已入库的报告文件，已中止提交："
+  echo "$DELETED_REPORTS" | sed 's/^/      /'
+  echo "  这通常意味着工作区被外部清理或误删。如属误删，先执行 git restore . 还原；"
+  echo "  如确需删除，请手动 git rm 并单独提交。"
+  git reset -q
+  exit 1
+fi
+
 # 判断是否只有「生成时间戳」在变（渲染必然刷新 BUILD 常量与页脚时间）
 MEANINGFUL="$(git diff --cached -U0 \
   | grep -E '^[+-]' \
